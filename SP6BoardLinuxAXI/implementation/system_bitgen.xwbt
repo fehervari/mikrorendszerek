@@ -1,0 +1,7 @@
+INFILE=F:\curr_ISE_proj\mikrorendszerek\SP6BoardLinuxAXI_14_7\SP6BoardLinuxAXI\implementation\system.ncd
+OUTFILE=F:\curr_ISE_proj\mikrorendszerek\SP6BoardLinuxAXI_14_7\SP6BoardLinuxAXI\implementation\system.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=F:\curr_ISE_proj\mikrorendszerek\SP6BoardLinuxAXI_14_7\SP6BoardLinuxAXI\implementation
+LICENSE=WebPack
+USER_INFO=__0_0_0

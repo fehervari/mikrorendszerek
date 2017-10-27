@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          F:\curr_ISE_proj\mikrorendszerek\SP6BoardLinuxAXI_14_7\SP6BoardLinuxAXI/drivers/cpld_if_v1_00_a/data/cpld_if_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Fri Oct 27 12:47:54 2017 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER cpld_if
+
+  OPTION supported_peripherals = (cpld_if);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

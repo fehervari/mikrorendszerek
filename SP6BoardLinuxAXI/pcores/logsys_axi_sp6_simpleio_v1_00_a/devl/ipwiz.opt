@@ -1,0 +1,8 @@
+-batch 
+-create logsys_axi_sp6_simpleio 
+-ver 1.00.a 
+-dir "F:\Logsys\SP6BoardLinuxAXI" 
+-lang verilog 
+-bus axi4lite s 
+-reg 3 
+-xps 

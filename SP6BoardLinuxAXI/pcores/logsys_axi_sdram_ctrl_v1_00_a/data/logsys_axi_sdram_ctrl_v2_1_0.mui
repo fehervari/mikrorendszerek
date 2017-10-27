@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- add comment here -->
+
+<!DOCTYPE doc SYSTEM "<EDK_Install>/hw/XilinxProcessorIPLib/pcores/ipdialog.dtd" [
+	<!ENTITY C_T_SDRAM_RP_NS '
+	<widget id="C_T_SDRAM_RP_NS">
+		<key>C_T_SDRAM_RP_NS</key>
+		<label>Wait time after PRECHARGE command in ns </label>
+		<tip></tip>
+	</widget>
+	'>
+
+	<!ENTITY C_T_SDRAM_RFC_NS '
+	<widget id="C_T_SDRAM_RFC_NS">
+		<key>C_T_SDRAM_RFC_NS</key>
+		<label>AUTO REFRESH command period in ns </label>
+		<tip></tip>
+	</widget>
+	'>
+
+	<!ENTITY C_T_SDRAM_RMD_CLK '
+	<widget id="C_T_SDRAM_RMD_CLK">
+		<key>C_T_SDRAM_RMD_CLK</key>
+		<label>Number of clock cycles to wait after mode reg. write </label>
+		<tip></tip>
+	</widget>
+	'>
+
+	<!ENTITY C_T_SDRAM_RCD_NS '
+	<widget id="C_T_SDRAM_RCD_NS">
+		<key>C_T_SDRAM_RCD_NS</key>
+		<label>RAS to CAS delay in ns </label>
+		<tip></tip>
+	</widget>
+	'>
+
+	<!ENTITY C_T_SDRAM_RC_NS '
+	<widget id="C_T_SDRAM_RC_NS">
+		<key>C_T_SDRAM_RC_NS</key>
+		<label>RAS to RAS delay in ns </label>
+		<tip></tip>
+	</widget>
+	'>
+
+	<!ENTITY C_T_SDRAM_RAS_MIN_NS '
+	<widget id="C_T_SDRAM_RAS_MIN_NS">
+		<key>C_T_SDRAM_RAS_MIN_NS</key>
+		<label>Minimum bank active time in ns </label>
+		<tip></tip>
+	</widget>
+	'>
+
+	<!ENTITY C_T_SDRAM_RAS_MAX_NS '
+	<widget id="C_T_SDRAM_RAS_MAX_NS">
+		<key>C_T_SDRAM_RAS_MAX_NS</key>
+		<label>Maximum bank active time in ns </label>
+		<tip></tip>
+	</widget>
+	'>
+
+	<!ENTITY C_T_SDRAM_REFRESH_MS '
+	<widget id="C_T_SDRAM_REFRESH_MS">
+		<key>C_T_SDRAM_REFRESH_MS</key>
+		<label>SDRAM refresh period in ms </label>
+		<tip></tip>
+	</widget>
+	'>
+
+	<!ENTITY C_SDRAM_REFRESH_BURST '
+	<widget id="C_SDRAM_REFRESH_BURST">
+		<key>C_SDRAM_REFRESH_BURST</key>
+		<label>Number of issued AUTO REFRESH commands in a burst </label>
+		<tip></tip>
+	</widget>
+	'>
+
+	<!ENTITY C_SDRAM_CAS_LATENCY '
+	<widget id="C_SDRAM_CAS_LATENCY">
+		<key>C_SDRAM_CAS_LATENCY</key>
+		<label>CAS latency in clock cycles </label>
+		<tip></tip>
+	</widget>
+	'>
+
+	<!ENTITY C_S_AXI_BASEADDR '
+	<widget id="C_S_AXI_BASEADDR">
+		<key>C_S_AXI_BASEADDR</key>
+		<label>AXI base address </label>
+		<tip></tip>
+	</widget>
+	'>
+
+	<!ENTITY C_S_AXI_HIGHADDR '
+	<widget id="C_S_AXI_HIGHADDR">
+		<key>C_S_AXI_HIGHADDR</key>
+		<label>AXI high address </label>
+		<tip></tip>
+	</widget>
+	'>
+
+	<!ENTITY C_S_AXI_ACLK_PERIOD_PS '
+	<widget id="C_S_AXI_ACLK_PERIOD_PS">
+		<key>C_S_AXI_ACLK_PERIOD_PS</key>
+		<label>AXI clock period in ps </label>
+		<tip></tip>
+	</widget>
+	'>
+
+	<!ENTITY C_S_AXI_DATA_WIDTH '
+	<widget id="C_S_AXI_DATA_WIDTH">
+		<key>C_S_AXI_DATA_WIDTH</key>
+		<label>AXI data width </label>
+		<tip></tip>
+	</widget>
+	'>
+
+	<!ENTITY C_S_AXI_ADDR_WIDTH '
+	<widget id="C_S_AXI_ADDR_WIDTH">
+		<key>C_S_AXI_ADDR_WIDTH</key>
+		<label>AXI address width </label>
+		<tip></tip>
+	</widget>
+	'>
+
+	<!ENTITY C_S_AXI_PROTOCOL '
+	<widget id="C_S_AXI_PROTOCOL">
+		<key>C_S_AXI_PROTOCOL</key>
+		<label>AXI protocol </label>
+		<tip></tip>
+	</widget>
+	'>
+
+	<!ENTITY C_S_AXI_SUPPORTS_READ '
+	<widget id="C_S_AXI_SUPPORTS_READ">
+		<key>C_S_AXI_SUPPORTS_READ</key>
+		<label>AXI supports read </label>
+		<tip></tip>
+	</widget>
+	'>
+
+	<!ENTITY C_S_AXI_SUPPORTS_WRITE '
+	<widget id="C_S_AXI_SUPPORTS_WRITE">
+		<key>C_S_AXI_SUPPORTS_WRITE</key>
+		<label>AXI supports write </label>
+		<tip></tip>
+	</widget>
+	'>
+
+	<!ENTITY C_S_AXI_SUPPORTS_NARROW_BURST '
+	<widget id="C_S_AXI_SUPPORTS_NARROW_BURST">
+		<key>C_S_AXI_SUPPORTS_NARROW_BURST</key>
+		<label>AXI supports narrow burst </label>
+		<tip></tip>
+	</widget>
+	'>
+]>
+
+<doc>
+	<view id="Timing">
+		<display>Timing parameters</display>
+		<group id="SDRAM">
+			<display>SDRAM</display>
+			<item>&C_T_SDRAM_RP_NS;</item>
+			<item>&C_T_SDRAM_RFC_NS;</item>
+			<item>&C_T_SDRAM_RMD_CLK;</item>
+			<item>&C_T_SDRAM_RCD_NS;</item>
+			<item>&C_T_SDRAM_RC_NS;</item>
+			<item>&C_T_SDRAM_RAS_MIN_NS;</item>
+			<item>&C_T_SDRAM_RAS_MAX_NS;</item>
+			<item>&C_T_SDRAM_REFRESH_MS;</item>
+			<item>&C_SDRAM_REFRESH_BURST;</item>
+			<item>&C_SDRAM_CAS_LATENCY;</item>
+		</group>
+	</view>
+	<view id="System">
+		<display>System</display>
+		<group id="Addresses">
+			<display>Assresses</display>
+			<item>&C_S_AXI_BASEADDR;</item>
+			<item>&C_S_AXI_HIGHADDR;</item>
+		</group>
+		<group id="AXI">
+			<display>AXI</display>
+			<item>&C_S_AXI_ACLK_PERIOD_PS;</item>
+			<item>&C_S_AXI_DATA_WIDTH;</item>
+			<item>&C_S_AXI_ADDR_WIDTH;</item>
+			<item>&C_S_AXI_PROTOCOL;</item>
+			<item>&C_S_AXI_SUPPORTS_READ;</item>
+			<item>&C_S_AXI_SUPPORTS_WRITE;</item>
+			<item>&C_S_AXI_SUPPORTS_NARROW_BURST;</item>
+		</group>
+	</view>
+</doc>

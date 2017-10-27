@@ -1,0 +1,7 @@
+lib logsys_axi_sdram_ctrl_v1_00_a axi_interface verilog
+lib logsys_axi_sdram_ctrl_v1_00_a fifo verilog
+lib logsys_axi_sdram_ctrl_v1_00_a sdram_ctrl verilog
+lib logsys_axi_sdram_ctrl_v1_00_a sdram_timing verilog
+lib logsys_axi_sdram_ctrl_v1_00_a bank_state verilog
+lib logsys_axi_sdram_ctrl_v1_00_a phy verilog
+lib logsys_axi_sdram_ctrl_v1_00_a logsys_axi_sdram_ctrl verilog

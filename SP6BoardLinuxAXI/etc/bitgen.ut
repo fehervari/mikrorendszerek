@@ -1,0 +1,3 @@
+-g TdoPin:PULLNONE
+-g StartUpClk:CCLK
+#add other options here.
