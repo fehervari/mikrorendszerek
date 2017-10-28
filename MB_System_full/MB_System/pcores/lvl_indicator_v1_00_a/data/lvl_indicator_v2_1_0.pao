@@ -1,0 +1,10 @@
+##############################################################################
+## Filename:          F:/EDK/MB_System/pcores/lvl_indicator_v1_00_a/data/lvl_indicator_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Fri Oct 20 14:44:41 2017 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib lvl_indicator_v1_00_a user_logic verilog
+lib lvl_indicator_v1_00_a lvl_indicator vhdl

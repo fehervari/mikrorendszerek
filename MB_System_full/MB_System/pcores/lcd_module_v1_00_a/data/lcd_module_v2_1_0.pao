@@ -1,0 +1,10 @@
+##############################################################################
+## Filename:          F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/lcd_module_v1_00_a/data/lcd_module_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Fri Oct 27 23:50:44 2017 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib lcd_module_v1_00_a user_logic verilog
+lib lcd_module_v1_00_a lcd_module vhdl

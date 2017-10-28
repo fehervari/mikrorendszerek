@@ -1,0 +1,10 @@
+##############################################################################
+## Filename:          F:/Logsys/SP6BoardLinuxAXI/pcores/logsys_axi_sp6_simpleio_v1_00_a/data/logsys_axi_sp6_simpleio_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Tue Dec 31 17:54:19 2013 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib logsys_axi_sp6_simpleio_v1_00_a user_logic verilog
+lib logsys_axi_sp6_simpleio_v1_00_a logsys_axi_sp6_simpleio vhdl

@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System/drivers/lcd_module_v1_00_a/data/lcd_module_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Fri Oct 27 23:50:52 2017 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER lcd_module
+
+  OPTION supported_peripherals = (lcd_module);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER
