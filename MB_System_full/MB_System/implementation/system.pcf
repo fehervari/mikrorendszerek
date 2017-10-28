@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sat Oct 28 14:29:40 2017
+// Written by: Map P.20131013 on Sat Oct 28 23:12:17 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -3152,22 +3152,22 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PIN
         "microblaze_0_i_bram_ctrl/microblaze_0_i_bram_ctrl/lmb_as" BEL
         "microblaze_0_d_bram_ctrl/microblaze_0_d_bram_ctrl/Sl_Rdy" BEL
         "microblaze_0_d_bram_ctrl/microblaze_0_d_bram_ctrl/lmb_as" BEL
-        "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/IF" BEL
+        "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/inst_notdata" BEL
         "lcd_screen_0/lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg"
         BEL "lcd_screen_0/lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst"
-        BEL "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/counter_3" BEL
-        "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/counter_2" BEL
-        "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/counter_0" BEL
-        "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/counter_1" BEL
-        "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/spi_state_1_1" BEL
+        BEL "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/SW_RESET" BEL
+        "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/FULL_REG" BEL
+        "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/EMPTY_REG" BEL
+        "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/IF" BEL
         "lcd_screen_0/lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rvalid_i"
         BEL
         "lcd_screen_0/lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bvalid_i"
         BEL "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/IE" BEL
-        "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/lcd_enable" BEL
-        "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/EMPTY_REG" BEL
-        "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/FULL_REG" BEL
-        "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/inst_notdata" BEL
+        "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/LCD_ENABLE" BEL
+        "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/counter_0" BEL
+        "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/counter_1" BEL
+        "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/counter_2" BEL
+        "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/counter_3" BEL
         "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/spi_state_0" BEL
         "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/spi_state_1" BEL
         "lcd_screen_0/lcd_screen_0/USER_LOGIC_I/puffer_0" BEL
@@ -3200,8 +3200,6 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PIN
         "lcd_screen_0/lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_6"
         BEL
         "lcd_screen_0/lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_7"
-        BEL
-        "lcd_screen_0/lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_8"
         BEL
         "lcd_screen_0/lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2"
         BEL

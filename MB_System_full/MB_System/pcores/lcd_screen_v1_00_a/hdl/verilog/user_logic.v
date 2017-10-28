@@ -1,17 +1,4 @@
-/**************** BASE + 0x0 -status registers {lcd_enable,  == clock enable
-																spi_state,   == (IDLE,LOAD,SEND) 2 bit
-																inst_notdata,== information about miso
-																IE,			 == interrupt enable
-																IF,			 == interrupt flag
-																FULL_REG,	 == FIFO FULL
-																EMPTY_REG}   == FIFO EMPTY
-																
-						BASE + 0x4 -spi fifo	-> WIDTH =  1  +    8		DEPTH = 16
-																	|		  |
-																	¡		  ¡
-																 {I/D , PAYLOAD}
-																
-*****************/
+`timescale 1ns / 1ps
 `uselib lib=unisims_ver
 `uselib lib=proc_common_v3_00_a
 
@@ -46,12 +33,13 @@ localparam SEND = 2'b10;
 
 // registers
 //status
-reg lcd_enable;
+reg LCD_ENABLE;
 reg [1:0]spi_state;
 reg IE;
 reg IF;
 reg FULL_REG;
 reg EMPTY_REG;
+reg SW_RESET;
 //other
 reg fifo_rd_req;
 reg [7:0]puffer;
@@ -60,7 +48,7 @@ reg [3:0]counter;
 reg [1:0]sclk_reg;
 
 wire clk     =  Bus2IP_Clk;
-wire rst     = ~Bus2IP_Resetn;
+wire rst     = ~Bus2IP_Resetn || SW_RESET;
 wire reg0_wr =  Bus2IP_WrCE[1];
 wire reg0_rd =  Bus2IP_RdCE[1];
 wire reg1_wr =  Bus2IP_WrCE[0];
@@ -72,7 +60,7 @@ wire [8:0]fifo_dout;
 wire [8:0]fifo_din = Bus2IP_Data[8:0];
 wire fifo_rd;
 wire fifo_wr;
-wire [7:0]status_reg = {lcd_enable,spi_state,inst_notdata,IE,IF,FULL_REG,EMPTY_REG};
+wire [7:0]status_reg = {spi_state,SW_RESET,FULL_REG,EMPTY_REG,IF,IE,LCD_ENABLE};
 
 //
 wire sclk_rise = (sclk_reg == 2'b01);
@@ -105,7 +93,7 @@ always @(posedge clk)
 begin
 	if (rst)
 		sclk_reg <= 1'b0;
-	else if(lcd_enable)
+	else if(LCD_ENABLE)
 		sclk_reg <= sclk_reg + 1;
 end
 
@@ -116,21 +104,33 @@ always @(posedge clk)
 begin
 	if(rst)
 	begin
-		IE <= 0;
-		IF <= 0;
-		lcd_enable <= 0;
+		IE         <= 1'b0;
+		IF         <= 1'b0;
+		LCD_ENABLE <= 1'b0;
+		SW_RESET   <= 1'b0;
+		FULL_REG   <= 1'b0;
+		EMPTY_REG  <= 1'b0;
 	end
-	if(reg0_wr)
+	
+	else
 	begin
-		lcd_enable <= Bus2IP_Data[0];
-		IE		   <= Bus2IP_Data[1];
+		if(reg0_wr)
+		begin
+			LCD_ENABLE <= Bus2IP_Data[0];
+			SW_RESET <= Bus2IP_Data[5];
+			IE		   <= Bus2IP_Data[1];
+		end
+		if(FULL_REG != full)
+			FULL_REG  <= full;
+		if(EMPTY_REG != empty)
+			EMPTY_REG <= empty;
+		if(reg0_rd)
+			IF <= 0;
+		if((~FULL_REG & full) | (~EMPTY_REG & empty))// event
+			IF <= 1;
+		if(SW_RESET)
+			SW_RESET <= 1'b0;
 	end
-	FULL_REG  <= full;
-	EMPTY_REG <= empty;
-	if(reg0_rd)
-		IF <= 0;
-	if(FULL_REG)
-		IF <= 1;
 end
 
 assign irq = IE & IF;
@@ -148,7 +148,7 @@ begin
 	case(spi_state)
 		IDLE:
 		begin
-			if(~empty && lcd_enable)
+			if(~empty && LCD_ENABLE)
 			begin
 				spi_state   <= LOAD;
 				fifo_rd_req <= 1;
@@ -217,7 +217,7 @@ always @(*)
 begin
    case (Bus2IP_RdCE)
       2'b10: IP2Bus_Data   <= {24'b0,status_reg};
-      2'b01: IP2Bus_Data   <= {23'b0,fifo_dout}; //  -\_(?)_/- 
+      2'b01: IP2Bus_Data   <= {23'b0,puffer};
       default: IP2Bus_Data <= 32'd0;
    endcase
 end
@@ -226,7 +226,7 @@ end
 
 endmodule
 
-`timescale 1ns / 1ps
+
 
 module fifo
 #(

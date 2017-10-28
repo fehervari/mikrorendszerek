@@ -3,8 +3,8 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> 
 TABLE OF CONTENTS
@@ -965,8 +965,8 @@ S_AXI_ACLK     |    4.525|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 14.10 secs
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 14.88 secs
  
 --> 
 

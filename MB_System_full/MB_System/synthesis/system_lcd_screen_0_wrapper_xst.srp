@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.12 secs
  
 --> 
@@ -129,7 +129,7 @@ WARNING:HDLCompiler:413 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_Sy
 WARNING:HDLCompiler:413 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/lcd_screen_v1_00_a/hdl/verilog/user_logic.v" Line 265: Result of 32-bit expression is truncated to fit in 5-bit target.
 WARNING:HDLCompiler:413 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/lcd_screen_v1_00_a/hdl/verilog/user_logic.v" Line 274: Result of 6-bit expression is truncated to fit in 5-bit target.
 WARNING:HDLCompiler:413 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/lcd_screen_v1_00_a/hdl/verilog/user_logic.v" Line 276: Result of 32-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/lcd_screen_v1_00_a/hdl/verilog/user_logic.v" Line 109: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/lcd_screen_v1_00_a/hdl/verilog/user_logic.v" Line 97: Result of 3-bit expression is truncated to fit in 2-bit target.
 WARNING:HDLCompiler:413 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/lcd_screen_v1_00_a/hdl/verilog/user_logic.v" Line 181: Result of 5-bit expression is truncated to fit in 4-bit target.
 Back to vhdl to continue elaboration
 
@@ -273,7 +273,8 @@ WARNING:Xst:647 - Input <Bus2IP_Data<31:9>> is never used. This port will be pre
 WARNING:Xst:647 - Input <Bus2IP_BE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <IE>.
     Found 1-bit register for signal <IF>.
-    Found 1-bit register for signal <lcd_enable>.
+    Found 1-bit register for signal <LCD_ENABLE>.
+    Found 1-bit register for signal <SW_RESET>.
     Found 1-bit register for signal <FULL_REG>.
     Found 1-bit register for signal <EMPTY_REG>.
     Found 8-bit register for signal <puffer>.
@@ -282,18 +283,20 @@ WARNING:Xst:647 - Input <Bus2IP_BE> is never used. This port will be preserved a
     Found 4-bit register for signal <counter>.
     Found 1-bit register for signal <inst_notdata>.
     Found 2-bit register for signal <sclk_reg>.
-    Found 2-bit adder for signal <sclk_reg[1]_GND_19_o_add_5_OUT> created at line 109.
-    Found 4-bit adder for signal <counter[3]_GND_19_o_add_19_OUT> created at line 181.
-    Found 8-bit 4-to-1 multiplexer for signal <spi_state[1]_puffer[7]_wide_mux_31_OUT> created at line 148.
-    Found 1-bit 4-to-1 multiplexer for signal <spi_state[1]_fifo_rd_req_Mux_33_o> created at line 148.
-    Found 2-bit 4-to-1 multiplexer for signal <spi_state[1]_spi_state[1]_wide_mux_35_OUT> created at line 148.
-    Found 4-bit comparator greater for signal <counter[3]_PWR_19_o_LessThan_11_o> created at line 112
+    Found 2-bit adder for signal <sclk_reg[1]_GND_19_o_add_5_OUT> created at line 97.
+    Found 4-bit adder for signal <counter[3]_GND_19_o_add_21_OUT> created at line 181.
+    Found 8-bit 4-to-1 multiplexer for signal <spi_state[1]_puffer[7]_wide_mux_33_OUT> created at line 148.
+    Found 1-bit 4-to-1 multiplexer for signal <spi_state[1]_fifo_rd_req_Mux_35_o> created at line 148.
+    Found 2-bit 4-to-1 multiplexer for signal <spi_state[1]_spi_state[1]_wide_mux_37_OUT> created at line 148.
+    Found 4-bit comparator greater for signal <counter[3]_PWR_19_o_LessThan_11_o> created at line 100
+    Found 1-bit comparator equal for signal <n0023> created at line 123
+    Found 1-bit comparator equal for signal <n0026> created at line 125
     HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <spi_state> would allow inference of a finite state machine and as consequence better performance and smaller area.
     Summary:
 	inferred   2 Adder/Subtractor(s).
-	inferred  23 D-type flip-flop(s).
-	inferred   1 Comparator(s).
-	inferred  23 Multiplexer(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  24 Multiplexer(s).
 Unit <user_logic> synthesized.
 
 Synthesizing Unit <fifo>.
@@ -322,18 +325,19 @@ Macro Statistics
  2-bit adder                                           : 1
  4-bit adder                                           : 2
  5-bit addsub                                          : 2
-# Registers                                            : 25
- 1-bit register                                        : 14
+# Registers                                            : 26
+ 1-bit register                                        : 15
  144-bit register                                      : 1
  2-bit register                                        : 4
  32-bit register                                       : 1
  4-bit register                                        : 2
  5-bit register                                        : 2
  8-bit register                                        : 1
-# Comparators                                          : 1
+# Comparators                                          : 3
+ 1-bit comparator equal                                : 2
  4-bit comparator greater                              : 1
-# Multiplexers                                         : 28
- 1-bit 2-to-1 multiplexer                              : 12
+# Multiplexers                                         : 29
+ 1-bit 2-to-1 multiplexer                              : 13
  1-bit 4-to-1 multiplexer                              : 1
  2-bit 2-to-1 multiplexer                              : 3
  2-bit 4-to-1 multiplexer                              : 1
@@ -386,20 +390,21 @@ Macro Statistics
  2-bit up counter                                      : 1
  4-bit up counter                                      : 1
  5-bit updown counter                                  : 2
-# Registers                                            : 64
- Flip-Flops                                            : 64
+# Registers                                            : 65
+ Flip-Flops                                            : 65
 # Shift Registers                                      : 9
  16-bit dynamic shift register                         : 9
-# Comparators                                          : 1
+# Comparators                                          : 3
+ 1-bit comparator equal                                : 2
  4-bit comparator greater                              : 1
-# Multiplexers                                         : 32
- 1-bit 2-to-1 multiplexer                              : 18
+# Multiplexers                                         : 26
+ 1-bit 2-to-1 multiplexer                              : 11
  1-bit 4-to-1 multiplexer                              : 1
  2-bit 2-to-1 multiplexer                              : 3
  2-bit 4-to-1 multiplexer                              : 1
  32-bit 2-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 2
- 8-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 6
  8-bit 4-to-1 multiplexer                              : 1
 # FSMs                                                 : 1
 
@@ -430,7 +435,8 @@ Optimizing unit <address_decoder> ...
 Optimizing unit <user_logic> ...
 
 Optimizing unit <fifo> ...
-WARNING:Xst:1293 - FF/Latch <lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_9> has a constant value of 0 in block <system_lcd_screen_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_8> has a constant value of 0 in block <system_lcd_screen_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_9> has a constant value of 0 in block <system_lcd_screen_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_10> has a constant value of 0 in block <system_lcd_screen_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_11> has a constant value of 0 in block <system_lcd_screen_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_12> has a constant value of 0 in block <system_lcd_screen_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
@@ -461,7 +467,6 @@ INFO:Xst:3203 - The FF/Latch <srl_dcnt_0> in Unit <lcd_screen_0/USER_LOGIC_I/rx_
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 0) on block system_lcd_screen_0_wrapper, actual ratio is 2.
-FlipFlop lcd_screen_0/USER_LOGIC_I/spi_state_1 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -469,8 +474,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 54
- Flip-Flops                                            : 54
+# Registers                                            : 53
+ Flip-Flops                                            : 53
 
 =========================================================================
 
@@ -493,20 +498,18 @@ Top Level Output File Name         : system_lcd_screen_0_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 108
+# BELS                             : 88
 #      GND                         : 1
-#      INV                         : 6
-#      LUT2                        : 18
-#      LUT3                        : 10
-#      LUT4                        : 13
-#      LUT5                        : 24
-#      LUT6                        : 32
-#      MUXF7                       : 4
-# FlipFlops/Latches                : 54
-#      FD                          : 21
-#      FDE                         : 1
-#      FDR                         : 8
-#      FDRE                        : 20
+#      INV                         : 4
+#      LUT2                        : 12
+#      LUT3                        : 7
+#      LUT4                        : 10
+#      LUT5                        : 23
+#      LUT6                        : 31
+# FlipFlops/Latches                : 53
+#      FD                          : 14
+#      FDR                         : 12
+#      FDRE                        : 23
 #      FDSE                        : 4
 # Shift Registers                  : 9
 #      SRLC16E                     : 9
@@ -518,18 +521,18 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              54  out of  11440     0%  
- Number of Slice LUTs:                  112  out of   5720     1%  
-    Number used as Logic:               103  out of   5720     1%  
+ Number of Slice Registers:              53  out of  11440     0%  
+ Number of Slice LUTs:                   96  out of   5720     1%  
+    Number used as Logic:                87  out of   5720     1%  
     Number used as Memory:                9  out of   1440     0%  
        Number used as SRL:                9
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    116
-   Number with an unused Flip Flop:      62  out of    116    53%  
-   Number with an unused LUT:             4  out of    116     3%  
-   Number of fully used LUT-FF pairs:    50  out of    116    43%  
-   Number of unique control sets:         9
+ Number of LUT Flip Flop pairs used:     99
+   Number with an unused Flip Flop:      46  out of     99    46%  
+   Number with an unused LUT:             3  out of     99     3%  
+   Number of fully used LUT-FF pairs:    50  out of     99    50%  
+   Number of unique control sets:        10
 
 IO Utilization: 
  Number of IOs:                         153
@@ -558,7 +561,7 @@ Clock Information:
 -----------------------------------+---------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                               | Load  |
 -----------------------------------+---------------------------------------------------------------------+-------+
-S_AXI_ACLK                         | NONE(lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1)| 63    |
+S_AXI_ACLK                         | NONE(lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1)| 62    |
 -----------------------------------+---------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -570,9 +573,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 4.747ns (Maximum Frequency: 210.659MHz)
+   Minimum period: 4.962ns (Maximum Frequency: 201.532MHz)
    Minimum input arrival time before clock: 2.125ns
-   Maximum output required time after clock: 2.408ns
+   Maximum output required time after clock: 2.368ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -581,31 +584,33 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
-  Clock period: 4.747ns (frequency: 210.659MHz)
-  Total number of paths / destination ports: 754 / 142
+  Clock period: 4.962ns (frequency: 201.532MHz)
+  Total number of paths / destination ports: 695 / 161
 -------------------------------------------------------------------------
-Delay:               4.747ns (Levels of Logic = 3)
-  Source:            lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1 (FF)
-  Destination:       lcd_screen_0/USER_LOGIC_I/rx_fifo/srl_dcnt_0 (FF)
+Delay:               4.962ns (Levels of Logic = 5)
+  Source:            lcd_screen_0/USER_LOGIC_I/rx_fifo/srl_dcnt_0 (FF)
+  Destination:       lcd_screen_0/USER_LOGIC_I/puffer_7 (FF)
   Source Clock:      S_AXI_ACLK rising
   Destination Clock: S_AXI_ACLK rising
 
-  Data Path: lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1 to lcd_screen_0/USER_LOGIC_I/rx_fifo/srl_dcnt_0
+  Data Path: lcd_screen_0/USER_LOGIC_I/rx_fifo/srl_dcnt_0 to lcd_screen_0/USER_LOGIC_I/puffer_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            13   0.525   1.206  lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1 (lcd_screen_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1)
-     LUT3:I1->O           18   0.250   1.235  lcd_screen_0/USER_LOGIC_I/fifo_wr1 (lcd_screen_0/USER_LOGIC_I/fifo_wr)
-     begin scope: 'lcd_screen_0/USER_LOGIC_I/rx_fifo:wr'
-     LUT2:I1->O            9   0.254   0.975  _n0049_inv1 (_n0049_inv)
-     FDSE:CE                   0.302          srl_addr_1
+     FDRE:C->Q             9   0.525   0.975  srl_dcnt_0 (srl_dcnt_0)
+     INV:I->O             10   0.255   1.007  Q_0_inv1_INV_0 (Q_0_inv)
+     SRLC16E:A0->Q         1   0.254   0.682  Mshreg_dout_2_0 (dout<2>)
+     end scope: 'lcd_screen_0/USER_LOGIC_I/rx_fifo:dout<2>'
+     LUT6:I5->O            1   0.254   0.682  lcd_screen_0/USER_LOGIC_I/Mmux_spi_state[1]_puffer[7]_wide_mux_33_OUT52 (lcd_screen_0/USER_LOGIC_I/Mmux_spi_state[1]_puffer[7]_wide_mux_33_OUT51)
+     LUT6:I5->O            1   0.254   0.000  lcd_screen_0/USER_LOGIC_I/Mmux_spi_state[1]_puffer[7]_wide_mux_33_OUT53 (lcd_screen_0/USER_LOGIC_I/spi_state[1]_puffer[7]_wide_mux_33_OUT<2>)
+     FD:D                      0.074          lcd_screen_0/USER_LOGIC_I/puffer_2
     ----------------------------------------
-    Total                      4.747ns (1.331ns logic, 3.416ns route)
-                                       (28.0% logic, 72.0% route)
+    Total                      4.962ns (1.616ns logic, 3.346ns route)
+                                       (32.6% logic, 67.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
-  Total number of paths / destination ports: 78 / 53
+  Total number of paths / destination ports: 78 / 56
 -------------------------------------------------------------------------
 Offset:              2.125ns (Levels of Logic = 2)
   Source:            S_AXI_RREADY (PAD)
@@ -625,9 +630,9 @@ Offset:              2.125ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
-  Total number of paths / destination ports: 37 / 19
+  Total number of paths / destination ports: 36 / 18
 -------------------------------------------------------------------------
-Offset:              2.408ns (Levels of Logic = 1)
+Offset:              2.368ns (Levels of Logic = 1)
   Source:            lcd_screen_0/USER_LOGIC_I/spi_state_0 (FF)
   Destination:       spi_mosi (PAD)
   Source Clock:      S_AXI_ACLK rising
@@ -636,11 +641,11 @@ Offset:              2.408ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              26   0.525   1.648  lcd_screen_0/USER_LOGIC_I/spi_state_0 (lcd_screen_0/USER_LOGIC_I/spi_state_0)
+     FD:C->Q              24   0.525   1.608  lcd_screen_0/USER_LOGIC_I/spi_state_0 (lcd_screen_0/USER_LOGIC_I/spi_state_0)
      LUT3:I0->O            0   0.235   0.000  lcd_screen_0/USER_LOGIC_I/Mmux_spi_mosi11 (spi_mosi)
     ----------------------------------------
-    Total                      2.408ns (0.760ns logic, 1.648ns route)
-                                       (31.6% logic, 68.4% route)
+    Total                      2.368ns (0.760ns logic, 1.608ns route)
+                                       (32.1% logic, 67.9% route)
 
 =========================================================================
 
@@ -652,20 +657,20 @@ Clock to Setup on destination clock S_AXI_ACLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-S_AXI_ACLK     |    4.747|         |         |         |
+S_AXI_ACLK     |    4.962|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.94 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.36 secs
  
 --> 
 
 Total memory usage is 268256 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   45 (   0 filtered)
+Number of warnings :   46 (   0 filtered)
 Number of infos    :    6 (   0 filtered)
 
