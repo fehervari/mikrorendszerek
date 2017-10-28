@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="system_bd.bmm" key="MB_System_hw_platform-bmmFile"/>
+	<item value="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\SW\LCD\Debug\LCD.elf" key="MB_System_hw_platform-microblaze_0-initElf"/>
+	<item value="system.bit" key="MB_System_hw_platform-bitFile"/>
+</section>

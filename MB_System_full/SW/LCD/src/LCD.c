@@ -1,0 +1,106 @@
+# include "LCD.h"
+
+struct LCD_STATUS {
+	Xuint8		INVERSE;
+	Xuint8		SPEED;// forgalomszabályzás
+};
+
+static Xuint8 speedRate[4]= {16,8,4,2};
+static Xuint8 convert[8] = {0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80};
+
+static struct LCD_STATUS LCD;
+
+Xuint8 itit_LCD(Xuint8 inverseEn){/* TODO */
+	LCD.INVERSE = inverseEn;
+	LCD.SPEED = 3;
+
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_STATUS_REG_OFFSET,LCD_SCREEN_ENABLE_MASK | LCD_SCREEN_IRQ_ENABLE_MASK);
+
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET,0xE2);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET,0x40);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET,0xA0);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET,0xC8);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET,0xA4);
+
+	if(LCD.INVERSE)
+		sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, 0xA7);
+	else
+		sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, 0xA6);
+
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, 0xA2);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, 0x2F);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, 0x27);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, 0x81);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, 0x10);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, 0xFA);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, 0x90);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, 0xAF);
+
+	return 0;
+}
+
+void clear_LCD(void){ // lapok [0 ... 7] oszlopok [30 ... 131]
+	Xuint8 page, colL, colH;
+	Xuint8 i,j;
+	Xuint32 data = 0x100;
+	for (i = 0; i < 8; i++){ // lapok
+		for(j = 0x1E; j < 0x84; j++){ // sorok
+			page = 0xB0 + i; //lapcím
+			colH = 0x10 + (j >> 4); // oszlop felsõ
+			colL = j & 0x0F; // oszlop alsó
+			sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, page);
+			sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, colH);
+			sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, colL);
+			sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, data);
+		}
+	}
+}
+
+void write_Pixel(Xuint8 x, Xuint8 y){ // x [1 : 102] y [1 : 64]
+	Xuint8 Page_addr = 0xB0 + (y >> 3); // lapcím
+	Xuint8 Col_addr = (x + 0x1E); //oszlopcím
+	Xuint8 Col_addrH = 0x10 + (Col_addr >> 4);
+	Xuint8 Col_addrL = Col_addr & 0x0F;
+	Xuint16 Row_addr = (y & 0x07);// sorcím
+	Row_addr = convert[Row_addr];
+	Row_addr += 0x100;
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Page_addr);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Col_addrH);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Col_addrL);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Row_addr);
+}
+
+void write_Memory(Xuint8 page, Xuint8 addr, Xuint8 data){
+	Xuint8 Page_addr = 0xB0 + page; //lapcím
+	Xuint8 Col_addrH = 0x10 + (addr >> 4);
+	Xuint8 Col_addrL = addr & 0x0F;
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Page_addr);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Col_addrH);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Col_addrL);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, data);
+}
+
+
+void sendData16(Xuint32 addr, Xuint16 data){
+	Xuint8 i;
+	for(i = 0; i < speedRate[LCD.SPEED]; ++i); // forgalomszabályzás
+	MEM16(addr) = data;
+}
+
+void lcd_IT_handler(void *instancePtr){
+	Xuint16 ifr;
+	ifr = MEM16(LCD_SCREEN_STATUS_REG_OFFSET);
+	if(ifr & LCD_SCREEN_FULL_FIFO_EVENT){// ha tele a fifo akkor
+		if(LCD.SPEED > 0)
+			LCD.SPEED -= 1;
+		else{
+			// valami nem oké...
+			MEM16(LCD_SCREEN_STATUS_REG_OFFSET) = LCD_SCREEN_SW_RESET_MASK;
+			itit_LCD(0);
+		}
+	}
+	else if(ifr & LCD_SCREEN_FULL_FIFO_EVENT)
+		if(LCD.SPEED < 3)
+			LCD.SPEED += 1;
+}
+

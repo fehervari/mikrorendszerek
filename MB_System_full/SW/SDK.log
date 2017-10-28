@@ -1,0 +1,111 @@
+13:46:47.780 INFO  - Processing command line option -hwspec F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.xml. 
+13:54:46.648 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+13:55:43.779 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+13:56:00.598 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:24:21.576 INFO  - Project MB_System_hw_platform's source hardware specification located at F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+14:28:55.043 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.xml into \MB_System_hw_platform\system.xml. 
+14:28:55.049 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.bit into \MB_System_hw_platform\system.bit. 
+14:28:55.052 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system_bd.bmm into \MB_System_hw_platform\system_bd.bmm. 
+14:28:55.539 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:28:58.060 INFO  - Updating hardware inferred compiler options for LCD. 
+14:28:58.129 INFO  - Clearing existing target manager status. 
+14:31:27.149 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+14:31:32.829 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.bit into \MB_System_hw_platform\system.bit. 
+14:31:32.832 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system_bd.bmm into \MB_System_hw_platform\system_bd.bmm. 
+14:37:36.197 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+14:38:55.644 INFO  - FPGA configured successfully with bitstream "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+15:05:11.324 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+15:05:13.341 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.bit into \MB_System_hw_platform\system.bit. 
+15:05:13.344 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system_bd.bmm into \MB_System_hw_platform\system_bd.bmm. 
+16:42:20.871 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+18:59:53.599 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:00:23.505 WARN  - Terminating existing sessions on processor microblaze_0 
+19:00:28.944 INFO  - FPGA configured successfully with bitstream "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+19:17:49.880 WARN  - Terminating existing sessions on processor microblaze_0 
+19:17:55.252 INFO  - FPGA configured successfully with bitstream "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+19:22:27.087 ERROR - Unexpected error while launching program. java.lang.RuntimeException: The program file specified in the launch configuration does not exist
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+19:28:40.787 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:28:58.488 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:29:41.074 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:30:57.001 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:32:21.181 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:32:35.261 WARN  - Terminating existing sessions on processor microblaze_0 
+19:32:40.635 INFO  - FPGA configured successfully with bitstream "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+19:33:20.308 INFO  - FPGA configured successfully with bitstream "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+19:34:46.823 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:35:00.846 WARN  - Terminating existing sessions on processor microblaze_0 
+19:35:06.261 INFO  - FPGA configured successfully with bitstream "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+19:35:52.231 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:36:36.295 WARN  - Terminating existing sessions on processor microblaze_0 
+19:36:41.497 INFO  - FPGA configured successfully with bitstream "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+19:38:38.510 WARN  - Terminating existing sessions on processor microblaze_0 
+19:38:50.845 WARN  - Terminating existing sessions on processor microblaze_0 
+19:39:06.700 WARN  - Terminating existing sessions on processor microblaze_0 
+19:39:24.933 WARN  - Terminating existing sessions on processor microblaze_0 
+19:40:12.221 WARN  - Terminating existing sessions on processor microblaze_0 
+19:40:16.378 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+19:42:04.507 INFO  - FPGA configured successfully with bitstream "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+20:09:21.482 INFO  - FPGA configured successfully with bitstream "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+20:11:25.118 WARN  - Terminating existing sessions on processor microblaze_0 
+20:11:30.566 INFO  - FPGA configured successfully with bitstream "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+20:14:25.126 INFO  - FPGA configured successfully with bitstream "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+20:56:36.444 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+20:56:38.662 ERROR - Unexpected error while launching program. java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.TM.terminateCurrentLaunch(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(Unknown Source)
+
+20:57:12.913 INFO  - FPGA configured successfully with bitstream "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+21:02:26.992 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:02:51.466 INFO  - FPGA configured successfully with bitstream "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+21:04:17.078 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:05:06.933 INFO  - FPGA configured successfully with bitstream "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+21:06:58.984 WARN  - Terminating existing sessions on processor microblaze_0 
+21:07:04.213 INFO  - FPGA configured successfully with bitstream "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+21:07:44.695 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:07:45.893 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+21:08:04.298 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:08:06.802 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+21:08:47.414 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:08:54.806 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:10:41.883 WARN  - Terminating existing sessions on processor microblaze_0 
+21:10:47.197 INFO  - FPGA configured successfully with bitstream "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+21:14:11.037 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:15:42.101 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:16:06.213 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:16:43.554 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:17:29.911 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:26:39.216 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:41:30.293 INFO  - FPGA configured successfully with bitstream "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+23:13:57.163 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+23:14:04.303 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.bit into \MB_System_hw_platform\system.bit. 
+23:14:04.307 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system_bd.bmm into \MB_System_hw_platform\system_bd.bmm. 
+00:11:45.201 INFO  - FPGA configured successfully with bitstream "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+00:16:22.640 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+00:17:23.283 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

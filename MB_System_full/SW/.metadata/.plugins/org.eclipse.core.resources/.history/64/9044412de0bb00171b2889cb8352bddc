@@ -1,0 +1,3 @@
+#define MEM8(addr)   (*(volatile unsigned char *)(addr))
+#define MEM16(addr)  (*(volatile unsigned short *)(addr))
+#define MEM32(addr)  (*(volatile unsigned long *)(addr))
