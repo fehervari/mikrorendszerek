@@ -1165,3 +1165,52 @@ Done writing filter settings to:
 	F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\etc\system.filters
 Done writing Tab View settings to:
 	F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\etc\system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Deleting External port : bt 
+Deleting Internal port logsys_axi_sp6_simpleio_0:btn_in 
+Deleting Internal port logsys_axi_sp6_simpleio_0:irq 
+Deleting Internal port lvl_indicator_0:sensor_in 
+Deleting Internal port logsys_axi_sp6_simpleio_0:sw_out 
+logsys_axi_sp6_simpleio_0 has been deleted from the project
+Deleting Internal port lvl_indicator_0:irq 
+lvl_indicator_0 has been deleted from the project
+WARNING:EDK - UCF file has reference to the following nonexistent external port(s), please revise UCF file.
+   bt
+   cpld_clk
+   cpld_jtagen
+   cpld_load
+   cpld_miso
+   cpld_mosi
+   cpld_rstn
+Assigned Driver generic 1.00.a for instance cpld_if_0
+cpld_if_0 has been added to the project
+WARNING:EDK:2137 - Peripheral cpld_if_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+ERROR:EDK:3759 - AddresGen MHS Error Address Generator can not generate address map for your design. Please check if there is address conflict, clear the conflict and re-generate the address map.Please consult the online help for how to let Address Generator to overwrite the address. If Address Generator still can not generate the address map, please provide the address map manually.
+INFO:EDK - Use microblaze_0_intc as reference
+INFO:EDK - Connect bus interface S_AXI to axi4lite_0
+INFO:EDK - Connect clock port S_AXI_ACLK to clk_50_0000MHz
+INFO:EDK - External IO port grouping doneWARNING:EDK - Generate address failed during auto bus connection
+INFO:EDK - Successfully finished auto bus connection for IP instance: cpld_if_0, however there is problem when generating address, please generate address manually
+Overriding Xilinx file <TextEditor.cfg> with local file <D:/Xilinx/14.7/ISE_DS/EDK/data/TextEditor.cfg>
+Make instance cpld_if_0 port cpld_jtagen external with net as port name
+Instance cpld_if_0 port cpld_jtagen connector undefined, using cpld_if_0_cpld_jtagen
+Make instance cpld_if_0 port cpld_rstn external with net as port name
+Instance cpld_if_0 port cpld_rstn connector undefined, using cpld_if_0_cpld_rstn
+Make instance cpld_if_0 port cpld_miso external with net as port name
+Instance cpld_if_0 port cpld_miso connector undefined, using cpld_if_0_cpld_miso
+Make instance cpld_if_0 port cpld_mosi external with net as port name
+Instance cpld_if_0 port cpld_mosi connector undefined, using cpld_if_0_cpld_mosi
+Make instance cpld_if_0 port cpld_ld external with net as port name
+Instance cpld_if_0 port cpld_ld connector undefined, using cpld_if_0_cpld_ld
+Make instance cpld_if_0 port cpld_clk external with net as port name
+Instance cpld_if_0 port cpld_clk connector undefined, using cpld_if_0_cpld_clk
+The project's MHS file has changed on disk.
+The project's MHS file has changed on disk.
+Writing filter settings....
+Done writing filter settings to:
+	F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\etc\system.filters
+Done writing Tab View settings to:
+	F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\etc\system.gui

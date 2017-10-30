@@ -15,13 +15,6 @@
  PORT dev_mosi = RS232_Uart_1_sin, DIR = I
  PORT rstbt = RESET, DIR = I, SIGIS = RST, RST_POLARITY = 0
  PORT clk50M = CLK, DIR = I, SIGIS = CLK, CLK_FREQ = 50000000
- PORT cpld_jtagen = logsys_axi_sp6_simpleio_0_cpld_jtagen, DIR = O
- PORT cpld_rstn = logsys_axi_sp6_simpleio_0_cpld_rstn, DIR = O
- PORT cpld_clk = logsys_axi_sp6_simpleio_0_cpld_clk, DIR = O
- PORT cpld_load = logsys_axi_sp6_simpleio_0_cpld_load, DIR = O
- PORT cpld_mosi = logsys_axi_sp6_simpleio_0_cpld_mosi, DIR = O
- PORT cpld_miso = logsys_axi_sp6_simpleio_0_cpld_miso, DIR = I
- PORT bt = net_logsys_axi_sp6_simpleio_0_btn_in_pin, DIR = I, VEC = [2:0]
  PORT sdram_csn = net_vcc, DIR = O, SIGIS = NONE
  PORT spi_sdcard_csn = net_vcc, DIR = O, SIGIS = NONE
  PORT spi_flash_csn = net_vcc, DIR = O, SIGIS = NONE
@@ -30,6 +23,12 @@
  PORT spi_clk = lcd_screen_0_spi_clk, DIR = O
  PORT spi_mosi = lcd_screen_0_spi_mosi, DIR = O
  PORT spi_miso = lcd_screen_0_spi_miso, DIR = O
+ PORT cpld_jtagen = cpld_if_0_cpld_jtagen, DIR = O
+ PORT cpld_rstn = cpld_if_0_cpld_rstn, DIR = O
+ PORT cpld_miso = cpld_if_0_cpld_miso, DIR = I
+ PORT cpld_mosi = cpld_if_0_cpld_mosi, DIR = O
+ PORT cpld_load = cpld_if_0_cpld_ld, DIR = O
+ PORT cpld_clk = cpld_if_0_cpld_clk, DIR = O
 
 
 BEGIN proc_sys_reset
@@ -53,7 +52,7 @@ BEGIN axi_intc
  BUS_INTERFACE S_AXI = axi4lite_0
  BUS_INTERFACE INTERRUPT = microblaze_0_interrupt
  PORT S_AXI_ACLK = clk_50_0000MHz
- PORT INTR = axi_timer_0_Interrupt & RS232_Interrupt & logsys_axi_sp6_simpleio_0_irq & lvl_indicator_0_irq & lcd_screen_0_irq
+ PORT INTR = axi_timer_0_Interrupt & RS232_Interrupt & lcd_screen_0_irq
 END
 
 BEGIN lmb_v10
@@ -120,37 +119,6 @@ BEGIN microblaze
  PORT CLK = clk_50_0000MHz
 END
 
-BEGIN lvl_indicator
- PARAMETER INSTANCE = lvl_indicator_0
- PARAMETER HW_VER = 1.00.a
- PARAMETER C_USE_WSTRB = 1
- PARAMETER C_BASEADDR = 0x44000000
- PARAMETER C_HIGHADDR = 0x4400FFFF
- BUS_INTERFACE S_AXI = axi4lite_0
- PORT S_AXI_ACLK = clk_50_0000MHz
- PORT sensor_in = logsys_axi_sp6_simpleio_0_sw_out
- PORT irq = lvl_indicator_0_irq
-END
-
-BEGIN logsys_axi_sp6_simpleio
- PARAMETER INSTANCE = logsys_axi_sp6_simpleio_0
- PARAMETER HW_VER = 1.00.a
- PARAMETER C_GPIO_ENABLE = 0
- PARAMETER C_BASEADDR = 0x43000000
- PARAMETER C_HIGHADDR = 0x4300FFFF
- BUS_INTERFACE S_AXI = axi4lite_0
- PORT S_AXI_ACLK = clk_50_0000MHz
- PORT cpld_jtagen = logsys_axi_sp6_simpleio_0_cpld_jtagen
- PORT cpld_rstn = logsys_axi_sp6_simpleio_0_cpld_rstn
- PORT cpld_clk = logsys_axi_sp6_simpleio_0_cpld_clk
- PORT cpld_load = logsys_axi_sp6_simpleio_0_cpld_load
- PORT cpld_mosi = logsys_axi_sp6_simpleio_0_cpld_mosi
- PORT cpld_miso = logsys_axi_sp6_simpleio_0_cpld_miso
- PORT btn_in = net_logsys_axi_sp6_simpleio_0_btn_in_pin
- PORT irq = logsys_axi_sp6_simpleio_0_irq
- PORT sw_out = logsys_axi_sp6_simpleio_0_sw_out
-END
-
 BEGIN lcd_screen
  PARAMETER INSTANCE = lcd_screen_0
  PARAMETER HW_VER = 1.00.a
@@ -175,6 +143,21 @@ BEGIN mdm
  BUS_INTERFACE MBDEBUG_0 = microblaze_0_debug
  PORT Debug_SYS_Rst = proc_sys_reset_0_MB_Debug_Sys_Rst
  PORT S_AXI_ACLK = clk_50_0000MHz
+END
+
+BEGIN cpld_if
+ PARAMETER INSTANCE = cpld_if_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x44000000
+ PARAMETER C_HIGHADDR = 0x4400FFFF
+ BUS_INTERFACE S_AXI = axi4lite_0
+ PORT S_AXI_ACLK = clk_50_0000MHz
+ PORT cpld_jtagen = cpld_if_0_cpld_jtagen
+ PORT cpld_rstn = cpld_if_0_cpld_rstn
+ PORT cpld_miso = cpld_if_0_cpld_miso
+ PORT cpld_mosi = cpld_if_0_cpld_mosi
+ PORT cpld_ld = cpld_if_0_cpld_ld
+ PORT cpld_clk = cpld_if_0_cpld_clk
 END
 
 BEGIN clock_generator
