@@ -1,0 +1,18 @@
+LCD + dirver:
+Beszéltem a konzulensünkkel és azt mondta, hogy egy picit túlbonyolíottam(jogosan) az LCD-t, szóval:
+- NEM KELL FIFO
+- SEM IRQ (BÁR MOST MÁR MINDKETTÕ MEGMARAD...)
+
+LCD DRIVERT ÚGY KELL MEGCSINÁLNI, HOGY KÜLDÉSKOR TIMERT HASZNÁLJA...
+- LCD_SEND FÜGGVÉNY ÁTÍRÁSA
+- INIT_LCD ÁTÍRÁSA
+
+WRITE_PIXEL FV-NEK NINCS ÉRTELME A JELENLEGI FORMÁBAN...
+- KELL BEMENETI PARAMÉTERNEK EGY 8 BITES DATA - (AMELY AZ ADOT CÍMEN LÉVÕ ADATOT TÁROLJA). AZ ÍRANDÓ PIXELT ÖSSZE KELL ÉSELNI DATÁVAL
+- HASONLÓAN LEHET EGY DELETE_PIXEL FÜGGVÉNY (OPCIONÁLIS)
+
+CPLD-IF...
+- DRIVER MEGÍRÁSA ÓRAI GYAK ALAPJÁN
+
+
+-------------------------------------------------------------------------------------------------------------
