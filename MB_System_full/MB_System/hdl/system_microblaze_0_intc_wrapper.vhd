@@ -31,7 +31,7 @@ entity system_microblaze_0_intc_wrapper is
     S_AXI_RRESP : out std_logic_vector(1 downto 0);
     S_AXI_RVALID : out std_logic;
     S_AXI_RREADY : in std_logic;
-    Intr : in std_logic_vector(4 downto 0);
+    Intr : in std_logic_vector(2 downto 0);
     Irq : out std_logic;
     Interrupt_address : out std_logic_vector(31 downto 0);
     Processor_ack : in std_logic_vector(1 downto 0);
@@ -111,9 +111,9 @@ begin
       C_INSTANCE => "microblaze_0_intc",
       C_S_AXI_ADDR_WIDTH => 9,
       C_S_AXI_DATA_WIDTH => 32,
-      C_NUM_INTR_INPUTS => 5,
+      C_NUM_INTR_INPUTS => 3,
       C_NUM_SW_INTR => 0,
-      C_KIND_OF_INTR => B"11111111111111111111111111101000",
+      C_KIND_OF_INTR => B"11111111111111111111111111111010",
       C_KIND_OF_EDGE => B"11111111111111111111111111111111",
       C_KIND_OF_LVL => B"11111111111111111111111111111111",
       C_HAS_IPR => 1,

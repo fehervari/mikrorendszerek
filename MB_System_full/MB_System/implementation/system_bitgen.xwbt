@@ -1,7 +1,7 @@
-INFILE=F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\implementation\system.ncd
-OUTFILE=F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\implementation\system.bit
+INFILE=F:\git\MB_System_full\MB_System\implementation\system.ncd
+OUTFILE=F:\git\MB_System_full\MB_System\implementation\system.bit
 FAMILY=Spartan6
 PART=xc6slx9-2tqg144
-WORKINGDIR=F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\implementation
+WORKINGDIR=F:\git\MB_System_full\MB_System\implementation
 LICENSE=WebPack
 USER_INFO=__0_0_0

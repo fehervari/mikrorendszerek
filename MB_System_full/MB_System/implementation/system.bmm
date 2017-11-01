@@ -1,4 +1,4 @@
-// File: F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\implementation\system.bmm
+// File: F:\git\MB_System_full\MB_System\implementation\system.bmm
 
 ADDRESS_MAP microblaze_0 MICROBLAZE-LE 100
 	ADDRESS_SPACE microblaze_0_bram_block_combined COMBINED [0x00000000:0x00007fff]

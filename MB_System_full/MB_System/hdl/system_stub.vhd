@@ -13,13 +13,6 @@ entity system_stub is
     dev_mosi : in std_logic;
     rstbt : in std_logic;
     clk50M : in std_logic;
-    cpld_jtagen : out std_logic;
-    cpld_rstn : out std_logic;
-    cpld_clk : out std_logic;
-    cpld_load : out std_logic;
-    cpld_mosi : out std_logic;
-    cpld_miso : in std_logic;
-    bt : in std_logic_vector(2 downto 0);
     sdram_csn : out std_logic;
     spi_sdcard_csn : out std_logic;
     spi_flash_csn : out std_logic;
@@ -27,7 +20,13 @@ entity system_stub is
     sram_csn : out std_logic;
     spi_clk : out std_logic;
     spi_mosi : out std_logic;
-    spi_miso : out std_logic
+    spi_miso : out std_logic;
+    cpld_jtagen : out std_logic;
+    cpld_rstn : out std_logic;
+    cpld_miso : in std_logic;
+    cpld_mosi : out std_logic;
+    cpld_load : out std_logic;
+    cpld_clk : out std_logic
   );
 end system_stub;
 
@@ -39,13 +38,6 @@ architecture STRUCTURE of system_stub is
       dev_mosi : in std_logic;
       rstbt : in std_logic;
       clk50M : in std_logic;
-      cpld_jtagen : out std_logic;
-      cpld_rstn : out std_logic;
-      cpld_clk : out std_logic;
-      cpld_load : out std_logic;
-      cpld_mosi : out std_logic;
-      cpld_miso : in std_logic;
-      bt : in std_logic_vector(2 downto 0);
       sdram_csn : out std_logic;
       spi_sdcard_csn : out std_logic;
       spi_flash_csn : out std_logic;
@@ -53,7 +45,13 @@ architecture STRUCTURE of system_stub is
       sram_csn : out std_logic;
       spi_clk : out std_logic;
       spi_mosi : out std_logic;
-      spi_miso : out std_logic
+      spi_miso : out std_logic;
+      cpld_jtagen : out std_logic;
+      cpld_rstn : out std_logic;
+      cpld_miso : in std_logic;
+      cpld_mosi : out std_logic;
+      cpld_load : out std_logic;
+      cpld_clk : out std_logic
     );
   end component;
 
@@ -68,13 +66,6 @@ begin
       dev_mosi => dev_mosi,
       rstbt => rstbt,
       clk50M => clk50M,
-      cpld_jtagen => cpld_jtagen,
-      cpld_rstn => cpld_rstn,
-      cpld_clk => cpld_clk,
-      cpld_load => cpld_load,
-      cpld_mosi => cpld_mosi,
-      cpld_miso => cpld_miso,
-      bt => bt,
       sdram_csn => sdram_csn,
       spi_sdcard_csn => spi_sdcard_csn,
       spi_flash_csn => spi_flash_csn,
@@ -82,7 +73,13 @@ begin
       sram_csn => sram_csn,
       spi_clk => spi_clk,
       spi_mosi => spi_mosi,
-      spi_miso => spi_miso
+      spi_miso => spi_miso,
+      cpld_jtagen => cpld_jtagen,
+      cpld_rstn => cpld_rstn,
+      cpld_miso => cpld_miso,
+      cpld_mosi => cpld_mosi,
+      cpld_load => cpld_load,
+      cpld_clk => cpld_clk
     );
 
 end architecture STRUCTURE;

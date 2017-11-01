@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-10-30T23:37:07</DateModified>
+  <DateModified>2017-11-01T21:57:49</DateModified>
   <ModuleName>system</ModuleName>
-  <SummaryTimeStamp>2017-10-30T23:37:06</SummaryTimeStamp>
-  <SavedFilePath>F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/__xps/ise/system.xreport</SavedFilePath>
+  <SummaryTimeStamp>2017-11-01T21:57:48</SummaryTimeStamp>
+  <SavedFilePath>F:/git/MB_System_full/MB_System/__xps/ise/system.xreport</SavedFilePath>
   <FilterFile>filter.filter</FilterFile>
-  <SavedFilterFilePath>F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/__xps/ise</SavedFilterFilePath>
+  <SavedFilterFilePath>F:/git/MB_System_full/MB_System/__xps/ise</SavedFilterFilePath>
   <DateInitialized>2017-09-22T14:49:40</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
