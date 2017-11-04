@@ -2586,3 +2586,21 @@ Creating bit map...
 Saving bit stream in "system.bit".
 Bitstream generation is complete.
 Done!
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+********************************************************************************
+At Local date and time: Sat Nov 04 10:01:02 2017
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Sat Nov 04 10:01:02 2017
+ xsdk.exe -hwspec D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!

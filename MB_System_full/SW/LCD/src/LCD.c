@@ -63,13 +63,13 @@ void write_Pixel(Xuint8 x, Xuint8 y){ // x [1 : 102] y [1 : 64]
 	Xuint8 Col_addrL = Col_addr & 0x0F;
 	Xuint16 Row_addr = (y & 0x07);// sorcím
 	Row_addr = convert[Row_addr];
-	Row_addr += 0x100;
+	Row_addr += 0x10F;
 	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Page_addr);
 	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Col_addrH);
 	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Col_addrL);
 	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Row_addr);
 }
-
+/*
 void write_Memory(Xuint8 page, Xuint8 addr, Xuint8 data){
 	Xuint8 Page_addr = 0xB0 + page; //lapcím
 	Xuint8 Col_addrH = 0x10 + (addr >> 4);
@@ -78,8 +78,17 @@ void write_Memory(Xuint8 page, Xuint8 addr, Xuint8 data){
 	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Col_addrH);
 	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Col_addrL);
 	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, data);
+}*/
+void write_Memory(Xuint8 page, Xuint8 col,  Xuint8 data){ // x [1 : 102] y [1 : 64]
+	Xuint8 Page_addr = 0xB0 + page; // lapcím
+	Xuint8 Col_addr = (col + 0x1E); //oszlopcím
+	Xuint8 Col_addrH = 0x10 + (Col_addr >> 4);
+	Xuint8 Col_addrL = Col_addr & 0x0F;
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Page_addr);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Col_addrH);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Col_addrL);
+	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, data | 0x100);
 }
-
 
 void sendData16(Xuint32 addr, Xuint16 data){
 	Xuint8 i;

@@ -45,8 +45,7 @@ void print(char *str);
 
 int main()
 {
-	Xuint8 i,k;
-	int j;
+	Xuint8 i,k, j;
     init_platform();
 
 	XIntc_RegisterHandler( XPAR_INTC_0_BASEADDR, XPAR_MICROBLAZE_0_INTC_LCD_SCREEN_0_IRQ_INTR, lcd_IT_handler,NULL);
@@ -55,23 +54,16 @@ int main()
 	XIntc_EnableIntr(XPAR_INTC_0_BASEADDR, XPAR_LCD_SCREEN_0_IRQ_MASK);
 		//MEM32(XPAR_LVL_INDICATOR_0_BASEADDR + LVL_IE_REG) = LVL_ERROR_IRQ ;
 	microblaze_enable_interrupts();
-
-
-
-
-
-
-
-
     itit_LCD(0);
-
     clear_LCD();
-    write_Pixel(1,1);
-    for(k=1 ;k<64;++k)
+
+for( j = 0 ; ; j++){
+    for(k=0 ;k<8;k++)
 	for(i= 1; i < 102; ++i)
 	{
-		write_Pixel(i,k);
+		write_Memory(k,i,j);
 	}
+}
 	//write_Pixel(1,1);
 	//write_Pixel(102,63);
     return 0;

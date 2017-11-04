@@ -1,6 +1,7 @@
-<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Wed Nov 01 21:57:51 2017">
 
-  <SYSTEMINFO ARCH="spartan6" DEVICE="xc6slx9" PACKAGE="tqg144" PART="xc6slx9tqg144-2" SOURCE="F:/git/MB_System_full/MB_System/system.xmp" SPEEDGRADE="-2"/>
+<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Sat Nov 04 10:00:53 2017">
+
+  <SYSTEMINFO ARCH="spartan6" DEVICE="xc6slx9" PACKAGE="tqg144" PART="xc6slx9tqg144-2" SOURCE="D:/git/mikrorendszerek/MB_System_full/MB_System/system.xmp" SPEEDGRADE="-2"/>
 
   <EXTERNALPORTS>
     <PORT DIR="O" MHS_INDEX="0" NAME="dev_miso" SIGNAME="RS232_Uart_1_sout">
