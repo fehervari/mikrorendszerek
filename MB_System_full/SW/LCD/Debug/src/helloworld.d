@@ -1,5 +1,5 @@
 src/helloworld.d: ../src/helloworld.c ../src/platform.h \
- ../src/platform_config.h \
+ ../src/platform_config.h ../src/snake.h \
  ../../LCD_bsp/microblaze_0/include/xbasic_types.h ../src/lcd.h \
  ../../LCD_bsp/microblaze_0/include/xparameters.h \
  ../../LCD_bsp/microblaze_0/include/xintc_l.h \
@@ -14,6 +14,8 @@ src/helloworld.d: ../src/helloworld.c ../src/platform.h \
 ../src/platform.h:
 
 ../src/platform_config.h:
+
+../src/snake.h:
 
 ../../LCD_bsp/microblaze_0/include/xbasic_types.h:
 

@@ -33,6 +33,7 @@
 
 #include <stdio.h>
 #include "platform.h"
+#include "snake.h"
 
 #include "xbasic_types.h"
 #include "lcd.h"
@@ -45,7 +46,7 @@ void print(char *str);
 
 int main()
 {
-	Xuint8 i,k, j;
+	Xuint8 i,k, j, pagepixel;
     init_platform();
 
 	XIntc_RegisterHandler( XPAR_INTC_0_BASEADDR, XPAR_MICROBLAZE_0_INTC_LCD_SCREEN_0_IRQ_INTR, lcd_IT_handler,NULL);
@@ -57,13 +58,14 @@ int main()
     itit_LCD(0);
     clear_LCD();
 
-for( j = 0 ; ; j++){
+
     for(k=0 ;k<8;k++)
 	for(i= 1; i < 102; ++i)
 	{
-		write_Memory(k,i,j);
+		write_Memory(k,i,snake[k*102 + i]);
 	}
-}
+
+
 	//write_Pixel(1,1);
 	//write_Pixel(102,63);
     return 0;

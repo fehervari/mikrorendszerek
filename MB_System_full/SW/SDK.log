@@ -221,3 +221,4 @@ MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its 
 10:58:01.919 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
 10:58:26.413 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
 11:00:29.307 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:22:18.198 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
