@@ -33,7 +33,7 @@
 
 #include <stdio.h>
 #include "platform.h"
-#include "snake.h"
+#include "snake2.h"
 
 #include "xbasic_types.h"
 #include "lcd.h"
@@ -62,11 +62,8 @@ int main()
     for(k=0 ;k<8;k++)
 	for(i= 1; i < 102; ++i)
 	{
-		write_Memory(k,i,snake[k*102 + i]);
+		write_Memory(k,i,snake3[k*102 + i]);
 	}
 
-
-	//write_Pixel(1,1);
-	//write_Pixel(102,63);
     return 0;
 }
