@@ -6,7 +6,11 @@
 @REM #
 @REM # Command line for ngdbuild
 @REM #
-ngdbuild -p xc6slx9tqg144-2 -nt timestamp -bm system.bmm "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/implementation/system.ngc" -uc system.ucf system.ngd 
+<<<<<<< HEAD
+ngdbuild -p xc6slx9tqg144-2 -nt timestamp -bm system.bmm "D:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system.ngc" -uc system.ucf system.ngd 
+=======
+ngdbuild -p xc6slx9tqg144-2 -nt timestamp -bm system.bmm "F:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system.ngc" -uc system.ucf system.ngd 
+>>>>>>> remotes/origin/master
 
 @REM #
 @REM # Command line for map

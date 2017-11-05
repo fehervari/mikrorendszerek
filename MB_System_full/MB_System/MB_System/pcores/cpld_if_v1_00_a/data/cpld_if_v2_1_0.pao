@@ -1,0 +1,18 @@
+##############################################################################
+## Filename:          F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\pcores/cpld_if_v1_00_a/data/cpld_if_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Mon Oct 30 15:46:57 2017 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a proc_common_pkg vhdl
+lib proc_common_v3_00_a ipif_pkg vhdl
+lib proc_common_v3_00_a or_muxcy vhdl
+lib proc_common_v3_00_a or_gate128 vhdl
+lib proc_common_v3_00_a family_support vhdl
+lib proc_common_v3_00_a pselect_f vhdl
+lib proc_common_v3_00_a counter_f vhdl
+lib axi_lite_ipif_v1_01_a address_decoder vhdl
+lib axi_lite_ipif_v1_01_a slave_attachment vhdl
+lib axi_lite_ipif_v1_01_a axi_lite_ipif vhdl
+lib cpld_if_v1_00_a user_logic verilog
+lib cpld_if_v1_00_a cpld_if vhdl

@@ -30,14 +30,14 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
 ================================================================================
 Timing constraint: PATH "TS_sync_microblaze_0_intc_path" TIG;
 
- 11 paths analyzed, 6 endpoints analyzed, 0 failing endpoints
+ 3 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
 --------------------------------------------------------------------------------
 
 ================================================================================
 Timing constraint: PATH "TS_intr_sync_p1_microblaze_0_intc_path" TIG;
 
- 3 paths analyzed, 3 endpoints analyzed, 0 failing endpoints
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
 --------------------------------------------------------------------------------
 
@@ -91,9 +91,15 @@ PERIOD TIMEGRP         "clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0"
 TS_clk50M HIGH         50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 308787 paths analyzed, 13216 endpoints analyzed, 0 failing endpoints
+<<<<<<< HEAD
+ 390501 paths analyzed, 13505 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  11.016ns.
+ Minimum period is  13.508ns.
+=======
+ 306110 paths analyzed, 12889 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  11.309ns.
+>>>>>>> remotes/origin/master
 --------------------------------------------------------------------------------
 
 
@@ -104,8 +110,13 @@ Derived Constraints for TS_clk50M
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_clk50M                      |     20.000ns|      5.000ns|     11.016ns|            0|            0|            0|       308787|
-| TS_clock_generator_0_clock_gen|     20.000ns|     11.016ns|          N/A|            0|            0|       308787|            0|
+<<<<<<< HEAD
+|TS_clk50M                      |     20.000ns|      5.000ns|     13.508ns|            0|            0|            0|       390501|
+| TS_clock_generator_0_clock_gen|     20.000ns|     13.508ns|          N/A|            0|            0|       390501|            0|
+=======
+|TS_clk50M                      |     20.000ns|      5.000ns|     11.309ns|            0|            0|            0|       306110|
+| TS_clock_generator_0_clock_gen|     20.000ns|     11.309ns|          N/A|            0|            0|       306110|            0|
+>>>>>>> remotes/origin/master
 | erator_0_SIG_PLL0_CLKOUT0     |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -121,7 +132,11 @@ Clock to Setup on destination clock clk50M
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk50M         |   11.016|         |         |         |
+<<<<<<< HEAD
+clk50M         |   13.508|         |         |         |
+=======
+clk50M         |   11.309|         |         |         |
+>>>>>>> remotes/origin/master
 ---------------+---------+---------+---------+---------+
 
 
@@ -130,20 +145,30 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 308815 paths, 0 nets, and 14893 connections
+<<<<<<< HEAD
+Constraints cover 390519 paths, 0 nets, and 15249 connections
 
 Design statistics:
-   Minimum period:  11.016ns   (Maximum frequency:  90.777MHz)
+   Minimum period:  13.508ns   (Maximum frequency:  74.030MHz)
 
 
-Analysis completed Sun Nov 05 13:07:51 2017 
+Analysis completed Sun Nov 05 10:28:18 2017 
+=======
+Constraints cover 306128 paths, 0 nets, and 14581 connections
+
+Design statistics:
+   Minimum period:  11.309ns   (Maximum frequency:  88.425MHz)
+
+
+Analysis completed Sun Nov 05 09:49:34 2017 
+>>>>>>> remotes/origin/master
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 303 MB
+Peak Memory Usage: 302 MB
 
 
 

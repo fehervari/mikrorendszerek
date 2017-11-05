@@ -26,8 +26,7 @@ entity system_stub is
     cpld_miso : in std_logic;
     cpld_mosi : out std_logic;
     cpld_load : out std_logic;
-    cpld_clk : out std_logic;
-    bt : in std_logic_vector(2 downto 0)
+    cpld_clk : out std_logic
   );
 end system_stub;
 
@@ -52,8 +51,7 @@ architecture STRUCTURE of system_stub is
       cpld_miso : in std_logic;
       cpld_mosi : out std_logic;
       cpld_load : out std_logic;
-      cpld_clk : out std_logic;
-      bt : in std_logic_vector(2 downto 0)
+      cpld_clk : out std_logic
     );
   end component;
 
@@ -81,8 +79,7 @@ begin
       cpld_miso => cpld_miso,
       cpld_mosi => cpld_mosi,
       cpld_load => cpld_load,
-      cpld_clk => cpld_clk,
-      bt => bt
+      cpld_clk => cpld_clk
     );
 
 end architecture STRUCTURE;

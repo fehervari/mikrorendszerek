@@ -29,7 +29,6 @@
  PORT cpld_mosi = cpld_if_0_cpld_mosi, DIR = O
  PORT cpld_load = cpld_if_0_cpld_ld, DIR = O
  PORT cpld_clk = cpld_if_0_cpld_clk, DIR = O
- PORT bt = bt_GPIO_IO_I, DIR = I, VEC = [2:0]
 
 
 BEGIN proc_sys_reset
@@ -53,7 +52,7 @@ BEGIN axi_intc
  BUS_INTERFACE S_AXI = axi4lite_0
  BUS_INTERFACE INTERRUPT = microblaze_0_interrupt
  PORT S_AXI_ACLK = clk_50_0000MHz
- PORT INTR = axi_timer_0_Interrupt & RS232_Interrupt & lcd_screen_0_irq & cpld_if_0_irq
+ PORT INTR = axi_timer_0_Interrupt & RS232_Interrupt & lcd_screen_0_irq
 END
 
 BEGIN lmb_v10
@@ -67,7 +66,7 @@ BEGIN lmb_bram_if_cntlr
  PARAMETER INSTANCE = microblaze_0_i_bram_ctrl
  PARAMETER HW_VER = 3.10.c
  PARAMETER C_BASEADDR = 0x00000000
- PARAMETER C_HIGHADDR = 0x00007fff
+ PARAMETER C_HIGHADDR = 0x0000FFFF
  BUS_INTERFACE SLMB = microblaze_0_ilmb
  BUS_INTERFACE BRAM_PORT = microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block
 END
@@ -83,7 +82,7 @@ BEGIN lmb_bram_if_cntlr
  PARAMETER INSTANCE = microblaze_0_d_bram_ctrl
  PARAMETER HW_VER = 3.10.c
  PARAMETER C_BASEADDR = 0x00000000
- PARAMETER C_HIGHADDR = 0x00007fff
+ PARAMETER C_HIGHADDR = 0x0000FFFF
  BUS_INTERFACE SLMB = microblaze_0_dlmb
  BUS_INTERFACE BRAM_PORT = microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block
 END
@@ -159,7 +158,6 @@ BEGIN cpld_if
  PORT cpld_mosi = cpld_if_0_cpld_mosi
  PORT cpld_ld = cpld_if_0_cpld_ld
  PORT cpld_clk = cpld_if_0_cpld_clk
- PORT irq = cpld_if_0_irq
 END
 
 BEGIN clock_generator
@@ -173,19 +171,6 @@ BEGIN clock_generator
  PORT CLKOUT0 = clk_50_0000MHz
  PORT RST = RESET
  PORT CLKIN = CLK
-END
-
-BEGIN axi_gpio
- PARAMETER INSTANCE = button
- PARAMETER HW_VER = 1.01.b
- PARAMETER C_INTERRUPT_PRESENT = 1
- PARAMETER C_ALL_INPUTS = 1
- PARAMETER C_BASEADDR = 0x46000000
- PARAMETER C_HIGHADDR = 0x46000FFF
- PARAMETER C_GPIO_WIDTH = 3
- BUS_INTERFACE S_AXI = axi4lite_0
- PORT S_AXI_ACLK = clk_50_0000MHz
- PORT GPIO_IO_I = bt_GPIO_IO_I
 END
 
 BEGIN axi_timer

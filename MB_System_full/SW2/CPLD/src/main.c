@@ -89,17 +89,17 @@ int main()
 {
 	CPLD_init();
     init_platform();
-
+    itit_LCD(0);
     start_interrupts(1); // parameter = timer freq
 	microblaze_enable_interrupts();
-	itit_LCD(0);
+
     clear_LCD();
 
     int k,i;
     for(k=0 ;k<8;k++)
 	for(i= 1; i < 102; ++i)
 	{
-		write_Memory(k,i,0x55);
+		write_Memory(k,i,snake3[k*102 + i]);
 	}
     clear_LCD();
     while(1);

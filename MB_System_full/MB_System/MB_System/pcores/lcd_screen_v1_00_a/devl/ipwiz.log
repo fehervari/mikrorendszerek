@@ -1,0 +1,144 @@
+Parsing XST project file successfully ...
+Analyzing HDL source files ...
+Analyzing HDL source files successfully ...
+HDL language for the peripheral (top level) design unit lcd_screen is vhdl ...
+INFO:EDK:3391 - Create temporary xst project file:
+   F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\pcores/lcd_screen.p
+   rj
+WARNING:HDLParsers:3497 - Ignoring Verilog File
+   "F:/curr_ISE_proj/mikrorendszerek/SP6BoardLinuxAXI_14_7/SP6BoardLinuxAXI/pcor
+   es/lcd_screen_v1_00_a/hdl/verilog/user_logic.v"
+Compiling vhdl file
+"D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
+Package <proc_common_pkg> compiled.
+Package body <proc_common_pkg> compiled.
+Compiling vhdl file
+"D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/family_support.vhd" in Library proc_common_v3_00_a.
+Package <family_support> compiled.
+Package body <family_support> compiled.
+Compiling vhdl file
+"D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/or_muxcy.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy> compiled.
+Entity <or_muxcy> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/or_gate128.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate128> compiled.
+Entity <or_gate128> (Architecture <imp>) compiled.
+Compiling vhdl file
+"D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/counter_f.vhd" in Library proc_common_v3_00_a.
+Entity <counter_f> compiled.
+Entity <counter_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/pselect_f.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_f> compiled.
+Entity <pselect_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/ipif_pkg.vhd" in Library proc_common_v3_00_a.
+Package <ipif_pkg> compiled.
+Package body <ipif_pkg> compiled.
+Compiling vhdl file
+"D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/
+hdl/vhdl/address_decoder.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <address_decoder> compiled.
+Entity <address_decoder> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/
+hdl/vhdl/slave_attachment.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <slave_attachment> compiled.
+Entity <slave_attachment> (Architecture <imp>) compiled.
+Compiling vhdl file
+"D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/
+hdl/vhdl/axi_lite_ipif.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <axi_lite_ipif> compiled.
+Entity <axi_lite_ipif> (Architecture <imp>) compiled.
+Compiling vhdl file
+"F:/curr_ISE_proj/mikrorendszerek/SP6BoardLinuxAXI_14_7/SP6BoardLinuxAXI/pcores/
+lcd_screen_v1_00_a/hdl/vhdl/lcd_screen.vhd" in Library lcd_screen_v1_00_a.
+Entity <lcd_screen> compiled.
+Entity <lcd_screen> (Architecture <IMP>) compiled.
+
+
+Analyzing HDL attributes ...
+Entity name = lcd_screen
+INFO:EDK:1607 - IPTYPE set to value : PERIPHERAL
+INFO:EDK:1511 - IMP_NETLIST set to value : TRUE
+INFO:EDK:1486 - HDL set to value : VHDL
+WARNING:EDK:3590 - Unable to delete temporary project file
+   F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\pcores\lcd_screen.p
+   rj : 13
+INFO:EDK:1951 - No SIGIS=CLK specified for probable Clock signal spi_clk
+INFO:EDK:1951 - No SIGIS=CLK specified for probable Clock signal spi_clk
+INFO:EDK:1470 - Get attribute value spi_if0 from previous MPD file.
+INFO:EDK:1470 - Get attribute value spi_if0 from previous MPD file.
+INFO:EDK:1470 - Get attribute value spi_if0 from previous MPD file.
+INFO:EDK:1470 - Get attribute value spi_if0 from previous MPD file.
+INFO:EDK:1470 - Get attribute value INTERRUPT from previous MPD file.
+INFO:EDK:1470 - Get attribute value LEVEL_HIGH from previous MPD file.
+INFO:EDK:1631 - Infer bus clock [S_AXI_ACLK] for bus interface S_AXI ...
+INFO:EDK:1470 - Get attribute value spi_if0 from previous MPD file.
+INFO:EDK:1470 - Get attribute value spi_if0 from previous MPD file.
+INFO:EDK:1470 - Get attribute value spi_if0 from previous MPD file.
+INFO:EDK:1470 - Get attribute value spi_if0 from previous MPD file.
+INFO:EDK:1470 - Get attribute value INTERRUPT from previous MPD file.
+INFO:EDK:1470 - Get attribute value LEVEL_HIGH from previous MPD file.
+INFO:EDK:1470 - Get attribute value CONSTANT from previous MPD file.
+INFO:EDK:1470 - Get attribute value CONSTANT from previous MPD file.
+INFO:EDK:1470 - Get attribute value 0x100 from previous MPD file.
+INFO:EDK:1470 - Get attribute value CONSTANT from previous MPD file.
+INFO:EDK:1470 - Get attribute value CONSTANT from previous MPD file.
+INFO:EDK:1470 - Get attribute value 0x100 from previous MPD file.
+INFO:EDK:1470 - Get attribute value spi_if0 from previous MPD file.
+INFO:EDK:1470 - Get attribute value spi_if0 from previous MPD file.
+INFO:EDK:1470 - Get attribute value spi_if0 from previous MPD file.
+INFO:EDK:1470 - Get attribute value spi_if0 from previous MPD file.
+INFO:EDK:1470 - Get attribute value INTERRUPT from previous MPD file.
+INFO:EDK:1470 - Get attribute value LEVEL_HIGH from previous MPD file.
+Copying file user_logic.v to
+F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\pcores/lcd_screen_v1_0
+0_a/hdl/verilog/ ...
+Copying file lcd_screen.vhd to
+F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\pcores/lcd_screen_v1_0
+0_a/hdl/vhdl/ ...
+
+Thank you for using Create and Import Peripheral Wizard! Please find your
+imported peripheral under
+F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\pcores\lcd_screen_v1_0
+0_a.
+
+Summary:
+
+  Logical library     : lcd_screen_v1_00_a
+  Version             : 1.00.a
+  Bus interface(s)    : S_AXI4LITE 
+
+The following sub-directories will be created:
+
+  - lcd_screen_v1_00_a\data
+  - lcd_screen_v1_00_a\hdl
+  - lcd_screen_v1_00_a\hdl\verilog
+  - lcd_screen_v1_00_a\hdl\vhdl
+  - lcd_screen_v1_00_a\netlist
+
+The following HDL source files will be copied into the
+lcd_screen_v1_00_a\hdl\verilog directory:
+
+  - user_logic.v
+
+The following HDL source files will be copied into the
+lcd_screen_v1_00_a\hdl\vhdl directory:
+
+  - lcd_screen.vhd
+
+The following files will be created under the lcd_screen_v1_00_a\data directory:
+
+  - lcd_screen_v2_1_0.mpd
+  - lcd_screen_v2_1_0.pao
+
+

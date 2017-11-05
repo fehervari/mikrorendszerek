@@ -1,34 +1,6 @@
-13:56:30 **** Auto Build of configuration Debug for project LCD ****
+13:49:23 **** Incremental Build of configuration Debug for project LCD ****
 make all 
-'Building file: ../src/Tile.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Tile.d" -MT"src/Tile.d" -o "src/Tile.o" "../src/Tile.c"
-'Finished building: ../src/Tile.c'
-' '
-'Building target: LCD.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/Tile.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: LCD.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size LCD.elf  |tee "LCD.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  16308	   1388	   9848	  27544	   6b98	LCD.elf
-'Finished building: LCD.elf.size'
-' '
-'Invoking: Xilinx ELF Check'
-elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
-elfcheck
-Xilinx EDK 14.7 Build EDK_P.20131013
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+make: Nothing to be done for `all'.
 
-Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
-microblaze_0 LCD.elf 
-
-ELF file	: LCD.elf
-elfcheck passed.
-'Finished building: LCD.elf.elfcheck'
-' '
-
-13:56:31 Build Finished (took 1s.331ms)
+13:49:23 Build Finished (took 124ms)
 

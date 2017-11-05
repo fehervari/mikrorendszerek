@@ -1,4 +1,8 @@
-set -tmpdir F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\synthesis\xst_temp_dir\
+<<<<<<< HEAD
+set -tmpdir D:\git\mikrorendszerek\MB_System_full\MB_System\synthesis\xst_temp_dir\
+=======
+set -tmpdir F:\git\mikrorendszerek\MB_System_full\MB_System\synthesis\xst_temp_dir\
+>>>>>>> remotes/origin/master
 run
 -opt_mode speed
 -netlist_hierarchy as_optimized
@@ -12,4 +16,8 @@ run
 -iobuf YES
 -max_fanout 10000
 -sd {../implementation}
--vlgincdir {"F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+<<<<<<< HEAD
+-vlgincdir {"D:\git\mikrorendszerek\MB_System_full\MB_System\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+=======
+-vlgincdir {"F:\git\mikrorendszerek\MB_System_full\MB_System\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+>>>>>>> remotes/origin/master

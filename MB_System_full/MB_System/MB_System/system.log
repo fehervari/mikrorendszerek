@@ -11953,8 +11953,3 @@ LCK cycle: NoWait
 '1': Programmed successfully.
 Elapsed time =      5 sec.
 Done!
-Writing filter settings....
-Done writing filter settings to:
-	D:\git\mikrorendszerek\MB_System_full\MB_System\MB_System\etc\system.filters
-Done writing Tab View settings to:
-	D:\git\mikrorendszerek\MB_System_full\MB_System\MB_System\etc\system.gui

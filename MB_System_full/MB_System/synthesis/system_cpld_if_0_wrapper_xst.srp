@@ -1,10 +1,18 @@
 Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\synthesis\xst_temp_dir\
+<<<<<<< HEAD
+--> Parameter TMPDIR set to D:\git\mikrorendszerek\MB_System_full\MB_System\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.05 secs
+=======
+--> Parameter TMPDIR set to F:\git\mikrorendszerek\MB_System_full\MB_System\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+>>>>>>> remotes/origin/master
  
 --> 
 TABLE OF CONTENTS
@@ -35,7 +43,11 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_cpld_if_0_wrapper_xst.prj"
-Verilog Include Directory          : {"F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+<<<<<<< HEAD
+Verilog Include Directory          : {"D:\git\mikrorendszerek\MB_System_full\MB_System\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+=======
+Verilog Include Directory          : {"F:\git\mikrorendszerek\MB_System_full\MB_System\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+>>>>>>> remotes/origin/master
 
 ---- Target Parameters
 Target Device                      : xc6slx9tqg144-2
@@ -62,7 +74,11 @@ Cores Search Directories           : {../implementation}
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v" into library cpld_if_v1_00_a
+<<<<<<< HEAD
+Analyzing Verilog file "D:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v" into library cpld_if_v1_00_a
+=======
+Analyzing Verilog file "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v" into library cpld_if_v1_00_a
+>>>>>>> remotes/origin/master
 Parsing module <user_logic>.
 Parsing module <fpga_cpld>.
 Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
@@ -95,10 +111,17 @@ Parsing architecture <imp> of entity <slave_attachment>.
 Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd" into library axi_lite_ipif_v1_01_a
 Parsing entity <axi_lite_ipif>.
 Parsing architecture <imp> of entity <axi_lite_ipif>.
-Parsing VHDL file "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" into library cpld_if_v1_00_a
+<<<<<<< HEAD
+Parsing VHDL file "D:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" into library cpld_if_v1_00_a
 Parsing entity <cpld_if>.
 Parsing architecture <IMP> of entity <cpld_if>.
-Parsing VHDL file "F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\hdl\system_cpld_if_0_wrapper.vhd" into library work
+Parsing VHDL file "D:\git\mikrorendszerek\MB_System_full\MB_System\hdl\system_cpld_if_0_wrapper.vhd" into library work
+=======
+Parsing VHDL file "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" into library cpld_if_v1_00_a
+Parsing entity <cpld_if>.
+Parsing architecture <IMP> of entity <cpld_if>.
+Parsing VHDL file "F:\git\mikrorendszerek\MB_System_full\MB_System\hdl\system_cpld_if_0_wrapper.vhd" into library work
+>>>>>>> remotes/origin/master
 Parsing entity <system_cpld_if_0_wrapper>.
 Parsing architecture <STRUCTURE> of entity <system_cpld_if_0_wrapper>.
 
@@ -127,8 +150,13 @@ Going to verilog side to elaborate module user_logic
 Elaborating module <user_logic(C_NUM_REG=3,C_SLV_DWIDTH=32)>.
 
 Elaborating module <fpga_cpld>.
-WARNING:HDLCompiler:413 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v" Line 278: Result of 13-bit expression is truncated to fit in 12-bit target.
-WARNING:HDLCompiler:413 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v" Line 292: Result of 6-bit expression is truncated to fit in 5-bit target.
+<<<<<<< HEAD
+WARNING:HDLCompiler:413 - "D:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v" Line 294: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "D:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v" Line 308: Result of 6-bit expression is truncated to fit in 5-bit target.
+=======
+WARNING:HDLCompiler:413 - "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v" Line 294: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v" Line 308: Result of 6-bit expression is truncated to fit in 5-bit target.
+>>>>>>> remotes/origin/master
 Back to vhdl to continue elaboration
 
 =========================================================================
@@ -136,13 +164,21 @@ Back to vhdl to continue elaboration
 =========================================================================
 
 Synthesizing Unit <system_cpld_if_0_wrapper>.
-    Related source file is "F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\hdl\system_cpld_if_0_wrapper.vhd".
+<<<<<<< HEAD
+    Related source file is "D:\git\mikrorendszerek\MB_System_full\MB_System\hdl\system_cpld_if_0_wrapper.vhd".
+=======
+    Related source file is "F:\git\mikrorendszerek\MB_System_full\MB_System\hdl\system_cpld_if_0_wrapper.vhd".
+>>>>>>> remotes/origin/master
     Summary:
 	no macro.
 Unit <system_cpld_if_0_wrapper> synthesized.
 
 Synthesizing Unit <cpld_if>.
-    Related source file is "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd".
+<<<<<<< HEAD
+    Related source file is "D:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd".
+=======
+    Related source file is "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd".
+>>>>>>> remotes/origin/master
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
         C_S_AXI_DATA_WIDTH = 32
@@ -161,9 +197,15 @@ WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/p
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
     Set property "MAX_FANOUT = 10000" for signal <S_AXI_ARESETN>.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
-INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" line 287: Output port <Bus2IP_Addr> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" line 287: Output port <Bus2IP_CS> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" line 287: Output port <Bus2IP_RNW> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+<<<<<<< HEAD
+INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" line 287: Output port <Bus2IP_Addr> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" line 287: Output port <Bus2IP_CS> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" line 287: Output port <Bus2IP_RNW> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+=======
+INFO:Xst:3210 - "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" line 287: Output port <Bus2IP_Addr> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" line 287: Output port <Bus2IP_CS> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" line 287: Output port <Bus2IP_RNW> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+>>>>>>> remotes/origin/master
     Summary:
 	no macro.
 Unit <cpld_if> synthesized.
@@ -275,10 +317,44 @@ Synthesizing Unit <pselect_f_3>.
 Unit <pselect_f_3> synthesized.
 
 Synthesizing Unit <user_logic>.
-    Related source file is "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v".
+<<<<<<< HEAD
+    Related source file is "D:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v".
+=======
+    Related source file is "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v".
+>>>>>>> remotes/origin/master
         C_NUM_REG = 3
         C_SLV_DWIDTH = 32
-    Found 1-bit register for signal <IF>.
+    Found 1-bit register for signal <slv_reg0<30>>.
+    Found 1-bit register for signal <slv_reg0<29>>.
+    Found 1-bit register for signal <slv_reg0<28>>.
+    Found 1-bit register for signal <slv_reg0<27>>.
+    Found 1-bit register for signal <slv_reg0<26>>.
+    Found 1-bit register for signal <slv_reg0<25>>.
+    Found 1-bit register for signal <slv_reg0<24>>.
+    Found 1-bit register for signal <slv_reg0<23>>.
+    Found 1-bit register for signal <slv_reg0<22>>.
+    Found 1-bit register for signal <slv_reg0<21>>.
+    Found 1-bit register for signal <slv_reg0<20>>.
+    Found 1-bit register for signal <slv_reg0<19>>.
+    Found 1-bit register for signal <slv_reg0<18>>.
+    Found 1-bit register for signal <slv_reg0<17>>.
+    Found 1-bit register for signal <slv_reg0<16>>.
+    Found 1-bit register for signal <slv_reg0<15>>.
+    Found 1-bit register for signal <slv_reg0<14>>.
+    Found 1-bit register for signal <slv_reg0<13>>.
+    Found 1-bit register for signal <slv_reg0<12>>.
+    Found 1-bit register for signal <slv_reg0<11>>.
+    Found 1-bit register for signal <slv_reg0<10>>.
+    Found 1-bit register for signal <slv_reg0<9>>.
+    Found 1-bit register for signal <slv_reg0<8>>.
+    Found 1-bit register for signal <slv_reg0<7>>.
+    Found 1-bit register for signal <slv_reg0<6>>.
+    Found 1-bit register for signal <slv_reg0<5>>.
+    Found 1-bit register for signal <slv_reg0<4>>.
+    Found 1-bit register for signal <slv_reg0<3>>.
+    Found 1-bit register for signal <slv_reg0<2>>.
+    Found 1-bit register for signal <slv_reg0<1>>.
+    Found 1-bit register for signal <slv_reg0<0>>.
     Found 1-bit register for signal <slv_reg1<31>>.
     Found 1-bit register for signal <slv_reg1<30>>.
     Found 1-bit register for signal <slv_reg1<29>>.
@@ -311,17 +387,52 @@ Synthesizing Unit <user_logic>.
     Found 1-bit register for signal <slv_reg1<2>>.
     Found 1-bit register for signal <slv_reg1<1>>.
     Found 1-bit register for signal <slv_reg1<0>>.
-    Found 32-bit register for signal <slv_reg2>.
-    Found 1-bit register for signal <IE>.
-    Found 32-bit comparator equal for signal <n0021> created at line 220
+    Found 1-bit register for signal <slv_reg2<31>>.
+    Found 1-bit register for signal <slv_reg2<30>>.
+    Found 1-bit register for signal <slv_reg2<29>>.
+    Found 1-bit register for signal <slv_reg2<28>>.
+    Found 1-bit register for signal <slv_reg2<27>>.
+    Found 1-bit register for signal <slv_reg2<26>>.
+    Found 1-bit register for signal <slv_reg2<25>>.
+    Found 1-bit register for signal <slv_reg2<24>>.
+    Found 1-bit register for signal <slv_reg2<23>>.
+    Found 1-bit register for signal <slv_reg2<22>>.
+    Found 1-bit register for signal <slv_reg2<21>>.
+    Found 1-bit register for signal <slv_reg2<20>>.
+    Found 1-bit register for signal <slv_reg2<19>>.
+    Found 1-bit register for signal <slv_reg2<18>>.
+    Found 1-bit register for signal <slv_reg2<17>>.
+    Found 1-bit register for signal <slv_reg2<16>>.
+    Found 1-bit register for signal <slv_reg2<15>>.
+    Found 1-bit register for signal <slv_reg2<14>>.
+    Found 1-bit register for signal <slv_reg2<13>>.
+    Found 1-bit register for signal <slv_reg2<12>>.
+    Found 1-bit register for signal <slv_reg2<11>>.
+    Found 1-bit register for signal <slv_reg2<10>>.
+    Found 1-bit register for signal <slv_reg2<9>>.
+    Found 1-bit register for signal <slv_reg2<8>>.
+    Found 1-bit register for signal <slv_reg2<7>>.
+    Found 1-bit register for signal <slv_reg2<6>>.
+    Found 1-bit register for signal <slv_reg2<5>>.
+    Found 1-bit register for signal <slv_reg2<4>>.
+    Found 1-bit register for signal <slv_reg2<3>>.
+    Found 1-bit register for signal <slv_reg2<2>>.
+    Found 1-bit register for signal <slv_reg2<1>>.
+    Found 1-bit register for signal <slv_reg2<0>>.
+    Found 1-bit register for signal <slv_reg0<31>>.
+    Found 32-bit comparator equal for signal <n0023> created at line 224
     Summary:
-	inferred  66 D-type flip-flop(s).
+	inferred  96 D-type flip-flop(s).
 	inferred   1 Comparator(s).
-	inferred  33 Multiplexer(s).
+	inferred  68 Multiplexer(s).
 Unit <user_logic> synthesized.
 
 Synthesizing Unit <fpga_cpld>.
-    Related source file is "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v".
+<<<<<<< HEAD
+    Related source file is "D:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v".
+=======
+    Related source file is "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v".
+>>>>>>> remotes/origin/master
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Register <cpld_clk> equivalent to <clk_div_msb> has been removed
     Found 1-bit register for signal <clk_div_msb>.
@@ -333,8 +444,8 @@ WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and lef
     Found 16-bit register for signal <shr_in>.
     Found 16-bit register for signal <din_reg>.
     Found 12-bit register for signal <clk_div>.
-    Found 12-bit adder for signal <clk_div[11]_GND_21_o_add_1_OUT> created at line 278.
-    Found 5-bit adder for signal <cntr[4]_GND_21_o_add_5_OUT> created at line 292.
+    Found 12-bit adder for signal <clk_div[11]_GND_21_o_add_1_OUT> created at line 294.
+    Found 5-bit adder for signal <cntr[4]_GND_21_o_add_5_OUT> created at line 308.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  69 D-type flip-flop(s).
@@ -349,20 +460,21 @@ Macro Statistics
  12-bit adder                                          : 1
  4-bit adder                                           : 1
  5-bit adder                                           : 1
-# Registers                                            : 56
- 1-bit register                                        : 46
+# Registers                                            : 73
+ 1-bit register                                        : 60
  12-bit register                                       : 1
  16-bit register                                       : 3
  2-bit register                                        : 2
  32-bit register                                       : 2
- 4-bit register                                        : 1
+ 4-bit register                                        : 3
  5-bit register                                        : 1
+ 8-bit register                                        : 1
 # Comparators                                          : 1
  32-bit comparator equal                               : 1
-# Multiplexers                                         : 43
- 1-bit 2-to-1 multiplexer                              : 40
+# Multiplexers                                         : 78
+ 1-bit 2-to-1 multiplexer                              : 74
  16-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 3
 # FSMs                                                 : 1
 
 =========================================================================
@@ -392,14 +504,14 @@ Macro Statistics
  12-bit up counter                                     : 1
  4-bit up counter                                      : 1
  5-bit up counter                                      : 1
-# Registers                                            : 159
- Flip-Flops                                            : 159
+# Registers                                            : 189
+ Flip-Flops                                            : 189
 # Comparators                                          : 1
  32-bit comparator equal                               : 1
-# Multiplexers                                         : 40
- 1-bit 2-to-1 multiplexer                              : 37
+# Multiplexers                                         : 75
+ 1-bit 2-to-1 multiplexer                              : 71
  16-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 3
 # FSMs                                                 : 1
 
 =========================================================================
@@ -417,17 +529,17 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg1_17> (witho
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg1_18> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg1_19> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg1_20> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg1_21> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg1_22> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg1_23> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg1_21> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg1_24> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg1_25> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg1_26> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg1_27> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg1_28> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg1_29> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg1_31> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg1_30> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg1_31> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/FSM_0> on signal <state[1:2]> with user encoding.
 ----------------------
@@ -455,11 +567,11 @@ WARNING:Xst:2677 - Node <cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block system_cpld_if_0_wrapper, actual ratio is 4.
+Found area constraint ratio of 100 (+ 0) on block system_cpld_if_0_wrapper, actual ratio is 5.
 FlipFlop cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg has been replicated 2 time(s)
-FlipFlop cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0 has been replicated 1 time(s)
-FlipFlop cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1 has been replicated 1 time(s)
-FlipFlop cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_2 has been replicated 1 time(s)
+FlipFlop cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0 has been replicated 3 time(s)
+FlipFlop cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1 has been replicated 3 time(s)
+FlipFlop cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_2 has been replicated 2 time(s)
 FlipFlop cpld_if_0/USER_LOGIC_I/cpld/cntr_1 has been replicated 1 time(s)
 FlipFlop cpld_if_0/USER_LOGIC_I/cpld/cntr_2 has been replicated 1 time(s)
 FlipFlop cpld_if_0/USER_LOGIC_I/cpld/cntr_3 has been replicated 1 time(s)
@@ -474,8 +586,8 @@ Unit <system_cpld_if_0_wrapper> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 161
- Flip-Flops                                            : 161
+# Registers                                            : 196
+ Flip-Flops                                            : 196
 # Shift Registers                                      : 1
  4-bit shift register                                  : 1
 
@@ -500,24 +612,23 @@ Top Level Output File Name         : system_cpld_if_0_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 196
+# BELS                             : 226
 #      GND                         : 1
-#      INV                         : 5
+#      INV                         : 4
 #      LUT1                        : 11
-#      LUT2                        : 8
+#      LUT2                        : 11
 #      LUT3                        : 21
 #      LUT4                        : 5
-#      LUT5                        : 65
-#      LUT6                        : 47
+#      LUT5                        : 13
+#      LUT6                        : 129
 #      MUXCY                       : 18
-#      MUXF7                       : 2
 #      VCC                         : 1
 #      XORCY                       : 12
-# FlipFlops/Latches                : 162
-#      FD                          : 26
+# FlipFlops/Latches                : 197
+#      FD                          : 31
 #      FDE                         : 49
-#      FDR                         : 23
-#      FDRE                        : 64
+#      FDR                         : 85
+#      FDRE                        : 32
 # Shift Registers                  : 1
 #      SRLC16E                     : 1
 
@@ -528,18 +639,18 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             162  out of  11440     1%  
- Number of Slice LUTs:                  163  out of   5720     2%  
-    Number used as Logic:               162  out of   5720     2%  
+ Number of Slice Registers:             197  out of  11440     1%  
+ Number of Slice LUTs:                  195  out of   5720     3%  
+    Number used as Logic:               194  out of   5720     3%  
     Number used as Memory:                1  out of   1440     0%  
        Number used as SRL:                1
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    183
-   Number with an unused Flip Flop:      21  out of    183    11%  
-   Number with an unused LUT:            20  out of    183    10%  
-   Number of fully used LUT-FF pairs:   142  out of    183    77%  
-   Number of unique control sets:         7
+ Number of LUT Flip Flop pairs used:    220
+   Number with an unused Flip Flop:      23  out of    220    10%  
+   Number with an unused LUT:            25  out of    220    11%  
+   Number of fully used LUT-FF pairs:   172  out of    220    78%  
+   Number of unique control sets:         6
 
 IO Utilization: 
  Number of IOs:                         155
@@ -568,7 +679,7 @@ Clock Information:
 -----------------------------------+------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                            | Load  |
 -----------------------------------+------------------------------------------------------------------+-------+
-S_AXI_ACLK                         | NONE(cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1)| 163   |
+S_AXI_ACLK                         | NONE(cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1)| 198   |
 -----------------------------------+------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -581,7 +692,7 @@ Timing Summary:
 Speed Grade: -2
 
    Minimum period: 3.763ns (Maximum Frequency: 265.745MHz)
-   Minimum input arrival time before clock: 2.501ns
+   Minimum input arrival time before clock: 2.751ns
    Maximum output required time after clock: 1.935ns
    Maximum combinational path delay: No path found
 
@@ -592,7 +703,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
   Clock period: 3.763ns (frequency: 265.745MHz)
-  Total number of paths / destination ports: 1360 / 315
+  Total number of paths / destination ports: 1601 / 318
 -------------------------------------------------------------------------
 Delay:               3.763ns (Levels of Logic = 7)
   Source:            cpld_if_0/USER_LOGIC_I/cpld/din_reg_2 (FF)
@@ -605,12 +716,12 @@ Delay:               3.763ns (Levels of Logic = 7)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q              3   0.525   1.221  cpld_if_0/USER_LOGIC_I/cpld/din_reg_2 (cpld_if_0/USER_LOGIC_I/cpld/din_reg_2)
-     LUT6:I0->O            1   0.254   0.000  cpld_if_0/USER_LOGIC_I/Mcompar_n0021_lut<0> (cpld_if_0/USER_LOGIC_I/Mcompar_n0021_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  cpld_if_0/USER_LOGIC_I/Mcompar_n0021_cy<0> (cpld_if_0/USER_LOGIC_I/Mcompar_n0021_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  cpld_if_0/USER_LOGIC_I/Mcompar_n0021_cy<1> (cpld_if_0/USER_LOGIC_I/Mcompar_n0021_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  cpld_if_0/USER_LOGIC_I/Mcompar_n0021_cy<2> (cpld_if_0/USER_LOGIC_I/Mcompar_n0021_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  cpld_if_0/USER_LOGIC_I/Mcompar_n0021_cy<3> (cpld_if_0/USER_LOGIC_I/Mcompar_n0021_cy<3>)
-     MUXCY:CI->O          14   0.023   1.127  cpld_if_0/USER_LOGIC_I/Mcompar_n0021_cy<4> (cpld_if_0/USER_LOGIC_I/n0021)
+     LUT6:I0->O            1   0.254   0.000  cpld_if_0/USER_LOGIC_I/Mcompar_n0023_lut<0> (cpld_if_0/USER_LOGIC_I/Mcompar_n0023_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  cpld_if_0/USER_LOGIC_I/Mcompar_n0023_cy<0> (cpld_if_0/USER_LOGIC_I/Mcompar_n0023_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  cpld_if_0/USER_LOGIC_I/Mcompar_n0023_cy<1> (cpld_if_0/USER_LOGIC_I/Mcompar_n0023_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  cpld_if_0/USER_LOGIC_I/Mcompar_n0023_cy<2> (cpld_if_0/USER_LOGIC_I/Mcompar_n0023_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  cpld_if_0/USER_LOGIC_I/Mcompar_n0023_cy<3> (cpld_if_0/USER_LOGIC_I/Mcompar_n0023_cy<3>)
+     MUXCY:CI->O          14   0.023   1.127  cpld_if_0/USER_LOGIC_I/Mcompar_n0023_cy<4> (cpld_if_0/USER_LOGIC_I/n0023)
      LUT3:I2->O            1   0.254   0.000  cpld_if_0/USER_LOGIC_I/slv_reg1_12_rstpot (cpld_if_0/USER_LOGIC_I/slv_reg1_12_rstpot)
      FDR:D                     0.074          cpld_if_0/USER_LOGIC_I/slv_reg1_12
     ----------------------------------------
@@ -619,37 +730,37 @@ Delay:               3.763ns (Levels of Logic = 7)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
-  Total number of paths / destination ports: 161 / 95
+  Total number of paths / destination ports: 272 / 161
 -------------------------------------------------------------------------
-Offset:              2.501ns (Levels of Logic = 1)
+Offset:              2.751ns (Levels of Logic = 1)
   Source:            S_AXI_ARESETN (PAD)
-  Destination:       cpld_if_0/USER_LOGIC_I/slv_reg2_31 (FF)
+  Destination:       cpld_if_0/USER_LOGIC_I/slv_reg2_15 (FF)
   Destination Clock: S_AXI_ACLK rising
 
-  Data Path: S_AXI_ARESETN to cpld_if_0/USER_LOGIC_I/slv_reg2_31
+  Data Path: S_AXI_ARESETN to cpld_if_0/USER_LOGIC_I/slv_reg2_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     INV:I->O             48   0.255   1.787  cpld_if_0/USER_LOGIC_I/Bus2IP_Resetn_inv351_INV_0 (cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_rstpot)
-     FDRE:R                    0.459          cpld_if_0/USER_LOGIC_I/slv_reg2_0
+     INV:I->O             78   0.255   2.037  cpld_if_0/USER_LOGIC_I/Bus2IP_Resetn_inv521_INV_0 (cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_rstpot)
+     FDR:R                     0.459          cpld_if_0/USER_LOGIC_I/slv_reg2_8
     ----------------------------------------
-    Total                      2.501ns (0.714ns logic, 1.787ns route)
-                                       (28.6% logic, 71.4% route)
+    Total                      2.751ns (0.714ns logic, 2.037ns route)
+                                       (26.0% logic, 74.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
   Total number of paths / destination ports: 54 / 41
 -------------------------------------------------------------------------
 Offset:              1.935ns (Levels of Logic = 1)
-  Source:            cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2 (FF)
+  Source:            cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1_2 (FF)
   Destination:       S_AXI_ARREADY (PAD)
   Source Clock:      S_AXI_ACLK rising
 
-  Data Path: cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2 to S_AXI_ARREADY
+  Data Path: cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1_2 to S_AXI_ARREADY
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.525   1.156  cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2 (cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2)
+     FD:C->Q               2   0.525   1.156  cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1_2 (cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1_2)
      LUT5:I0->O            2   0.254   0.000  cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rd_done1 (S_AXI_ARREADY)
     ----------------------------------------
     Total                      1.935ns (0.779ns logic, 1.156ns route)
@@ -671,12 +782,17 @@ S_AXI_ACLK     |    3.763|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.88 secs
+<<<<<<< HEAD
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.65 secs
+=======
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.85 secs
+>>>>>>> remotes/origin/master
  
 --> 
 
-Total memory usage is 268256 kilobytes
+Total memory usage is 259156 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   40 (   0 filtered)

@@ -1,38 +1,36 @@
 
 <RENDERBATCH>
 
-  <RENDERIMG RASNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\proc_sys_reset_0.jpg" SVGNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\proc_sys_reset_0.svg" TMPSVGFN="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\proc_sys_reset_0.svg"/>
+  <RENDERIMG RASNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\proc_sys_reset_0.jpg" SVGNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\proc_sys_reset_0.svg" TMPSVGFN="D:\git\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\proc_sys_reset_0.svg"/>
 
-  <RENDERIMG RASNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_intc.jpg" SVGNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_intc.svg" TMPSVGFN="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\microblaze_0_intc.svg"/>
+  <RENDERIMG RASNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_intc.jpg" SVGNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_intc.svg" TMPSVGFN="D:\git\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\microblaze_0_intc.svg"/>
 
-  <RENDERIMG RASNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_ilmb.jpg" SVGNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_ilmb.svg" TMPSVGFN="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\microblaze_0_ilmb.svg"/>
+  <RENDERIMG RASNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_ilmb.jpg" SVGNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_ilmb.svg" TMPSVGFN="D:\git\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\microblaze_0_ilmb.svg"/>
 
-  <RENDERIMG RASNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl.jpg" SVGNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl.svg" TMPSVGFN="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\microblaze_0_i_bram_ctrl.svg"/>
+  <RENDERIMG RASNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl.jpg" SVGNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl.svg" TMPSVGFN="D:\git\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\microblaze_0_i_bram_ctrl.svg"/>
 
-  <RENDERIMG RASNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_dlmb.jpg" SVGNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_dlmb.svg" TMPSVGFN="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\microblaze_0_dlmb.svg"/>
+  <RENDERIMG RASNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_dlmb.jpg" SVGNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_dlmb.svg" TMPSVGFN="D:\git\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\microblaze_0_dlmb.svg"/>
 
-  <RENDERIMG RASNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl.jpg" SVGNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl.svg" TMPSVGFN="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\microblaze_0_d_bram_ctrl.svg"/>
+  <RENDERIMG RASNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl.jpg" SVGNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl.svg" TMPSVGFN="D:\git\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\microblaze_0_d_bram_ctrl.svg"/>
 
-  <RENDERIMG RASNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block.jpg" SVGNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block.svg" TMPSVGFN="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\microblaze_0_bram_block.svg"/>
+  <RENDERIMG RASNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block.jpg" SVGNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block.svg" TMPSVGFN="D:\git\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\microblaze_0_bram_block.svg"/>
 
-  <RENDERIMG RASNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0.jpg" SVGNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0.svg" TMPSVGFN="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\microblaze_0.svg"/>
+  <RENDERIMG RASNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0.jpg" SVGNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\microblaze_0.svg" TMPSVGFN="D:\git\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\microblaze_0.svg"/>
 
-  <RENDERIMG RASNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\lcd_screen_0.jpg" SVGNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\lcd_screen_0.svg" TMPSVGFN="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\lcd_screen_0.svg"/>
+  <RENDERIMG RASNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\lcd_screen_0.jpg" SVGNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\lcd_screen_0.svg" TMPSVGFN="D:\git\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\lcd_screen_0.svg"/>
 
-  <RENDERIMG RASNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\debug_module.jpg" SVGNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\debug_module.svg" TMPSVGFN="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\debug_module.svg"/>
+  <RENDERIMG RASNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\debug_module.jpg" SVGNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\debug_module.svg" TMPSVGFN="D:\git\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\debug_module.svg"/>
 
-  <RENDERIMG RASNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\cpld_if_0.jpg" SVGNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\cpld_if_0.svg" TMPSVGFN="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\cpld_if_0.svg"/>
+  <RENDERIMG RASNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\cpld_if_0.jpg" SVGNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\cpld_if_0.svg" TMPSVGFN="D:\git\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\cpld_if_0.svg"/>
 
-  <RENDERIMG RASNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\clock_generator_0.jpg" SVGNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\clock_generator_0.svg" TMPSVGFN="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\clock_generator_0.svg"/>
+  <RENDERIMG RASNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\clock_generator_0.jpg" SVGNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\clock_generator_0.svg" TMPSVGFN="D:\git\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\clock_generator_0.svg"/>
 
-  <RENDERIMG RASNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\button.jpg" SVGNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\button.svg" TMPSVGFN="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\button.svg"/>
+  <RENDERIMG RASNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\axi_timer_0.jpg" SVGNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\axi_timer_0.svg" TMPSVGFN="D:\git\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\axi_timer_0.svg"/>
 
-  <RENDERIMG RASNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\axi_timer_0.jpg" SVGNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\axi_timer_0.svg" TMPSVGFN="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\axi_timer_0.svg"/>
+  <RENDERIMG RASNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\axi4lite_0.jpg" SVGNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\axi4lite_0.svg" TMPSVGFN="D:\git\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\axi4lite_0.svg"/>
 
-  <RENDERIMG RASNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\axi4lite_0.jpg" SVGNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\axi4lite_0.svg" TMPSVGFN="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\axi4lite_0.svg"/>
+  <RENDERIMG RASNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\RS232.jpg" SVGNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\RS232.svg" TMPSVGFN="D:\git\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\RS232.svg"/>
 
-  <RENDERIMG RASNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\RS232.jpg" SVGNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\RS232.svg" TMPSVGFN="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\RS232.svg"/>
-
-  <RENDERIMG RASNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\system_blkd.jpg" SVGNAME="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\system_blkd.svg" TMPSVGFN="F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\system_blkd.svg"/>
+  <RENDERIMG RASNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\system_blkd.jpg" SVGNAME="D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\imgs\system_blkd.svg" TMPSVGFN="D:\git\mikrorendszerek\MB_System_full\MB_System\__xps\.dswkshop\system_blkd.svg"/>
 
 </RENDERBATCH>

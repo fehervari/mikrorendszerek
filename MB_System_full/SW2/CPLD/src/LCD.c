@@ -90,8 +90,8 @@ void write_Memory(Xuint8 page, Xuint8 col,  Xuint8 data){ // x [1 : 102] y [1 : 
 }
 
 void sendData16(Xuint32 addr, Xuint16 data){
-	asm ("nop");
-	while(LCD.FULL);
+	Xuint8 i;
+	while(LCD.FULL); // forgalomszabályzás
 	MEM16(addr) = data;
 }
 

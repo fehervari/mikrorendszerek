@@ -1,0 +1,8 @@
+-batch 
+-create lvl_indicator 
+-ver 1.00.a 
+-dir "F:\EDK\MB_System" 
+-lang verilog 
+-bus axi4lite s 
+-reg 3 
+-xps 

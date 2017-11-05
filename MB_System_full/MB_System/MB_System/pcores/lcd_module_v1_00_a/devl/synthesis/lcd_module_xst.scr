@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\pcores\lcd_module_v1_00_a\devl\synthesis\lcd_module_xst.prj"
+-top lcd_module
+-p virtex6
+-ofn "F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\pcores\lcd_module_v1_00_a\devl\synthesis\lcd_module_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib lcd_module_v1_00_a

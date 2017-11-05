@@ -23,9 +23,9 @@ NET dev_miso       LOC=P144 | IOSTANDARD=LVCMOS33;
 
 
 # 3 darab aktív magas nyomógomb, balról jobbra számozva.
-NET bt<2>          LOC=P61  | IOSTANDARD=LVCMOS33 | PULLDOWN;  
-NET bt<1>          LOC=P62  | IOSTANDARD=LVCMOS33 | PULLDOWN;  
-NET bt<0>          LOC=P66  | IOSTANDARD=LVCMOS33 | PULLDOWN;
+#NET bt<2>          LOC=P61  | IOSTANDARD=LVCMOS33 | PULLDOWN;  
+#NET bt<1>          LOC=P62  | IOSTANDARD=LVCMOS33 | PULLDOWN;  
+#NET bt<0>          LOC=P66  | IOSTANDARD=LVCMOS33 | PULLDOWN;
 
 
 # A CPLD interfész vonalai. A cpld_jtagen jelet

@@ -67,7 +67,7 @@ begin
 
   microblaze_0_bram_block : microblaze_0_bram_block_elaborate
     generic map (
-      C_MEMSIZE => 16#8000#,
+      C_MEMSIZE => 16#10000#,
       C_PORT_DWIDTH => 32,
       C_PORT_AWIDTH => 32,
       C_NUM_WE => 4,

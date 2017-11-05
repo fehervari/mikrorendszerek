@@ -74,39 +74,3 @@ Failed to Scan JTAG Chain
 12:23:09.909 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
 12:26:51.436 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
 12:27:39.931 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-13:08:29.770 INFO  - Updating .bit and .bmm files from XPS's export folder. 
-13:08:36.146 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.bit into \MB_System_hw_platform\system.bit. 
-13:08:36.156 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system_bd.bmm into \MB_System_hw_platform\system_bd.bmm. 
-13:08:43.101 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-13:09:35.086 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-13:10:16.242 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-13:12:08.333 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW2/MB_System_hw_platform/download.bit" 
-13:12:33.761 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-13:13:01.063 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-13:13:36.295 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW2/MB_System_hw_platform/download.bit" 
-13:14:44.794 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-13:15:15.926 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW2/MB_System_hw_platform/download.bit" 
-13:16:47.766 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-13:17:14.282 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-13:17:41.897 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-13:18:09.828 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-13:18:34.377 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-13:19:01.876 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-13:19:18.887 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-13:23:43.301 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
-	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
-	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
-
-13:23:43.301 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
-13:36:24.895 INFO  - Processing command line option -hwspec F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.xml. 
-13:36:42.331 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW2/MB_System_hw_platform/download.bit" 
-13:38:34.361 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW2/MB_System_hw_platform/download.bit" 
-13:40:58.100 WARN  - Terminating existing sessions on processor microblaze_0 
-13:41:03.550 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW2/MB_System_hw_platform/download.bit" 
-13:44:50.529 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-13:45:08.968 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-13:47:41.320 WARN  - Terminating existing sessions on processor microblaze_0 
-13:47:46.756 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW2/MB_System_hw_platform/download.bit" 
-13:50:49.969 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-13:51:07.314 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-13:51:22.185 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 

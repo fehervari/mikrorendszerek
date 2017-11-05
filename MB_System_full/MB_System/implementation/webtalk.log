@@ -4,7 +4,7 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 Project Information
 --------------------
 ProjectID=9e3080b521bf484ea246a303393ede04
-ProjectIteration=23
+ProjectIteration=17
 
 WebTalk Summary
 ----------------
@@ -13,4 +13,8 @@ INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
 INFO:WebTalk:8 - WebTalk Install setting is ON.
 INFO:WebTalk:6 - WebTalk User setting is ON.
 
-INFO:WebTalk:5 - F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/implementation/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html
+<<<<<<< HEAD
+INFO:WebTalk:5 - D:/git/mikrorendszerek/MB_System_full/MB_System/implementation/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html
+=======
+INFO:WebTalk:5 - F:/git/mikrorendszerek/MB_System_full/MB_System/implementation/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html
+>>>>>>> remotes/origin/master

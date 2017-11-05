@@ -2,7 +2,7 @@
 Checking platform configuration ...
 IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
 IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
-IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 6 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 5 slave(s) 
 
 Checking port drivers...
 WARNING:EDK:4180 - PORT: Interrupt_address_in, CONNECTOR: Interrupt_address_in -
@@ -20,7 +20,7 @@ Performing Reset DRCs...
 
 Overriding system level properties...
 INFO:EDK:4130 - IPNAME: axi_intc, INSTANCE:microblaze_0_intc - tcl is overriding
-   PARAMETER C_KIND_OF_INTR value to 0b11111111111111111111111111110101 -
+   PARAMETER C_KIND_OF_INTR value to 0b11111111111111111111111111111010 -
    D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
    a\axi_intc_v2_1_0.mpd line 87 
 INFO:EDK:4130 - IPNAME: axi_intc, INSTANCE:microblaze_0_intc - tcl is overriding

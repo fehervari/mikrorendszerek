@@ -1,5 +1,1 @@
-<<<<<<< HEAD
  -p spartan6 -lang vhdl$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s isim -X D:/git/mikrorendszerek/MB_System_full/MB_System/
-=======
- -p spartan6 -lang vhdl$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s mgm -X F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/
->>>>>>> 42fcca8b0d728ec4bf13b858e10f4c221f2ec213
