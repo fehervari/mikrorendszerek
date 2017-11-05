@@ -1,0 +1,12 @@
+11:41:25 **** Incremental Build of configuration Debug for project full ****
+make all 
+'Building target: full.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../full_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "full.elf"  ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/lib/bs/m/le/crtinit.o: In function `_crtinit':
+/wrk/ptx/users/nagaraju/GCC_2013_03/newlib/libgloss/microblaze/crtinit.S:69: undefined reference to `main'
+collect2: ld returned 1 exit status
+make: *** [full.elf] Error 1
+
+11:41:26 Build Finished (took 650ms)
+

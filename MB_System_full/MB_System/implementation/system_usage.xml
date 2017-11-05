@@ -5,14 +5,21 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <DeviceUsageSummary rev="38">
+<<<<<<< HEAD
 <DesignStatistics TimeStamp="Sun Nov 05 10:28:33 2017"><group name="NetStatistics">
 <item name="NumNets_Active" rev="38">
 <attrib name="value" value="3676"/></item>
+=======
+<DesignStatistics TimeStamp="Sun Nov 05 09:50:03 2017"><group name="NetStatistics">
+<item name="NumNets_Active" rev="38">
+<attrib name="value" value="3675"/></item>
+>>>>>>> remotes/origin/master
 <item name="NumNets_Gnd" rev="38">
 <attrib name="value" value="1"/></item>
 <item name="NumNets_Vcc" rev="38">
 <attrib name="value" value="1"/></item>
 <item name="NumNodesOfType_Active_BOUNCEACROSS" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="148"/></item>
 <item name="NumNodesOfType_Active_BOUNCEIN" rev="38">
 <attrib name="value" value="628"/></item>
@@ -36,21 +43,55 @@
 <attrib name="value" value="164"/></item>
 <item name="NumNodesOfType_Active_INPUT" rev="38">
 <attrib name="value" value="1593"/></item>
+=======
+<attrib name="value" value="124"/></item>
+<item name="NumNodesOfType_Active_BOUNCEIN" rev="38">
+<attrib name="value" value="629"/></item>
+<item name="NumNodesOfType_Active_BUFGOUT" rev="38">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_BUFHINP2OUT" rev="38">
+<attrib name="value" value="12"/></item>
+<item name="NumNodesOfType_Active_BUFIOINP" rev="38">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_CLKPIN" rev="38">
+<attrib name="value" value="890"/></item>
+<item name="NumNodesOfType_Active_CLKPINFEED" rev="38">
+<attrib name="value" value="19"/></item>
+<item name="NumNodesOfType_Active_CNTRLPIN" rev="38">
+<attrib name="value" value="1190"/></item>
+<item name="NumNodesOfType_Active_DOUBLE" rev="38">
+<attrib name="value" value="7234"/></item>
+<item name="NumNodesOfType_Active_GENERIC" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="NumNodesOfType_Active_GLOBAL" rev="38">
+<attrib name="value" value="154"/></item>
+<item name="NumNodesOfType_Active_INPUT" rev="38">
+<attrib name="value" value="985"/></item>
+>>>>>>> remotes/origin/master
 <item name="NumNodesOfType_Active_IOBIN2OUT" rev="38">
 <attrib name="value" value="12"/></item>
 <item name="NumNodesOfType_Active_IOBOUTPUT" rev="38">
 <attrib name="value" value="11"/></item>
 <item name="NumNodesOfType_Active_LUTINPUT" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="11441"/></item>
 <item name="NumNodesOfType_Active_OUTBOUND" rev="38">
 <attrib name="value" value="3719"/></item>
 <item name="NumNodesOfType_Active_OUTPUT" rev="38">
 <attrib name="value" value="3773"/></item>
+=======
+<attrib name="value" value="11409"/></item>
+<item name="NumNodesOfType_Active_OUTBOUND" rev="38">
+<attrib name="value" value="3708"/></item>
+<item name="NumNodesOfType_Active_OUTPUT" rev="38">
+<attrib name="value" value="3756"/></item>
+>>>>>>> remotes/origin/master
 <item name="NumNodesOfType_Active_PADINPUT" rev="38">
 <attrib name="value" value="8"/></item>
 <item name="NumNodesOfType_Active_PADOUTPUT" rev="38">
 <attrib name="value" value="4"/></item>
 <item name="NumNodesOfType_Active_PINBOUNCE" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="3025"/></item>
 <item name="NumNodesOfType_Active_PINFEED" rev="38">
 <attrib name="value" value="14258"/></item>
@@ -66,11 +107,29 @@
 <attrib name="value" value="5"/></item>
 <item name="NumNodesOfType_Gnd_BOUNCEIN" rev="38">
 <attrib name="value" value="395"/></item>
+=======
+<attrib name="value" value="2910"/></item>
+<item name="NumNodesOfType_Active_PINFEED" rev="38">
+<attrib name="value" value="13644"/></item>
+<item name="NumNodesOfType_Active_PINFEED2" rev="38">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Active_QUAD" rev="38">
+<attrib name="value" value="4270"/></item>
+<item name="NumNodesOfType_Active_REGINPUT" rev="38">
+<attrib name="value" value="877"/></item>
+<item name="NumNodesOfType_Active_SINGLE" rev="38">
+<attrib name="value" value="8505"/></item>
+<item name="NumNodesOfType_Gnd_BOUNCEACROSS" rev="38">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_BOUNCEIN" rev="38">
+<attrib name="value" value="232"/></item>
+>>>>>>> remotes/origin/master
 <item name="NumNodesOfType_Gnd_CLKPIN" rev="38">
 <attrib name="value" value="1"/></item>
 <item name="NumNodesOfType_Gnd_CNTRLPIN" rev="38">
 <attrib name="value" value="7"/></item>
 <item name="NumNodesOfType_Gnd_DOUBLE" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="9"/></item>
 <item name="NumNodesOfType_Gnd_GENERIC" rev="38">
 <attrib name="value" value="1"/></item>
@@ -78,6 +137,15 @@
 <attrib name="value" value="176"/></item>
 <item name="NumNodesOfType_Gnd_INPUT" rev="38">
 <attrib name="value" value="2777"/></item>
+=======
+<attrib name="value" value="12"/></item>
+<item name="NumNodesOfType_Gnd_GENERIC" rev="38">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_HGNDOUT" rev="38">
+<attrib name="value" value="112"/></item>
+<item name="NumNodesOfType_Gnd_INPUT" rev="38">
+<attrib name="value" value="1529"/></item>
+>>>>>>> remotes/origin/master
 <item name="NumNodesOfType_Gnd_IOBIN2OUT" rev="38">
 <attrib name="value" value="1"/></item>
 <item name="NumNodesOfType_Gnd_IOBOUTPUT" rev="38">
@@ -85,6 +153,7 @@
 <item name="NumNodesOfType_Gnd_LUTINPUT" rev="38">
 <attrib name="value" value="83"/></item>
 <item name="NumNodesOfType_Gnd_OUTBOUND" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="23"/></item>
 <item name="NumNodesOfType_Gnd_OUTPUT" rev="38">
 <attrib name="value" value="27"/></item>
@@ -98,6 +167,23 @@
 <attrib name="value" value="35"/></item>
 <item name="NumNodesOfType_Gnd_SINGLE" rev="38">
 <attrib name="value" value="22"/></item>
+=======
+<attrib name="value" value="24"/></item>
+<item name="NumNodesOfType_Gnd_OUTPUT" rev="38">
+<attrib name="value" value="30"/></item>
+<item name="NumNodesOfType_Gnd_PADINPUT" rev="38">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_PINBOUNCE" rev="38">
+<attrib name="value" value="544"/></item>
+<item name="NumNodesOfType_Gnd_PINFEED" rev="38">
+<attrib name="value" value="1437"/></item>
+<item name="NumNodesOfType_Gnd_QUAD" rev="38">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_REGINPUT" rev="38">
+<attrib name="value" value="34"/></item>
+<item name="NumNodesOfType_Gnd_SINGLE" rev="38">
+<attrib name="value" value="17"/></item>
+>>>>>>> remotes/origin/master
 <item name="NumNodesOfType_Vcc_CLKPIN" rev="38">
 <attrib name="value" value="5"/></item>
 <item name="NumNodesOfType_Vcc_CNTRLPIN" rev="38">
@@ -105,7 +191,11 @@
 <item name="NumNodesOfType_Vcc_GENERIC" rev="38">
 <attrib name="value" value="5"/></item>
 <item name="NumNodesOfType_Vcc_HVCCOUT" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="297"/></item>
+=======
+<attrib name="value" value="286"/></item>
+>>>>>>> remotes/origin/master
 <item name="NumNodesOfType_Vcc_INPUT" rev="38">
 <attrib name="value" value="7"/></item>
 <item name="NumNodesOfType_Vcc_IOBIN2OUT" rev="38">
@@ -115,13 +205,21 @@
 <item name="NumNodesOfType_Vcc_KVCCOUT" rev="38">
 <attrib name="value" value="82"/></item>
 <item name="NumNodesOfType_Vcc_LUTINPUT" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="712"/></item>
+=======
+<attrib name="value" value="714"/></item>
+>>>>>>> remotes/origin/master
 <item name="NumNodesOfType_Vcc_PADINPUT" rev="38">
 <attrib name="value" value="5"/></item>
 <item name="NumNodesOfType_Vcc_PINBOUNCE" rev="38">
 <attrib name="value" value="72"/></item>
 <item name="NumNodesOfType_Vcc_PINFEED" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="728"/></item>
+=======
+<attrib name="value" value="730"/></item>
+>>>>>>> remotes/origin/master
 <item name="NumNodesOfType_Vcc_REGINPUT" rev="38">
 <attrib name="value" value="60"/></item>
 </group>
@@ -133,11 +231,19 @@
 <item name="IOB-IOBS" rev="38">
 <attrib name="value" value="10"/></item>
 <item name="SLICEL-SLICEM" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="143"/></item>
 <item name="SLICEX-SLICEL" rev="38">
 <attrib name="value" value="122"/></item>
 <item name="SLICEX-SLICEM" rev="38">
 <attrib name="value" value="98"/></item>
+=======
+<attrib name="value" value="147"/></item>
+<item name="SLICEX-SLICEL" rev="38">
+<attrib name="value" value="120"/></item>
+<item name="SLICEX-SLICEM" rev="38">
+<attrib name="value" value="89"/></item>
+>>>>>>> remotes/origin/master
 </group>
 <group name="MiscellaneousStatistics">
 <item name="AGG_BONDED_IO" rev="37">
@@ -147,12 +253,17 @@
 <item name="AGG_LOCED_IO" rev="37">
 <attrib name="value" value="18"/></item>
 <item name="AGG_SLICE" rev="37">
+<<<<<<< HEAD
 <attrib name="value" value="1021"/></item>
+=======
+<attrib name="value" value="1006"/></item>
+>>>>>>> remotes/origin/master
 <item name="NUM_BONDED_IOB" rev="37">
 <attrib name="value" value="18"/></item>
 <item name="NUM_BSCAN" rev="37">
 <attrib name="value" value="1"/></item>
 <item name="NUM_BSFULL" rev="37">
+<<<<<<< HEAD
 <attrib name="value" value="1449"/></item>
 <item name="NUM_BSLUTONLY" rev="37">
 <attrib name="value" value="1070"/></item>
@@ -160,6 +271,15 @@
 <attrib name="value" value="354"/></item>
 <item name="NUM_BSUSED" rev="37">
 <attrib name="value" value="2873"/></item>
+=======
+<attrib name="value" value="1448"/></item>
+<item name="NUM_BSLUTONLY" rev="37">
+<attrib name="value" value="1078"/></item>
+<item name="NUM_BSREGONLY" rev="37">
+<attrib name="value" value="344"/></item>
+<item name="NUM_BSUSED" rev="37">
+<attrib name="value" value="2870"/></item>
+>>>>>>> remotes/origin/master
 <item name="NUM_BUFG" rev="37">
 <attrib name="value" value="2"/></item>
 <item name="NUM_BUFIO2" rev="37">
@@ -177,12 +297,17 @@
 <item name="NUM_LOGIC_O5ANDO6" rev="37">
 <attrib name="value" value="454"/></item>
 <item name="NUM_LOGIC_O5ONLY" rev="37">
+<<<<<<< HEAD
 <attrib name="value" value="51"/></item>
+=======
+<attrib name="value" value="52"/></item>
+>>>>>>> remotes/origin/master
 <item name="NUM_LOGIC_O6ONLY" rev="37">
 <attrib name="value" value="1848"/></item>
 <item name="NUM_LUT_RT_DRIVES_CARRY4" rev="37">
 <attrib name="value" value="3"/></item>
 <item name="NUM_LUT_RT_DRIVES_FLOP" rev="37">
+<<<<<<< HEAD
 <attrib name="value" value="24"/></item>
 <item name="NUM_LUT_RT_EXO5" rev="37">
 <attrib name="value" value="24"/></item>
@@ -190,6 +315,15 @@
 <attrib name="value" value="3"/></item>
 <item name="NUM_LUT_RT_O5" rev="37">
 <attrib name="value" value="6"/></item>
+=======
+<attrib name="value" value="30"/></item>
+<item name="NUM_LUT_RT_EXO5" rev="37">
+<attrib name="value" value="30"/></item>
+<item name="NUM_LUT_RT_EXO6" rev="37">
+<attrib name="value" value="3"/></item>
+<item name="NUM_LUT_RT_O5" rev="37">
+<attrib name="value" value="8"/></item>
+>>>>>>> remotes/origin/master
 <item name="NUM_LUT_RT_O6" rev="37">
 <attrib name="value" value="51"/></item>
 <item name="NUM_OLOGIC2" rev="37">
@@ -197,6 +331,7 @@
 <item name="NUM_PLL_ADV" rev="37">
 <attrib name="value" value="1"/></item>
 <item name="NUM_RAMB16BWER" rev="37">
+<<<<<<< HEAD
 <attrib name="value" value="32"/></item>
 <item name="NUM_SLICEL" rev="37">
 <attrib name="value" value="297"/></item>
@@ -204,12 +339,25 @@
 <attrib name="value" value="47"/></item>
 <item name="NUM_SLICEX" rev="37">
 <attrib name="value" value="677"/></item>
+=======
+<attrib name="value" value="16"/></item>
+<item name="NUM_SLICEL" rev="37">
+<attrib name="value" value="297"/></item>
+<item name="NUM_SLICEM" rev="37">
+<attrib name="value" value="48"/></item>
+<item name="NUM_SLICEX" rev="37">
+<attrib name="value" value="661"/></item>
+>>>>>>> remotes/origin/master
 <item name="NUM_SLICE_CARRY4" rev="37">
 <attrib name="value" value="133"/></item>
 <item name="NUM_SLICE_CONTROLSET" rev="37">
 <attrib name="value" value="135"/></item>
 <item name="NUM_SLICE_CYINIT" rev="37">
+<<<<<<< HEAD
 <attrib name="value" value="3193"/></item>
+=======
+<attrib name="value" value="3202"/></item>
+>>>>>>> remotes/origin/master
 <item name="NUM_SLICE_F7MUX" rev="37">
 <attrib name="value" value="168"/></item>
 <item name="NUM_SLICE_FF" rev="37">
@@ -217,7 +365,11 @@
 <item name="NUM_SLICE_LATCHLOGIC" rev="37">
 <attrib name="value" value="7"/></item>
 <item name="NUM_SLICE_UNUSEDCTRL" rev="37">
+<<<<<<< HEAD
 <attrib name="value" value="114"/></item>
+=======
+<attrib name="value" value="119"/></item>
+>>>>>>> remotes/origin/master
 <item name="NUM_SRL_O5ANDO6" rev="37">
 <attrib name="value" value="50"/></item>
 <item name="NUM_SRL_O5ONLY" rev="37">
@@ -250,7 +402,11 @@
 <attrib name="value" value="1"/></item>
 </group>
 </DesignStatistics>
+<<<<<<< HEAD
 <DeviceUsage TimeStamp="Sun Nov 05 10:28:33 2017"><group name="SiteSummary">
+=======
+<DeviceUsage TimeStamp="Sun Nov 05 09:50:03 2017"><group name="SiteSummary">
+>>>>>>> remotes/origin/master
 <item name="BSCAN" rev="38">
 <attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
 <item name="BSCAN_BSCAN" rev="38">
@@ -270,7 +426,11 @@
 <item name="DSP48A1_DSP48A1" rev="38">
 <attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
 <item name="FF_SR" rev="38">
+<<<<<<< HEAD
 <attrib name="total" value="1000000"/><attrib name="used" value="122"/></item>
+=======
+<attrib name="total" value="1000000"/><attrib name="used" value="131"/></item>
+>>>>>>> remotes/origin/master
 <item name="HARD0" rev="38">
 <attrib name="total" value="1000000"/><attrib name="used" value="37"/></item>
 <item name="HARD1" rev="38">
@@ -288,6 +448,7 @@
 <item name="IOB_OUTBUF" rev="38">
 <attrib name="total" value="1000000"/><attrib name="used" value="14"/></item>
 <item name="LUT5" rev="38">
+<<<<<<< HEAD
 <attrib name="total" value="1000000"/><attrib name="used" value="530"/></item>
 <item name="LUT6" rev="38">
 <attrib name="total" value="1000000"/><attrib name="used" value="2347"/></item>
@@ -295,6 +456,15 @@
 <attrib name="total" value="1000000"/><attrib name="used" value="120"/></item>
 <item name="LUT_OR_MEM6" rev="38">
 <attrib name="total" value="1000000"/><attrib name="used" value="147"/></item>
+=======
+<attrib name="total" value="1000000"/><attrib name="used" value="538"/></item>
+<item name="LUT6" rev="38">
+<attrib name="total" value="1000000"/><attrib name="used" value="2343"/></item>
+<item name="LUT_OR_MEM5" rev="38">
+<attrib name="total" value="1000000"/><attrib name="used" value="121"/></item>
+<item name="LUT_OR_MEM6" rev="38">
+<attrib name="total" value="1000000"/><attrib name="used" value="151"/></item>
+>>>>>>> remotes/origin/master
 <item name="OLOGIC2" rev="38">
 <attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
 <item name="OLOGIC2_OUTFF" rev="38">
@@ -308,22 +478,39 @@
 <item name="PULL_OR_KEEP1" rev="38">
 <attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
 <item name="RAMB16BWER" rev="38">
+<<<<<<< HEAD
 <attrib name="total" value="1000000"/><attrib name="used" value="32"/></item>
 <item name="RAMB16BWER_RAMB16BWER" rev="38">
 <attrib name="total" value="1000000"/><attrib name="used" value="32"/></item>
 <item name="REG_SR" rev="38">
 <attrib name="total" value="1000000"/><attrib name="used" value="1795"/></item>
+=======
+<attrib name="total" value="1000000"/><attrib name="used" value="16"/></item>
+<item name="RAMB16BWER_RAMB16BWER" rev="38">
+<attrib name="total" value="1000000"/><attrib name="used" value="16"/></item>
+<item name="REG_SR" rev="38">
+<attrib name="total" value="1000000"/><attrib name="used" value="1786"/></item>
+>>>>>>> remotes/origin/master
 <item name="SELMUX2_1" rev="38">
 <attrib name="total" value="1000000"/><attrib name="used" value="169"/></item>
 <item name="SLICEL" rev="38">
 <attrib name="total" value="1000000"/><attrib name="used" value="297"/></item>
 <item name="SLICEM" rev="38">
+<<<<<<< HEAD
 <attrib name="total" value="1000000"/><attrib name="used" value="47"/></item>
 <item name="SLICEX" rev="38">
 <attrib name="total" value="1000000"/><attrib name="used" value="677"/></item>
 </group>
 </DeviceUsage>
 <ReportConfigData TimeStamp="Sun Nov 05 10:28:33 2017"><group name="DSP48A1">
+=======
+<attrib name="total" value="1000000"/><attrib name="used" value="48"/></item>
+<item name="SLICEX" rev="38">
+<attrib name="total" value="1000000"/><attrib name="used" value="661"/></item>
+</group>
+</DeviceUsage>
+<ReportConfigData TimeStamp="Sun Nov 05 09:50:03 2017"><group name="DSP48A1">
+>>>>>>> remotes/origin/master
 <item name="CEA" rev="38">
 <attrib name="CEA_INV" value="0"/><attrib name="CEA" value="3"/></item>
 <item name="CEB" rev="38">
@@ -361,6 +548,7 @@
 </group>
 <group name="REG_SR">
 <item name="CK" rev="38">
+<<<<<<< HEAD
 <attrib name="CK" value="1774"/><attrib name="CK_INV" value="21"/></item>
 <item name="LATCH_OR_FF" rev="38">
 <attrib name="FF" value="1788"/><attrib name="AND2L" value="7"/></item>
@@ -368,12 +556,25 @@
 <attrib name="SRINIT0" value="1733"/><attrib name="SRINIT1" value="62"/></item>
 <item name="SYNC_ATTR" rev="38">
 <attrib name="ASYNC" value="535"/><attrib name="SYNC" value="1260"/></item>
+=======
+<attrib name="CK" value="1765"/><attrib name="CK_INV" value="21"/></item>
+<item name="LATCH_OR_FF" rev="38">
+<attrib name="FF" value="1779"/><attrib name="AND2L" value="7"/></item>
+<item name="SRINIT" rev="38">
+<attrib name="SRINIT0" value="1725"/><attrib name="SRINIT1" value="61"/></item>
+<item name="SYNC_ATTR" rev="38">
+<attrib name="ASYNC" value="520"/><attrib name="SYNC" value="1266"/></item>
+>>>>>>> remotes/origin/master
 </group>
 <group name="LUT_OR_MEM5">
 <item name="CLK" rev="38">
 <attrib name="CLK" value="115"/><attrib name="CLK_INV" value="0"/></item>
 <item name="LUT_OR_MEM" rev="38">
+<<<<<<< HEAD
 <attrib name="LUT" value="5"/><attrib name="RAM" value="115"/></item>
+=======
+<attrib name="LUT" value="6"/><attrib name="RAM" value="115"/></item>
+>>>>>>> remotes/origin/master
 <item name="RAMMODE" rev="38">
 <attrib name="SRL16" value="51"/><attrib name="DPRAM32" value="64"/></item>
 </group>
@@ -381,7 +582,11 @@
 <item name="CLK" rev="38">
 <attrib name="CLK" value="138"/><attrib name="CLK_INV" value="0"/></item>
 <item name="LUT_OR_MEM" rev="38">
+<<<<<<< HEAD
 <attrib name="LUT" value="9"/><attrib name="RAM" value="138"/></item>
+=======
+<attrib name="LUT" value="13"/><attrib name="RAM" value="138"/></item>
+>>>>>>> remotes/origin/master
 <item name="RAMMODE" rev="38">
 <attrib name="SRL16" value="73"/><attrib name="SRL32" value="1"/><attrib name="DPRAM32" value="64"/></item>
 </group>
@@ -451,7 +656,11 @@
 </group>
 <group name="SLICEL">
 <item name="CLK" rev="38">
+<<<<<<< HEAD
 <attrib name="CLK" value="257"/><attrib name="CLK_INV" value="6"/></item>
+=======
+<attrib name="CLK" value="259"/><attrib name="CLK_INV" value="5"/></item>
+>>>>>>> remotes/origin/master
 </group>
 <group name="PLL_ADV_PLL_ADV">
 <item name="BANDWIDTH" rev="38">
@@ -625,7 +834,11 @@
 </group>
 <group name="SLICEM">
 <item name="CLK" rev="38">
+<<<<<<< HEAD
 <attrib name="CLK" value="47"/><attrib name="CLK_INV" value="0"/></item>
+=======
+<attrib name="CLK" value="48"/><attrib name="CLK_INV" value="0"/></item>
+>>>>>>> remotes/origin/master
 </group>
 <group name="IOB_OUTBUF">
 <item name="DRIVEATTRBOX" rev="38">
@@ -637,7 +850,11 @@
 </group>
 <group name="SLICEX">
 <item name="CLK" rev="38">
+<<<<<<< HEAD
 <attrib name="CLK" value="593"/><attrib name="CLK_INV" value="4"/></item>
+=======
+<attrib name="CLK" value="570"/><attrib name="CLK_INV" value="5"/></item>
+>>>>>>> remotes/origin/master
 </group>
 <group name="PULL_OR_KEEP1">
 <item name="PULLTYPE" rev="38">
@@ -669,6 +886,7 @@
 </group>
 <group name="RAMB16BWER">
 <item name="CLKA" rev="38">
+<<<<<<< HEAD
 <attrib name="CLKA_INV" value="0"/><attrib name="CLKA" value="32"/></item>
 <item name="CLKB" rev="38">
 <attrib name="CLKB_INV" value="0"/><attrib name="CLKB" value="32"/></item>
@@ -700,6 +918,39 @@
 <attrib name="WEB2_INV" value="0"/><attrib name="WEB2" value="32"/></item>
 <item name="WEB3" rev="38">
 <attrib name="WEB3" value="32"/><attrib name="WEB3_INV" value="0"/></item>
+=======
+<attrib name="CLKA_INV" value="0"/><attrib name="CLKA" value="16"/></item>
+<item name="CLKB" rev="38">
+<attrib name="CLKB_INV" value="0"/><attrib name="CLKB" value="16"/></item>
+<item name="ENA" rev="38">
+<attrib name="ENA_INV" value="0"/><attrib name="ENA" value="16"/></item>
+<item name="ENB" rev="38">
+<attrib name="ENB_INV" value="0"/><attrib name="ENB" value="16"/></item>
+<item name="REGCEA" rev="38">
+<attrib name="REGCEA_INV" value="0"/><attrib name="REGCEA" value="16"/></item>
+<item name="REGCEB" rev="38">
+<attrib name="REGCEB_INV" value="0"/><attrib name="REGCEB" value="16"/></item>
+<item name="RSTA" rev="38">
+<attrib name="RSTA" value="16"/><attrib name="RSTA_INV" value="0"/></item>
+<item name="RSTB" rev="38">
+<attrib name="RSTB" value="16"/><attrib name="RSTB_INV" value="0"/></item>
+<item name="WEA0" rev="38">
+<attrib name="WEA0" value="16"/><attrib name="WEA0_INV" value="0"/></item>
+<item name="WEA1" rev="38">
+<attrib name="WEA1" value="16"/><attrib name="WEA1_INV" value="0"/></item>
+<item name="WEA2" rev="38">
+<attrib name="WEA2" value="16"/><attrib name="WEA2_INV" value="0"/></item>
+<item name="WEA3" rev="38">
+<attrib name="WEA3_INV" value="0"/><attrib name="WEA3" value="16"/></item>
+<item name="WEB0" rev="38">
+<attrib name="WEB0" value="16"/><attrib name="WEB0_INV" value="0"/></item>
+<item name="WEB1" rev="38">
+<attrib name="WEB1" value="16"/><attrib name="WEB1_INV" value="0"/></item>
+<item name="WEB2" rev="38">
+<attrib name="WEB2_INV" value="0"/><attrib name="WEB2" value="16"/></item>
+<item name="WEB3" rev="38">
+<attrib name="WEB3" value="16"/><attrib name="WEB3_INV" value="0"/></item>
+>>>>>>> remotes/origin/master
 </group>
 <group name="BUFIO2_BUFIO2">
 <item name="DIVIDE" rev="38">
@@ -721,6 +972,7 @@
 </group>
 <group name="RAMB16BWER_RAMB16BWER">
 <item name="CLKA" rev="38">
+<<<<<<< HEAD
 <attrib name="CLKA_INV" value="0"/><attrib name="CLKA" value="32"/></item>
 <item name="CLKB" rev="38">
 <attrib name="CLKB_INV" value="0"/><attrib name="CLKB" value="32"/></item>
@@ -776,6 +1028,63 @@
 <attrib name="WRITE_FIRST" value="32"/></item>
 <item name="WRITE_MODE_B" rev="38">
 <attrib name="WRITE_FIRST" value="32"/></item>
+=======
+<attrib name="CLKA_INV" value="0"/><attrib name="CLKA" value="16"/></item>
+<item name="CLKB" rev="38">
+<attrib name="CLKB_INV" value="0"/><attrib name="CLKB" value="16"/></item>
+<item name="DATA_WIDTH_A" rev="38">
+<attrib name="2" value="16"/></item>
+<item name="DATA_WIDTH_B" rev="38">
+<attrib name="2" value="16"/></item>
+<item name="DOA_REG" rev="38">
+<attrib name="0" value="16"/></item>
+<item name="DOB_REG" rev="38">
+<attrib name="0" value="16"/></item>
+<item name="ENA" rev="38">
+<attrib name="ENA_INV" value="0"/><attrib name="ENA" value="16"/></item>
+<item name="ENB" rev="38">
+<attrib name="ENB_INV" value="0"/><attrib name="ENB" value="16"/></item>
+<item name="EN_RSTRAM_A" rev="38">
+<attrib name="TRUE" value="16"/></item>
+<item name="EN_RSTRAM_B" rev="38">
+<attrib name="TRUE" value="16"/></item>
+<item name="RAM_MODE" rev="38">
+<attrib name="TDP" value="16"/></item>
+<item name="REGCEA" rev="38">
+<attrib name="REGCEA_INV" value="0"/><attrib name="REGCEA" value="16"/></item>
+<item name="REGCEB" rev="38">
+<attrib name="REGCEB_INV" value="0"/><attrib name="REGCEB" value="16"/></item>
+<item name="RSTA" rev="38">
+<attrib name="RSTA" value="16"/><attrib name="RSTA_INV" value="0"/></item>
+<item name="RSTB" rev="38">
+<attrib name="RSTB" value="16"/><attrib name="RSTB_INV" value="0"/></item>
+<item name="RSTTYPE" rev="38">
+<attrib name="SYNC" value="16"/></item>
+<item name="RST_PRIORITY_A" rev="38">
+<attrib name="CE" value="16"/></item>
+<item name="RST_PRIORITY_B" rev="38">
+<attrib name="CE" value="16"/></item>
+<item name="WEA0" rev="38">
+<attrib name="WEA0" value="16"/><attrib name="WEA0_INV" value="0"/></item>
+<item name="WEA1" rev="38">
+<attrib name="WEA1" value="16"/><attrib name="WEA1_INV" value="0"/></item>
+<item name="WEA2" rev="38">
+<attrib name="WEA2" value="16"/><attrib name="WEA2_INV" value="0"/></item>
+<item name="WEA3" rev="38">
+<attrib name="WEA3_INV" value="0"/><attrib name="WEA3" value="16"/></item>
+<item name="WEB0" rev="38">
+<attrib name="WEB0" value="16"/><attrib name="WEB0_INV" value="0"/></item>
+<item name="WEB1" rev="38">
+<attrib name="WEB1" value="16"/><attrib name="WEB1_INV" value="0"/></item>
+<item name="WEB2" rev="38">
+<attrib name="WEB2_INV" value="0"/><attrib name="WEB2" value="16"/></item>
+<item name="WEB3" rev="38">
+<attrib name="WEB3" value="16"/><attrib name="WEB3_INV" value="0"/></item>
+<item name="WRITE_MODE_A" rev="38">
+<attrib name="WRITE_FIRST" value="16"/></item>
+<item name="WRITE_MODE_B" rev="38">
+<attrib name="WRITE_FIRST" value="16"/></item>
+>>>>>>> remotes/origin/master
 </group>
 <group name="ILOGIC2">
 <item name="CLK0" rev="38">
@@ -783,6 +1092,7 @@
 </group>
 <group name="FF_SR">
 <item name="CK" rev="38">
+<<<<<<< HEAD
 <attrib name="CK" value="122"/><attrib name="CK_INV" value="0"/></item>
 <item name="SRINIT" rev="38">
 <attrib name="SRINIT0" value="107"/><attrib name="SRINIT1" value="15"/></item>
@@ -791,6 +1101,16 @@
 </group>
 </ReportConfigData>
 <ReportPinData TimeStamp="Sun Nov 05 10:28:33 2017"><group name="BUFIO2">
+=======
+<attrib name="CK" value="131"/><attrib name="CK_INV" value="0"/></item>
+<item name="SRINIT" rev="38">
+<attrib name="SRINIT0" value="115"/><attrib name="SRINIT1" value="16"/></item>
+<item name="SYNC_ATTR" rev="38">
+<attrib name="ASYNC" value="45"/><attrib name="SYNC" value="86"/></item>
+</group>
+</ReportConfigData>
+<ReportPinData TimeStamp="Sun Nov 05 09:50:03 2017"><group name="BUFIO2">
+>>>>>>> remotes/origin/master
 <item name="DIVCLK" rev="38">
 <attrib name="value" value="1"/></item>
 <item name="I" rev="38">
@@ -1342,6 +1662,7 @@
 </group>
 <group name="REG_SR">
 <item name="CE" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="1151"/></item>
 <item name="CK" rev="38">
 <attrib name="value" value="1795"/></item>
@@ -1351,6 +1672,17 @@
 <attrib name="value" value="1795"/></item>
 <item name="SR" rev="38">
 <attrib name="value" value="1312"/></item>
+=======
+<attrib name="value" value="1144"/></item>
+<item name="CK" rev="38">
+<attrib name="value" value="1786"/></item>
+<item name="D" rev="38">
+<attrib name="value" value="1786"/></item>
+<item name="Q" rev="38">
+<attrib name="value" value="1786"/></item>
+<item name="SR" rev="38">
+<attrib name="value" value="1320"/></item>
+>>>>>>> remotes/origin/master
 </group>
 <group name="LUT_OR_MEM5">
 <item name="A1" rev="38">
@@ -1358,9 +1690,15 @@
 <item name="A2" rev="38">
 <attrib name="value" value="116"/></item>
 <item name="A3" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="117"/></item>
 <item name="A4" rev="38">
 <attrib name="value" value="116"/></item>
+=======
+<attrib name="value" value="118"/></item>
+<item name="A4" rev="38">
+<attrib name="value" value="117"/></item>
+>>>>>>> remotes/origin/master
 <item name="A5" rev="38">
 <attrib name="value" value="116"/></item>
 <item name="CLK" rev="38">
@@ -1368,7 +1706,11 @@
 <item name="DI1" rev="38">
 <attrib name="value" value="115"/></item>
 <item name="O5" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="120"/></item>
+=======
+<attrib name="value" value="121"/></item>
+>>>>>>> remotes/origin/master
 <item name="WA1" rev="38">
 <attrib name="value" value="64"/></item>
 <item name="WA2" rev="38">
@@ -1384,6 +1726,7 @@
 </group>
 <group name="LUT_OR_MEM6">
 <item name="A1" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="139"/></item>
 <item name="A2" rev="38">
 <attrib name="value" value="140"/></item>
@@ -1395,6 +1738,19 @@
 <attrib name="value" value="147"/></item>
 <item name="A6" rev="38">
 <attrib name="value" value="147"/></item>
+=======
+<attrib name="value" value="140"/></item>
+<item name="A2" rev="38">
+<attrib name="value" value="142"/></item>
+<item name="A3" rev="38">
+<attrib name="value" value="144"/></item>
+<item name="A4" rev="38">
+<attrib name="value" value="147"/></item>
+<item name="A5" rev="38">
+<attrib name="value" value="150"/></item>
+<item name="A6" rev="38">
+<attrib name="value" value="151"/></item>
+>>>>>>> remotes/origin/master
 <item name="CLK" rev="38">
 <attrib name="value" value="138"/></item>
 <item name="DI1" rev="38">
@@ -1404,7 +1760,11 @@
 <item name="MC31" rev="38">
 <attrib name="value" value="7"/></item>
 <item name="O6" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="131"/></item>
+=======
+<attrib name="value" value="135"/></item>
+>>>>>>> remotes/origin/master
 <item name="WA1" rev="38">
 <attrib name="value" value="64"/></item>
 <item name="WA2" rev="38">
@@ -1966,6 +2326,7 @@
 </group>
 <group name="SLICEL">
 <item name="A" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="54"/></item>
 <item name="A1" rev="38">
 <attrib name="value" value="65"/></item>
@@ -2005,6 +2366,47 @@
 <attrib name="value" value="97"/></item>
 <item name="BX" rev="38">
 <attrib name="value" value="79"/></item>
+=======
+<attrib name="value" value="60"/></item>
+<item name="A1" rev="38">
+<attrib name="value" value="72"/></item>
+<item name="A2" rev="38">
+<attrib name="value" value="117"/></item>
+<item name="A3" rev="38">
+<attrib name="value" value="158"/></item>
+<item name="A4" rev="38">
+<attrib name="value" value="181"/></item>
+<item name="A5" rev="38">
+<attrib name="value" value="189"/></item>
+<item name="A6" rev="38">
+<attrib name="value" value="195"/></item>
+<item name="AMUX" rev="38">
+<attrib name="value" value="53"/></item>
+<item name="AQ" rev="38">
+<attrib name="value" value="73"/></item>
+<item name="AX" rev="38">
+<attrib name="value" value="61"/></item>
+<item name="B" rev="38">
+<attrib name="value" value="78"/></item>
+<item name="B1" rev="38">
+<attrib name="value" value="91"/></item>
+<item name="B2" rev="38">
+<attrib name="value" value="162"/></item>
+<item name="B3" rev="38">
+<attrib name="value" value="176"/></item>
+<item name="B4" rev="38">
+<attrib name="value" value="193"/></item>
+<item name="B5" rev="38">
+<attrib name="value" value="200"/></item>
+<item name="B6" rev="38">
+<attrib name="value" value="205"/></item>
+<item name="BMUX" rev="38">
+<attrib name="value" value="60"/></item>
+<item name="BQ" rev="38">
+<attrib name="value" value="97"/></item>
+<item name="BX" rev="38">
+<attrib name="value" value="79"/></item>
+>>>>>>> remotes/origin/master
 <item name="C" rev="38">
 <attrib name="value" value="4"/></item>
 <item name="C1" rev="38">
@@ -2014,6 +2416,7 @@
 <item name="C3" rev="38">
 <attrib name="value" value="95"/></item>
 <item name="C4" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="190"/></item>
 <item name="C5" rev="38">
 <attrib name="value" value="232"/></item>
@@ -2025,11 +2428,25 @@
 <attrib name="value" value="75"/></item>
 <item name="CLK" rev="38">
 <attrib name="value" value="263"/></item>
+=======
+<attrib name="value" value="189"/></item>
+<item name="C5" rev="38">
+<attrib name="value" value="231"/></item>
+<item name="C6" rev="38">
+<attrib name="value" value="234"/></item>
+<item name="CE" rev="38">
+<attrib name="value" value="161"/></item>
+<item name="CIN" rev="38">
+<attrib name="value" value="75"/></item>
+<item name="CLK" rev="38">
+<attrib name="value" value="264"/></item>
+>>>>>>> remotes/origin/master
 <item name="CMUX" rev="38">
 <attrib name="value" value="63"/></item>
 <item name="COUT" rev="38">
 <attrib name="value" value="75"/></item>
 <item name="CQ" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="200"/></item>
 <item name="CX" rev="38">
 <attrib name="value" value="219"/></item>
@@ -2055,6 +2472,33 @@
 <attrib name="value" value="47"/></item>
 <item name="SR" rev="38">
 <attrib name="value" value="234"/></item>
+=======
+<attrib name="value" value="202"/></item>
+<item name="CX" rev="38">
+<attrib name="value" value="220"/></item>
+<item name="D" rev="38">
+<attrib name="value" value="5"/></item>
+<item name="D1" rev="38">
+<attrib name="value" value="89"/></item>
+<item name="D2" rev="38">
+<attrib name="value" value="146"/></item>
+<item name="D3" rev="38">
+<attrib name="value" value="231"/></item>
+<item name="D4" rev="38">
+<attrib name="value" value="244"/></item>
+<item name="D5" rev="38">
+<attrib name="value" value="255"/></item>
+<item name="D6" rev="38">
+<attrib name="value" value="258"/></item>
+<item name="DMUX" rev="38">
+<attrib name="value" value="48"/></item>
+<item name="DQ" rev="38">
+<attrib name="value" value="106"/></item>
+<item name="DX" rev="38">
+<attrib name="value" value="54"/></item>
+<item name="SR" rev="38">
+<attrib name="value" value="233"/></item>
+>>>>>>> remotes/origin/master
 </group>
 <group name="PLL_ADV_PLL_ADV">
 <item name="CLKFBIN" rev="38">
@@ -2120,6 +2564,7 @@
 </group>
 <group name="SLICEM">
 <item name="A" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="41"/></item>
 <item name="A1" rev="38">
 <attrib name="value" value="45"/></item>
@@ -2171,11 +2616,65 @@
 <attrib name="value" value="34"/></item>
 <item name="C3" rev="38">
 <attrib name="value" value="34"/></item>
+=======
+<attrib name="value" value="42"/></item>
+<item name="A1" rev="38">
+<attrib name="value" value="46"/></item>
+<item name="A2" rev="38">
+<attrib name="value" value="46"/></item>
+<item name="A3" rev="38">
+<attrib name="value" value="46"/></item>
+<item name="A4" rev="38">
+<attrib name="value" value="46"/></item>
+<item name="A5" rev="38">
+<attrib name="value" value="46"/></item>
+<item name="A6" rev="38">
+<attrib name="value" value="47"/></item>
+<item name="AI" rev="38">
+<attrib name="value" value="45"/></item>
+<item name="AMUX" rev="38">
+<attrib name="value" value="28"/></item>
+<item name="AQ" rev="38">
+<attrib name="value" value="9"/></item>
+<item name="AX" rev="38">
+<attrib name="value" value="19"/></item>
+<item name="B" rev="38">
+<attrib name="value" value="31"/></item>
+<item name="B1" rev="38">
+<attrib name="value" value="32"/></item>
+<item name="B2" rev="38">
+<attrib name="value" value="32"/></item>
+<item name="B3" rev="38">
+<attrib name="value" value="34"/></item>
+<item name="B4" rev="38">
+<attrib name="value" value="34"/></item>
+<item name="B5" rev="38">
+<attrib name="value" value="35"/></item>
+<item name="B6" rev="38">
+<attrib name="value" value="34"/></item>
+<item name="BI" rev="38">
+<attrib name="value" value="30"/></item>
+<item name="BMUX" rev="38">
+<attrib name="value" value="31"/></item>
+<item name="BQ" rev="38">
+<attrib name="value" value="4"/></item>
+<item name="BX" rev="38">
+<attrib name="value" value="14"/></item>
+<item name="C" rev="38">
+<attrib name="value" value="32"/></item>
+<item name="C1" rev="38">
+<attrib name="value" value="32"/></item>
+<item name="C2" rev="38">
+<attrib name="value" value="33"/></item>
+<item name="C3" rev="38">
+<attrib name="value" value="33"/></item>
+>>>>>>> remotes/origin/master
 <item name="C4" rev="38">
 <attrib name="value" value="34"/></item>
 <item name="C5" rev="38">
 <attrib name="value" value="35"/></item>
 <item name="C6" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="34"/></item>
 <item name="CE" rev="38">
 <attrib name="value" value="47"/></item>
@@ -2191,11 +2690,29 @@
 <attrib name="value" value="1"/></item>
 <item name="CQ" rev="38">
 <attrib name="value" value="5"/></item>
+=======
+<attrib name="value" value="35"/></item>
+<item name="CE" rev="38">
+<attrib name="value" value="48"/></item>
+<item name="CI" rev="38">
+<attrib name="value" value="31"/></item>
+<item name="CIN" rev="38">
+<attrib name="value" value="1"/></item>
+<item name="CLK" rev="38">
+<attrib name="value" value="48"/></item>
+<item name="CMUX" rev="38">
+<attrib name="value" value="30"/></item>
+<item name="COUT" rev="38">
+<attrib name="value" value="1"/></item>
+<item name="CQ" rev="38">
+<attrib name="value" value="3"/></item>
+>>>>>>> remotes/origin/master
 <item name="CX" rev="38">
 <attrib name="value" value="15"/></item>
 <item name="D" rev="38">
 <attrib name="value" value="16"/></item>
 <item name="D1" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="31"/></item>
 <item name="D2" rev="38">
 <attrib name="value" value="32"/></item>
@@ -2203,6 +2720,15 @@
 <attrib name="value" value="33"/></item>
 <item name="D4" rev="38">
 <attrib name="value" value="33"/></item>
+=======
+<attrib name="value" value="32"/></item>
+<item name="D2" rev="38">
+<attrib name="value" value="33"/></item>
+<item name="D3" rev="38">
+<attrib name="value" value="34"/></item>
+<item name="D4" rev="38">
+<attrib name="value" value="34"/></item>
+>>>>>>> remotes/origin/master
 <item name="D5" rev="38">
 <attrib name="value" value="35"/></item>
 <item name="D6" rev="38">
@@ -2212,11 +2738,19 @@
 <item name="DMUX" rev="38">
 <attrib name="value" value="35"/></item>
 <item name="DQ" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="3"/></item>
 <item name="DX" rev="38">
 <attrib name="value" value="30"/></item>
 <item name="SR" rev="38">
 <attrib name="value" value="2"/></item>
+=======
+<attrib name="value" value="2"/></item>
+<item name="DX" rev="38">
+<attrib name="value" value="30"/></item>
+<item name="SR" rev="38">
+<attrib name="value" value="5"/></item>
+>>>>>>> remotes/origin/master
 </group>
 <group name="IOB_OUTBUF">
 <item name="IN" rev="38">
@@ -2226,6 +2760,7 @@
 </group>
 <group name="SLICEX">
 <item name="A" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="244"/></item>
 <item name="A1" rev="38">
 <attrib name="value" value="263"/></item>
@@ -2311,6 +2846,93 @@
 <attrib name="value" value="89"/></item>
 <item name="SR" rev="38">
 <attrib name="value" value="435"/></item>
+=======
+<attrib name="value" value="231"/></item>
+<item name="A1" rev="38">
+<attrib name="value" value="248"/></item>
+<item name="A2" rev="38">
+<attrib name="value" value="358"/></item>
+<item name="A3" rev="38">
+<attrib name="value" value="400"/></item>
+<item name="A4" rev="38">
+<attrib name="value" value="437"/></item>
+<item name="A5" rev="38">
+<attrib name="value" value="454"/></item>
+<item name="A6" rev="38">
+<attrib name="value" value="459"/></item>
+<item name="AMUX" rev="38">
+<attrib name="value" value="70"/></item>
+<item name="AQ" rev="38">
+<attrib name="value" value="458"/></item>
+<item name="AX" rev="38">
+<attrib name="value" value="195"/></item>
+<item name="B" rev="38">
+<attrib name="value" value="206"/></item>
+<item name="B1" rev="38">
+<attrib name="value" value="202"/></item>
+<item name="B2" rev="38">
+<attrib name="value" value="300"/></item>
+<item name="B3" rev="38">
+<attrib name="value" value="338"/></item>
+<item name="B4" rev="38">
+<attrib name="value" value="356"/></item>
+<item name="B5" rev="38">
+<attrib name="value" value="368"/></item>
+<item name="B6" rev="38">
+<attrib name="value" value="370"/></item>
+<item name="BMUX" rev="38">
+<attrib name="value" value="79"/></item>
+<item name="BQ" rev="38">
+<attrib name="value" value="317"/></item>
+<item name="BX" rev="38">
+<attrib name="value" value="105"/></item>
+<item name="C" rev="38">
+<attrib name="value" value="137"/></item>
+<item name="C1" rev="38">
+<attrib name="value" value="167"/></item>
+<item name="C2" rev="38">
+<attrib name="value" value="228"/></item>
+<item name="C3" rev="38">
+<attrib name="value" value="263"/></item>
+<item name="C4" rev="38">
+<attrib name="value" value="278"/></item>
+<item name="C5" rev="38">
+<attrib name="value" value="293"/></item>
+<item name="C6" rev="38">
+<attrib name="value" value="291"/></item>
+<item name="CE" rev="38">
+<attrib name="value" value="327"/></item>
+<item name="CLK" rev="38">
+<attrib name="value" value="575"/></item>
+<item name="CMUX" rev="38">
+<attrib name="value" value="57"/></item>
+<item name="CQ" rev="38">
+<attrib name="value" value="272"/></item>
+<item name="CX" rev="38">
+<attrib name="value" value="97"/></item>
+<item name="D" rev="38">
+<attrib name="value" value="148"/></item>
+<item name="D1" rev="38">
+<attrib name="value" value="160"/></item>
+<item name="D2" rev="38">
+<attrib name="value" value="227"/></item>
+<item name="D3" rev="38">
+<attrib name="value" value="260"/></item>
+<item name="D4" rev="38">
+<attrib name="value" value="270"/></item>
+<item name="D5" rev="38">
+<attrib name="value" value="281"/></item>
+<item name="D6" rev="38">
+<attrib name="value" value="278"/></item>
+<item name="DMUX" rev="38">
+<attrib name="value" value="56"/></item>
+<item name="DQ" rev="38">
+<attrib name="value" value="243"/></item>
+<item name="DX" rev="38">
+<attrib name="value" value="82"/></item>
+<item name="SR" rev="38">
+<attrib name="value" value="431"/></item>
+>>>>>>> remotes/origin/master
 </group>
 <group name="BSCAN">
 <item name="CAPTURE" rev="38">
@@ -2448,6 +3070,7 @@
 </group>
 <group name="RAMB16BWER">
 <item name="ADDRA0" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="32"/></item>
 <item name="ADDRA1" rev="38">
 <attrib name="value" value="32"/></item>
@@ -2683,6 +3306,247 @@
 <attrib name="value" value="32"/></item>
 <item name="WEB3" rev="38">
 <attrib name="value" value="32"/></item>
+=======
+<attrib name="value" value="16"/></item>
+<item name="ADDRA1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA10" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA11" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA12" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA13" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA2" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA3" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA4" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA5" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA6" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA7" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA8" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA9" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB10" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB11" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB12" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB13" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB2" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB3" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB4" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB5" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB6" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB7" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB8" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB9" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="CLKA" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="CLKB" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA10" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA11" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA12" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA13" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA14" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA15" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA16" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA17" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA18" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA19" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA2" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA20" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA21" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA22" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA23" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA24" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA25" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA26" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA27" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA28" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA29" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA3" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA30" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA31" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA4" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA5" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA6" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA7" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA8" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA9" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB10" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB11" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB12" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB13" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB14" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB15" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB16" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB17" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB18" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB19" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB2" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB20" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB21" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB22" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB23" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB24" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB25" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB26" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB27" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB28" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB29" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB3" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB30" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB31" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB4" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB5" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB6" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB7" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB8" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB9" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIPA0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIPA1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIPA2" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIPA3" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIPB0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIPB1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIPB2" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIPB3" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DOA0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DOA1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DOB0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DOB1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ENA" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ENB" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="REGCEA" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="REGCEB" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="RSTA" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="RSTB" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="WEA0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="WEA1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="WEA2" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="WEA3" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="WEB0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="WEB1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="WEB2" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="WEB3" rev="38">
+<attrib name="value" value="16"/></item>
+>>>>>>> remotes/origin/master
 </group>
 <group name="CARRY4">
 <item name="CIN" rev="38">
@@ -2742,6 +3606,7 @@
 <item name="A1" rev="38">
 <attrib name="value" value="202"/></item>
 <item name="A2" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="261"/></item>
 <item name="A3" rev="38">
 <attrib name="value" value="213"/></item>
@@ -3005,6 +3870,275 @@
 <attrib name="value" value="32"/></item>
 <item name="WEB3" rev="38">
 <attrib name="value" value="32"/></item>
+=======
+<attrib name="value" value="262"/></item>
+<item name="A3" rev="38">
+<attrib name="value" value="212"/></item>
+<item name="A4" rev="38">
+<attrib name="value" value="175"/></item>
+<item name="A5" rev="38">
+<attrib name="value" value="230"/></item>
+<item name="O5" rev="38">
+<attrib name="value" value="538"/></item>
+</group>
+<group name="LUT6">
+<item name="A1" rev="38">
+<attrib name="value" value="942"/></item>
+<item name="A2" rev="38">
+<attrib name="value" value="1450"/></item>
+<item name="A3" rev="38">
+<attrib name="value" value="1837"/></item>
+<item name="A4" rev="38">
+<attrib name="value" value="2143"/></item>
+<item name="A5" rev="38">
+<attrib name="value" value="2240"/></item>
+<item name="A6" rev="38">
+<attrib name="value" value="2290"/></item>
+<item name="O6" rev="38">
+<attrib name="value" value="2343"/></item>
+</group>
+<group name="RAMB16BWER_RAMB16BWER">
+<item name="ADDRA0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA10" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA11" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA12" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA13" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA2" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA3" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA4" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA5" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA6" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA7" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA8" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRA9" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB10" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB11" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB12" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB13" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB2" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB3" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB4" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB5" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB6" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB7" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB8" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ADDRB9" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="CLKA" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="CLKB" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA10" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA11" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA12" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA13" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA14" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA15" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA16" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA17" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA18" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA19" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA2" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA20" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA21" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA22" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA23" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA24" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA25" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA26" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA27" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA28" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA29" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA3" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA30" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA31" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA4" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA5" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA6" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA7" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA8" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIA9" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB10" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB11" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB12" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB13" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB14" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB15" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB16" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB17" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB18" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB19" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB2" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB20" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB21" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB22" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB23" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB24" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB25" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB26" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB27" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB28" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB29" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB3" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB30" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB31" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB4" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB5" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB6" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB7" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB8" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIB9" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIPA0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIPA1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIPA2" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIPA3" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIPB0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIPB1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIPB2" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DIPB3" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DOA0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DOA1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DOB0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="DOB1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ENA" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="ENB" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="REGCEA" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="REGCEB" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="RSTA" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="RSTB" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="WEA0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="WEA1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="WEA2" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="WEA3" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="WEB0" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="WEB1" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="WEB2" rev="38">
+<attrib name="value" value="16"/></item>
+<item name="WEB3" rev="38">
+<attrib name="value" value="16"/></item>
+>>>>>>> remotes/origin/master
 </group>
 <group name="SELMUX2_1">
 <item name="0" rev="38">
@@ -3050,6 +4184,7 @@
 </group>
 <group name="FF_SR">
 <item name="CE" rev="38">
+<<<<<<< HEAD
 <attrib name="value" value="85"/></item>
 <item name="CK" rev="38">
 <attrib name="value" value="122"/></item>
@@ -3059,6 +4194,17 @@
 <attrib name="value" value="122"/></item>
 <item name="SR" rev="38">
 <attrib name="value" value="94"/></item>
+=======
+<attrib name="value" value="92"/></item>
+<item name="CK" rev="38">
+<attrib name="value" value="131"/></item>
+<item name="D" rev="38">
+<attrib name="value" value="131"/></item>
+<item name="Q" rev="38">
+<attrib name="value" value="131"/></item>
+<item name="SR" rev="38">
+<attrib name="value" value="86"/></item>
+>>>>>>> remotes/origin/master
 </group>
 <group name="BUFG">
 <item name="I0" rev="38">

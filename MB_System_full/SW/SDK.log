@@ -222,6 +222,7 @@ MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its 
 10:58:26.413 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
 11:00:29.307 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
 11:22:18.198 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+<<<<<<< HEAD
 14:37:34.879 INFO  - Processing command line option -hwspec D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.xml. 
 14:38:02.727 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
 MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
@@ -331,10 +332,29 @@ MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its 
 
 MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
     
+=======
+10:43:08.653 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:55:23.816 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:55:54.860 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:57:04.897 WARN  - Terminating existing sessions on processor microblaze_0 
+10:57:10.230 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+12:55:17.148 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:56:30.502 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:57:20.865 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:57:44.643 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:58:14.418 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+13:57:52.828 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+14:10:13.928 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:37:12.959 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Debug Operation Not Supported on the Target
+MicroBlaze Pipeline Stalled on a Blocking Instruction or Invalid Bus Access
+    Stalled PC: 0xffffa045
+    Try Resetting the Processor to Continue..
+>>>>>>> remotes/origin/master
 
 	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
 	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
 
+<<<<<<< HEAD
 00:30:10.557 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
 09:18:49.574 INFO  - Processing command line option -hwspec D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.xml. 
 09:20:53.802 INFO  - FPGA configured successfully with bitstream "D:/git/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
@@ -461,7 +481,23 @@ MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its 
 
 MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
     
+=======
+09:37:26.512 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Debug Operation Not Supported on the Target
+MicroBlaze Pipeline Stalled on a Blocking Instruction or Invalid Bus Access
+    Stalled PC: 0xffffa045
+    Try Resetting the Processor to Continue..
+>>>>>>> remotes/origin/master
 
 	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
 	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
 
+<<<<<<< HEAD
+=======
+09:37:41.894 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+09:41:49.451 WARN  - Terminating existing sessions on processor microblaze_0 
+09:41:54.816 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+09:51:36.076 WARN  - Terminating existing sessions on processor microblaze_0 
+09:52:00.540 WARN  - Terminating existing sessions on processor microblaze_0 
+09:52:34.496 WARN  - Terminating existing sessions on processor microblaze_0 
+09:53:33.427 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+>>>>>>> remotes/origin/master

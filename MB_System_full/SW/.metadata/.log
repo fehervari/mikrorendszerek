@@ -2533,11 +2533,16 @@ java.lang.RuntimeException: No Target with ID 0 in the System
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+<<<<<<< HEAD
 !SESSION 2017-11-04 14:37:29.607 -----------------------------------------------
+=======
+!SESSION 2017-11-04 10:42:35.667 -----------------------------------------------
+>>>>>>> remotes/origin/master
 eclipse.buildId=Release 14.7 Build SDK_P.20131013
 java.version=1.6.0_21
 java.vendor=Sun Microsystems Inc.
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=hu_HU
+<<<<<<< HEAD
 Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.core.jobs 4 2 2017-11-04 14:38:31.214
@@ -2575,6 +2580,11 @@ java.lang.RuntimeException: No Target with ID 0 in the System
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
 !ENTRY org.eclipse.cdt.core 4 0 2017-11-04 14:39:05.211
+=======
+Command-line arguments:  -data F:\git\mikrorendszerek\MB_System_full\SW -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-11-04 10:55:11.838
+>>>>>>> remotes/origin/master
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2601,7 +2611,11 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.cdt.core 4 0 2017-11-04 14:39:05.242
+=======
+!ENTRY org.eclipse.cdt.core 4 0 2017-11-04 10:55:11.976
+>>>>>>> remotes/origin/master
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2612,7 +2626,11 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(Unknown Source)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.cdt.core 4 0 2017-11-04 14:39:05.274
+=======
+!ENTRY org.eclipse.cdt.core 4 0 2017-11-04 10:55:12.014
+>>>>>>> remotes/origin/master
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2637,6 +2655,7 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.core.jobs 4 2 2017-11-04 14:39:35.157
 !MESSAGE An internal error occurred during: "Launching LCD.elf".
 !STACK 0
@@ -2839,6 +2858,9 @@ java.lang.RuntimeException: No Active System
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
 !ENTRY org.eclipse.cdt.core 4 0 2017-11-04 14:53:08.402
+=======
+!ENTRY org.eclipse.cdt.core 4 0 2017-11-04 10:57:11.301
+>>>>>>> remotes/origin/master
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2865,7 +2887,11 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.cdt.core 4 0 2017-11-04 14:53:08.448
+=======
+!ENTRY org.eclipse.cdt.core 4 0 2017-11-04 10:57:11.433
+>>>>>>> remotes/origin/master
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2876,7 +2902,11 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(Unknown Source)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.cdt.core 4 0 2017-11-04 14:53:08.464
+=======
+!ENTRY org.eclipse.cdt.core 4 0 2017-11-04 10:57:11.453
+>>>>>>> remotes/origin/master
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2901,6 +2931,7 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.cdt.core 4 0 2017-11-04 14:53:19.435
 !MESSAGE Error
 !STACK 0
@@ -2912,6 +2943,30 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(Unknown Source)
 	at org.eclipse.cdt.core.CommandLauncher.printCommandLine(CommandLauncher.java:280)
 	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:243)
+=======
+!ENTRY org.eclipse.cdt.core 1 0 2017-11-04 10:59:24.205
+!MESSAGE Indexed 'cpld' (2 sources, 26 headers) in 1,37 sec: 1 028 declarations; 1 284 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-11-04 12:58:15.497
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-11-04 12:58:15.656
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-11-04 12:58:15.699
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:160)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:68)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:97)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:192)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:252)
+>>>>>>> remotes/origin/master
 	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:248)
 	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
 	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
@@ -2928,6 +2983,7 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.cdt.core 4 0 2017-11-04 14:53:19.498
 !MESSAGE Error
 !STACK 0
@@ -2940,6 +2996,19 @@ java.lang.NullPointerException
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
 
 !ENTRY org.eclipse.cdt.core 4 0 2017-11-04 14:53:19.560
+=======
+!ENTRY org.eclipse.cdt.core 4 0 2017-11-04 13:57:53.912
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-11-04 13:57:54.059
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-11-04 13:57:54.114
+>>>>>>> remotes/origin/master
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2963,6 +3032,7 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+<<<<<<< HEAD
 
 !ENTRY org.eclipse.cdt.debug.core 4 1000 2017-11-04 14:54:00.551
 !MESSAGE Internal error logged from CDI Debug: 
@@ -2979,12 +3049,31 @@ org.eclipse.debug.core.DebugException: Target request failed: Target is not resp
 	at org.eclipse.cdt.debug.core.CDIDebugModel.newDebugTarget(CDIDebugModel.java:132)
 	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
 	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+=======
+!SESSION 2017-11-05 09:36:48.910 -----------------------------------------------
+eclipse.buildId=Release 14.7 Build SDK_P.20131013
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=hu_HU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-11-05 09:37:13.401
+!MESSAGE An internal error occurred during: "Launching cpld.elf".
+!STACK 0
+java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.stopRun(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.RemoteProcess.terminate(Unknown Source)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:252)
+>>>>>>> remotes/origin/master
 	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(Unknown Source)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.cdt.debug.core 4 5010 2017-11-04 14:54:00.551
 !MESSAGE Target request failed: Target is not responding (timed out).
 
@@ -2993,6 +3082,13 @@ org.eclipse.debug.core.DebugException: Target request failed: Target is not resp
 !STACK 0
 java.lang.RuntimeException: No Target with ID 0 in the System
 
+=======
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-11-05 09:37:26.940
+!MESSAGE An internal error occurred during: "Launching LCD.elf".
+!STACK 0
+java.lang.RuntimeException: No Active System
+>>>>>>> remotes/origin/master
 
 	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
 	at com.xilinx.sdk.debug.core.internal.AppRunner.stopRun(Unknown Source)
@@ -3005,7 +3101,11 @@ java.lang.RuntimeException: No Target with ID 0 in the System
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.cdt.core 4 0 2017-11-04 15:09:34.780
+=======
+!ENTRY org.eclipse.cdt.core 4 0 2017-11-05 09:37:43.016
+>>>>>>> remotes/origin/master
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3032,7 +3132,11 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.cdt.core 4 0 2017-11-04 15:09:34.823
+=======
+!ENTRY org.eclipse.cdt.core 4 0 2017-11-05 09:37:43.185
+>>>>>>> remotes/origin/master
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3043,7 +3147,11 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(Unknown Source)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.cdt.core 4 0 2017-11-04 15:09:34.830
+=======
+!ENTRY org.eclipse.cdt.core 4 0 2017-11-05 09:37:43.226
+>>>>>>> remotes/origin/master
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3068,16 +3176,24 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.core.jobs 4 2 2017-11-04 15:09:39.413
 !MESSAGE An internal error occurred during: "Launching LCD.elf".
 !STACK 0
 java.lang.RuntimeException: No Target with ID 0 in the System
 
+=======
+!ENTRY org.eclipse.core.resources 4 2 2017-11-05 09:38:11.979
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.RuntimeException: No Active System
+>>>>>>> remotes/origin/master
 
 	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
 	at com.xilinx.sdk.debug.core.internal.AppRunner.stopRun(Unknown Source)
 	at com.xilinx.sdk.debug.core.internal.RemoteProcess.terminate(Unknown Source)
 	at org.eclipse.debug.core.Launch.terminate(Launch.java:252)
+<<<<<<< HEAD
 	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(Unknown Source)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
 	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
@@ -3086,6 +3202,25 @@ java.lang.RuntimeException: No Target with ID 0 in the System
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
 !ENTRY org.eclipse.cdt.core 4 0 2017-11-04 15:17:39.815
+=======
+	at org.eclipse.debug.internal.core.LaunchManager.terminateMappedConfigurations(LaunchManager.java:2433)
+	at org.eclipse.debug.internal.core.LaunchManager.projectClosed(LaunchManager.java:2200)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:370)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2283)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-11-05 09:41:55.818
+>>>>>>> remotes/origin/master
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3112,7 +3247,11 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.cdt.core 4 0 2017-11-04 15:17:39.862
+=======
+!ENTRY org.eclipse.cdt.core 4 0 2017-11-05 09:41:55.938
+>>>>>>> remotes/origin/master
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3123,7 +3262,11 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(Unknown Source)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.cdt.core 4 0 2017-11-04 15:17:39.865
+=======
+!ENTRY org.eclipse.cdt.core 4 0 2017-11-05 09:41:55.978
+>>>>>>> remotes/origin/master
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3148,6 +3291,7 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.core.jobs 4 2 2017-11-04 15:19:08.796
 !MESSAGE An internal error occurred during: "Launching LCD.elf".
 !STACK 0
@@ -3165,6 +3309,9 @@ java.lang.RuntimeException: No Active System
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
 !ENTRY org.eclipse.debug.core 4 0 2017-11-05 00:30:10.619
+=======
+!ENTRY org.eclipse.debug.core 4 0 2017-11-05 09:53:33.667
+>>>>>>> remotes/origin/master
 !MESSAGE FrameworkEvent ERROR
 !STACK 0
 org.osgi.framework.BundleException: Exception in org.eclipse.debug.core.DebugPlugin.stop() of bundle org.eclipse.debug.core.
@@ -3231,6 +3378,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+<<<<<<< HEAD
 !SESSION 2017-11-05 09:18:44.493 -----------------------------------------------
 eclipse.buildId=Release 14.7 Build SDK_P.20131013
 java.version=1.6.0_21
@@ -3677,3 +3825,5 @@ java.lang.RuntimeException: No Target with ID 0 in the System
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+=======
+>>>>>>> remotes/origin/master

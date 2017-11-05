@@ -1,0 +1,9 @@
+#include "cpld.h"
+
+Xuint8 read_CPLD_switch(){
+
+
+}
+Xuint8 read_CPLD_dip();
+Xuint8 write_CPLD_seg(Xuint8 data);
+Xuint8 write_CPLD_led(Xuint8 data);

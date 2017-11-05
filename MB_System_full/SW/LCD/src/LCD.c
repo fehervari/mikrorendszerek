@@ -108,7 +108,7 @@ void lcd_IT_handler(void *instancePtr){
 			itit_LCD(0);
 		}
 	}
-	else if(ifr & LCD_SCREEN_FULL_FIFO_EVENT)
+	else if(ifr & LCD_SCREEN_EMPTY_FIFO_EVENT)
 		if(LCD.SPEED < 3)
 			LCD.SPEED += 1;
 }

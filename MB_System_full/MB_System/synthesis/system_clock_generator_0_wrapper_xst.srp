@@ -1,6 +1,10 @@
 Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+<<<<<<< HEAD
 --> Parameter TMPDIR set to D:\git\mikrorendszerek\MB_System_full\MB_System\synthesis\xst_temp_dir\
+=======
+--> Parameter TMPDIR set to F:\git\mikrorendszerek\MB_System_full\MB_System\synthesis\xst_temp_dir\
+>>>>>>> remotes/origin/master
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -35,7 +39,11 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_clock_generator_0_wrapper_xst.prj"
+<<<<<<< HEAD
 Verilog Include Directory          : {"D:\git\mikrorendszerek\MB_System_full\MB_System\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+=======
+Verilog Include Directory          : {"F:\git\mikrorendszerek\MB_System_full\MB_System\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+>>>>>>> remotes/origin/master
 
 ---- Target Parameters
 Target Device                      : xc6slx9tqg144-2
@@ -74,10 +82,17 @@ Parsing architecture <STRUCT> of entity <mmcm_module>.
 Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/plle2_module.vhd" into library clock_generator_v4_03_a
 Parsing entity <plle2_module>.
 Parsing architecture <STRUCT> of entity <plle2_module>.
+<<<<<<< HEAD
 Parsing VHDL file "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" into library clock_generator_0_v4_03_a
 Parsing entity <clock_generator>.
 Parsing architecture <STRUCTURE> of entity <clock_generator>.
 Parsing VHDL file "D:\git\mikrorendszerek\MB_System_full\MB_System\hdl\system_clock_generator_0_wrapper.vhd" into library work
+=======
+Parsing VHDL file "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" into library clock_generator_0_v4_03_a
+Parsing entity <clock_generator>.
+Parsing architecture <STRUCTURE> of entity <clock_generator>.
+Parsing VHDL file "F:\git\mikrorendszerek\MB_System_full\MB_System\hdl\system_clock_generator_0_wrapper.vhd" into library work
+>>>>>>> remotes/origin/master
 Parsing entity <system_clock_generator_0_wrapper>.
 Parsing architecture <STRUCTURE> of entity <system_clock_generator_0_wrapper>.
 
@@ -88,6 +103,7 @@ Parsing architecture <STRUCTURE> of entity <system_clock_generator_0_wrapper>.
 Elaborating entity <system_clock_generator_0_wrapper> (architecture <STRUCTURE>) from library <work>.
 
 Elaborating entity <clock_generator> (architecture <STRUCTURE>) with generics from library <clock_generator_0_v4_03_a>.
+<<<<<<< HEAD
 WARNING:HDLCompiler:1127 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 260: Assignment to net_gnd0 ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 264: Assignment to net_vdd0 ignored, since the identifier is never used
 
@@ -97,19 +113,38 @@ WARNING:HDLCompiler:1127 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/
 WARNING:HDLCompiler:1127 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 383: Assignment to sig_pll0_clkout3_buf ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 389: Assignment to sig_pll0_clkout4_buf ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 395: Assignment to sig_pll0_clkout5_buf ignored, since the identifier is never used
+=======
+WARNING:HDLCompiler:1127 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 260: Assignment to net_gnd0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 264: Assignment to net_vdd0 ignored, since the identifier is never used
+
+Elaborating entity <pll_module> (architecture <STRUCT>) with generics from library <clock_generator_v4_03_a>.
+WARNING:HDLCompiler:1127 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 371: Assignment to sig_pll0_clkout1_buf ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 377: Assignment to sig_pll0_clkout2_buf ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 383: Assignment to sig_pll0_clkout3_buf ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 389: Assignment to sig_pll0_clkout4_buf ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 395: Assignment to sig_pll0_clkout5_buf ignored, since the identifier is never used
+>>>>>>> remotes/origin/master
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <system_clock_generator_0_wrapper>.
+<<<<<<< HEAD
     Related source file is "D:\git\mikrorendszerek\MB_System_full\MB_System\hdl\system_clock_generator_0_wrapper.vhd".
+=======
+    Related source file is "F:\git\mikrorendszerek\MB_System_full\MB_System\hdl\system_clock_generator_0_wrapper.vhd".
+>>>>>>> remotes/origin/master
     Summary:
 	no macro.
 Unit <system_clock_generator_0_wrapper> synthesized.
 
 Synthesizing Unit <clock_generator>.
+<<<<<<< HEAD
     Related source file is "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd".
+=======
+    Related source file is "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd".
+>>>>>>> remotes/origin/master
         C_FAMILY = "spartan6"
         C_DEVICE = "6slx9"
         C_PACKAGE = "tqg144"
@@ -119,6 +154,7 @@ WARNING:Xst:647 - Input <CLKFBIN> is never used. This port will be preserved and
 WARNING:Xst:647 - Input <PSCLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <PSEN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <PSINCDEC> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<<<<<<< HEAD
 INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKFBDCM> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUT1> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUT2> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
@@ -131,6 +167,20 @@ INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/c
 INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM3> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM4> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM5> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+=======
+INFO:Xst:3210 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKFBDCM> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUT1> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUT2> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUT3> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUT4> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUT5> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM0> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM1> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM2> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM3> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM4> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM5> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+>>>>>>> remotes/origin/master
     Summary:
 	no macro.
 Unit <clock_generator> synthesized.
@@ -318,8 +368,13 @@ Cross Clock Domains Report:
 =========================================================================
 
 
+<<<<<<< HEAD
 Total REAL time to Xst completion: 4.00 secs
 Total CPU time to Xst completion: 4.17 secs
+=======
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 14.46 secs
+>>>>>>> remotes/origin/master
  
 --> 
 

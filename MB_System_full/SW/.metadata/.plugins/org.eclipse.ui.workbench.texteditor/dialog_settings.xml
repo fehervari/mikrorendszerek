@@ -3,26 +3,42 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="305" key="DIALOG_WIDTH"/>
 		<item value="185" key="DIALOG_Y_ORIGIN"/>
+<<<<<<< HEAD
 		<item value="1107" key="DIALOG_X_ORIGIN"/>
 		<item value="444" key="DIALOG_HEIGHT"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+=======
+		<item value="381" key="DIALOG_HEIGHT"/>
+		<item value="1107" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+>>>>>>> remotes/origin/master
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
+<<<<<<< HEAD
 		<item value="xil_printf" key="selection"/>
 		<list key="findhistory">
 			<item value="printf"/>
 			<item value="pagepixel"/>
+=======
+		<item value="" key="selection"/>
+		<list key="findhistory">
+			<item value="cpld"/>
+>>>>>>> remotes/origin/master
 			<item value="LCD"/>
 			<item value="intc"/>
 			<item value="bool"/>
 			<item value="but"/>
 			<item value="butt"/>
 			<item value="offs"/>
+<<<<<<< HEAD
+=======
+			<item value="off"/>
+>>>>>>> remotes/origin/master
 		</list>
 		<list key="replacehistory">
 			<item value="xil_printf"/>

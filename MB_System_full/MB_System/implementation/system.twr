@@ -91,9 +91,15 @@ PERIOD TIMEGRP         "clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0"
 TS_clk50M HIGH         50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
+<<<<<<< HEAD
  390501 paths analyzed, 13505 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
  Minimum period is  13.508ns.
+=======
+ 306110 paths analyzed, 12889 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  11.309ns.
+>>>>>>> remotes/origin/master
 --------------------------------------------------------------------------------
 
 
@@ -104,8 +110,13 @@ Derived Constraints for TS_clk50M
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+<<<<<<< HEAD
 |TS_clk50M                      |     20.000ns|      5.000ns|     13.508ns|            0|            0|            0|       390501|
 | TS_clock_generator_0_clock_gen|     20.000ns|     13.508ns|          N/A|            0|            0|       390501|            0|
+=======
+|TS_clk50M                      |     20.000ns|      5.000ns|     11.309ns|            0|            0|            0|       306110|
+| TS_clock_generator_0_clock_gen|     20.000ns|     11.309ns|          N/A|            0|            0|       306110|            0|
+>>>>>>> remotes/origin/master
 | erator_0_SIG_PLL0_CLKOUT0     |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -121,7 +132,11 @@ Clock to Setup on destination clock clk50M
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
+<<<<<<< HEAD
 clk50M         |   13.508|         |         |         |
+=======
+clk50M         |   11.309|         |         |         |
+>>>>>>> remotes/origin/master
 ---------------+---------+---------+---------+---------+
 
 
@@ -130,6 +145,7 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
+<<<<<<< HEAD
 Constraints cover 390519 paths, 0 nets, and 15249 connections
 
 Design statistics:
@@ -137,6 +153,15 @@ Design statistics:
 
 
 Analysis completed Sun Nov 05 10:28:18 2017 
+=======
+Constraints cover 306128 paths, 0 nets, and 14581 connections
+
+Design statistics:
+   Minimum period:  11.309ns   (Maximum frequency:  88.425MHz)
+
+
+Analysis completed Sun Nov 05 09:49:34 2017 
+>>>>>>> remotes/origin/master
 --------------------------------------------------------------------------------
 
 Trace Settings:

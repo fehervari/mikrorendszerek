@@ -5,7 +5,11 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Command Line: platgen -p xc6slx9tqg144-2 -lang vhdl -intstyle default -msg
 __xps/ise/xmsgprops.lst system.mhs 
 
+<<<<<<< HEAD
 Parse D:/git/mikrorendszerek/MB_System_full/MB_System/system.mhs ...
+=======
+Parse F:/git/mikrorendszerek/MB_System_full/MB_System/system.mhs ...
+>>>>>>> remotes/origin/master
 
 Read MPD definitions ...
 
@@ -179,6 +183,7 @@ Managing hardware (BBD-specified) netlist files ...
 
 Managing cache ...
 IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
+<<<<<<< HEAD
 D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 34 - Copying
 cache implementation netlist
 IPNAME:axi_intc INSTANCE:microblaze_0_intc -
@@ -210,14 +215,63 @@ D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 188 - Copying
 cache implementation netlist
 IPNAME:axi_uartlite INSTANCE:rs232 -
 D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 196 - Copying
+=======
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 34 - Copying
+cache implementation netlist
+IPNAME:axi_intc INSTANCE:microblaze_0_intc -
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 47 - Copying
+cache implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_ilmb -
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 58 - Copying
+cache implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl -
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 65 - Copying
+cache implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_dlmb -
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 74 - Copying
+cache implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl -
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 81 - Copying
+cache implementation netlist
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 90 - Copying
+cache implementation netlist
+IPNAME:microblaze INSTANCE:microblaze_0 -
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 97 - Copying
+cache implementation netlist
+IPNAME:lcd_screen INSTANCE:lcd_screen_0 -
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 122 - Copying
+cache implementation netlist
+IPNAME:mdm INSTANCE:debug_module -
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 136 - Copying
+cache implementation netlist
+IPNAME:cpld_if INSTANCE:cpld_if_0 -
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 148 - Copying
+cache implementation netlist
+IPNAME:axi_timer INSTANCE:axi_timer_0 -
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 176 - Copying
+cache implementation netlist
+IPNAME:axi_interconnect INSTANCE:axi4lite_0 -
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 188 - Copying
+cache implementation netlist
+IPNAME:axi_uartlite INSTANCE:rs232 -
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 196 - Copying
+>>>>>>> remotes/origin/master
 cache implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+<<<<<<< HEAD
 D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 90 - elaborating
 IP
 IPNAME:clock_generator INSTANCE:clock_generator_0 -
 D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 163 -
+=======
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 90 - elaborating
+IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 163 -
+>>>>>>> remotes/origin/master
 elaborating IP
 ClkGen elaborate status: PASSED
 ----------------------------------------
@@ -242,6 +296,7 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+<<<<<<< HEAD
 INSTANCE:microblaze_0_i_bram_ctrl -
 D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 65 - Running XST
 synthesis
@@ -258,11 +313,24 @@ INSTANCE:cpld_if_0 - D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs
 line 148 - Running XST synthesis
 INSTANCE:clock_generator_0 -
 D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 163 - Running
+=======
+INSTANCE:lcd_screen_0 -
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 122 - Running
+XST synthesis
+INSTANCE:cpld_if_0 - F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs
+line 148 - Running XST synthesis
+INSTANCE:clock_generator_0 -
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 163 - Running
+>>>>>>> remotes/origin/master
 XST synthesis
 
 Running NGCBUILD ...
 IPNAME:system_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
+<<<<<<< HEAD
 D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 163 - Running
+=======
+F:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 163 - Running
+>>>>>>> remotes/origin/master
 NGCBUILD
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
    If any constraint needs to be overridden, this should be done by modifying
@@ -270,4 +338,8 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
+<<<<<<< HEAD
 Total run time: 45.00 seconds
+=======
+Total run time: 81.00 seconds
+>>>>>>> remotes/origin/master

@@ -2,5 +2,9 @@ vhdl clock_generator_v4_03_a D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\p
 vhdl clock_generator_v4_03_a D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\clock_generator_v4_03_a/hdl/vhdl/pll_module.vhd
 vhdl clock_generator_v4_03_a D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\clock_generator_v4_03_a/hdl/vhdl/mmcm_module.vhd
 vhdl clock_generator_v4_03_a D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\clock_generator_v4_03_a/hdl/vhdl/plle2_module.vhd
+<<<<<<< HEAD
 VHDL clock_generator_0_v4_03_a D:\git\mikrorendszerek\MB_System_full\MB_System\hdl\elaborate\clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd
+=======
+VHDL clock_generator_0_v4_03_a F:\git\mikrorendszerek\MB_System_full\MB_System\hdl\elaborate\clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd
+>>>>>>> remotes/origin/master
 vhdl work ../hdl/system_clock_generator_0_wrapper.vhd

@@ -1,0 +1,6 @@
+12:12:32 **** Auto Build of project CPLD_bsp ****
+make -k all 
+'Finished building libraries'
+
+12:12:33 Build Finished (took 260ms)
+

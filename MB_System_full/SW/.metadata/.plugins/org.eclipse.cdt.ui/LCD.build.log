@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 12:26:59 **** Incremental Build of configuration Debug for project LCD ****
 make all 
 make: Nothing to be done for `all'.
 
 12:26:59 Build Finished (took 153ms)
+=======
+09:41:29 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+
+09:41:29 Build Finished (took 310ms)
+>>>>>>> remotes/origin/master
 

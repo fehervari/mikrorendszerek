@@ -1,0 +1,20 @@
+#include "cpld.h"
+# define CPLD_STATUS_REG_OFFSET 0x0
+# define CPLD_IN_OFFSET   0x4
+# define CPLD_OUT_OFFSET  0x8
+Xuint8 read_CPLD_switch(){
+	Xuint8 data;
+	data = MEM8(CPLD_BASE_ADDR + CPLD_IN_SW_OFFSET);
+	return data;
+}
+Xuint8 read_CPLD_dip(){
+	Xuint8 data;
+	data = MEM8(CPLD_BASE_ADDR + CPLD_IN_DP_OFFSET);
+	return data;
+}
+void write_CPLD_seg(Xuint8 data){
+
+}
+void write_CPLD_led(Xuint8 data){
+
+}

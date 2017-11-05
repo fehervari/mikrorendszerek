@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\git\mikrorendszerek\MB_System_full\MB_System\implementation\system.ngc 1509873974
 D:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_rs232_wrapper.ngc 1509873917
 D:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_proc_sys_reset_0_wrapper.ngc 1509873917
@@ -14,4 +15,22 @@ D:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_debug_modu
 D:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_lcd_screen_0_wrapper.ngc 1509873942
 D:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_axi_timer_0_wrapper.ngc 1509873917
 D:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_microblaze_0_bram_block_wrapper.ngc 1509873936
+=======
+F:\git\mikrorendszerek\MB_System_full\MB_System\implementation\system.ngc 1509871520
+F:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_rs232_wrapper.ngc 1509871418
+F:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_proc_sys_reset_0_wrapper.ngc 1509871418
+F:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_clock_generator_0_wrapper.ngc 1509871490
+F:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_cpld_if_0_wrapper.ngc 1509871460
+F:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_microblaze_0_ilmb_wrapper.ngc 1509871418
+F:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_microblaze_0_dlmb_wrapper.ngc 1509871418
+F:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_axi4lite_0_wrapper.ngc 1509871418
+F:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_microblaze_0_wrapper.ngc 1509871418
+F:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_microblaze_0_intc_wrapper.ngc 1509871418
+F:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_microblaze_0_i_bram_ctrl_wrapper.ngc 1509871418
+F:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_microblaze_0_d_bram_ctrl_wrapper.ngc 1509871418
+F:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_debug_module_wrapper.ngc 1509871418
+F:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_lcd_screen_0_wrapper.ngc 1509871442
+F:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_axi_timer_0_wrapper.ngc 1509871418
+F:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system_microblaze_0_bram_block_wrapper.ngc 1509871418
+>>>>>>> remotes/origin/master
 OK
