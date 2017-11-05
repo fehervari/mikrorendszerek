@@ -5331,3 +5331,14 @@ Done writing filter settings to:
 Done writing Tab View settings to:
 	F:\git\mikrorendszerek\MB_System_full\MB_System\etc\system.gui
 >>>>>>> remotes/origin/master
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+ERROR:EDK - Expected an element name
+ERROR:EDK:1397 - Fatal Error parsing XML file D:\git\mikrorendszerek\MB_System_full\MB_System\etc\system.gui
+Writing filter settings....
+Done writing filter settings to:
+	D:\git\mikrorendszerek\MB_System_full\MB_System\etc\system.filters
+Done writing Tab View settings to:
+	D:\git\mikrorendszerek\MB_System_full\MB_System\etc\system.gui

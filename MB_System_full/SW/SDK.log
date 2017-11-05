@@ -501,3 +501,14 @@ MicroBlaze Pipeline Stalled on a Blocking Instruction or Invalid Bus Access
 09:52:34.496 WARN  - Terminating existing sessions on processor microblaze_0 
 09:53:33.427 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
 >>>>>>> remotes/origin/master
+13:39:25.663 INFO  - Processing command line option -hwspec D:\git\mikrorendszerek\MB_System_full\MB_System\MB_System\SDK\SDK_Export\hw\system.xml. 
+13:40:45.312 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+13:48:36.287 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+13:49:24.137 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 

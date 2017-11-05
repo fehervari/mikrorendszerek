@@ -1,14 +1,6 @@
-<<<<<<< HEAD
-10:29:19 **** Auto Build of project LCD_bsp ****
+13:39:53 **** Build of project LCD_bsp ****
 make -k all 
 'Finished building libraries'
 
-10:29:19 Build Finished (took 172ms)
-=======
-09:41:55 **** Auto Build of project LCD_bsp ****
-make -k all 
-'Finished building libraries'
-
-09:41:55 Build Finished (took 244ms)
->>>>>>> remotes/origin/master
+13:39:53 Build Finished (took 93ms)
 

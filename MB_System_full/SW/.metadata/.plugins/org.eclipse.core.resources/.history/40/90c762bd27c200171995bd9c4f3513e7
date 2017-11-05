@@ -130,16 +130,6 @@ int main()
 		printsnake();
 		printsnake();
 		printsnake();
-		printsnake();
-		printsnake();
-		printsnake();
-		printsnake();
-		printsnake();
-		printsnake();
-		printsnake();
-		printsnake();
-		printsnake();
-		printsnake();
     		makesnakemap();
     		write_Area(1 ,8, X/8, Y, snakemap);
 

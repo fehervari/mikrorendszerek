@@ -11644,3 +11644,312 @@ Creating bit map...
 Saving bit stream in "system.bit".
 Bitstream generation is complete.
 Done!
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+********************************************************************************
+At Local date and time: Sun Nov 05 13:38:37 2017
+ make -f system.make bits started...
+make: Nothing to be done for `bits'.
+Done!
+
+********************************************************************************
+At Local date and time: Sun Nov 05 13:39:03 2017
+ make -f system.make download started...
+"*********************************************"
+"Initializing BRAM contents of the bitstream"
+"*********************************************"
+bitinit -p xc6slx9tqg144-2 system.mhs   -pe microblaze_0 bootloops/microblaze_0.elf \
+	-bt implementation/system.bit -o implementation/download.bit
+
+bitinit version Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) Xilinx Inc. 2002.
+
+Parsing MHS File system.mhs...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: axi_intc, INSTANCE:microblaze_0_intc - tcl is overriding
+   PARAMETER C_NUM_INTR_INPUTS value to 4 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
+   a\axi_intc_v2_1_0.mpd line 85 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00007fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) microblaze_0_intc	axi4lite_0
+  (0x41000000-0x4100ffff) axi_timer_0	axi4lite_0
+  (0x42000000-0x4200ffff) RS232	axi4lite_0
+  (0x44000000-0x4400ffff) cpld_if_0	axi4lite_0
+  (0x45000000-0x4500ffff) lcd_screen_0	axi4lite_0
+  (0x46000000-0x46000fff) button	axi4lite_0
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x8000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+Initializing Memory...
+Running Data2Mem with the following command:
+data2mem -bm "implementation/system_bd" -p xc6slx9tqg144-2 -bt
+"implementation/system.bit"  -bd "bootloops/microblaze_0.elf" tag microblaze_0 
+-o b implementation/download.bit 
+Memory Initialization completed successfully.
+
+""
+"*********************************************"
+"Downloading Bitstream onto the target board"
+"*********************************************"
+impact -batch etc/download.cmd
+Release 14.7 - iMPACT P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Preference Table
+Name                 Setting             
+StartupClock         Auto_Correction     
+AutoSignature        False               
+KeepSVF              False               
+ConcurrentMode       False               
+UseHighz             False               
+ConfigOnFailure      Stop                
+UserLevel            Novice              
+MessageLevel         Detailed            
+svfUseTime           false               
+SpiByteSwap          Auto_Correction     
+AutoInfer            false               
+SvfPlayDisplayComments false               
+AutoDetecting cable. Please wait.
+*** WARNING ***: When port is set to auto detect mode, cable speed is set to
+default 6 MHz regardless of explicit arguments supplied for setting the baud
+rates
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Driver file xusb_xlp.sys found.
+ Driver version: src=1029, dest=1029.
+ Driver windrvr6.sys version = 10.2.1.0. WinDriver v10.21 Jungo (c) 1997 - 2010 Build Date: Aug 31 2010 x86_64 64bit SYS
+14:14:44, version = 1021.
+ Cable PID = 0008.
+ Max current requested during enumeration is 74 mA.
+Type = 0x0004.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1303.
+File version of D:/Xilinx/14.7/ISE_DS/ISE/data/xusb_xlp.hex = 1303.
+Firmware hex file version = 1303.
+PLD file version = 0012h.
+ PLD version = 0012h.
+Type = 0x0004.
+ESN option: 0000112EA2A501.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc6slx9, Version : 2
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+Elapsed time =      0 sec.
+Elapsed time =      0 sec.
+'1': Loading file 'implementation/download.bit' ...
+done.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 1.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Maximum TCK operating frequency for this device chain: 25000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :    
+    0
+[1] IDCODE ERROR                                                           :    
+    0
+[2] DCM LOCK STATUS                                                        :    
+    1
+[3] GTS_CFG_B STATUS                                                       :    
+    1
+[4] GWE STATUS                                                             :    
+    1
+[5] GHIGH STATUS                                                           :    
+    1
+[6] DECRYPTION ERROR                                                       :    
+    0
+[7] DECRYPTOR ENABLE                                                       :    
+    0
+[8] HSWAPEN PIN                                                            :    
+    1
+[9] MODE PIN M[0]                                                          :    
+    1
+[10] MODE PIN M[1]                                                         :    
+    1
+[11] RESERVED                                                              :    
+    0
+[12] INIT_B PIN                                                            :    
+    1
+[13] DONE PIN                                                              :    
+    1
+[14] SUSPEND STATUS                                                        :    
+    0
+[15] FALLBACK STATUS                                                       :    
+    0
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+'1': Programmed successfully.
+Elapsed time =      5 sec.
+Done!
+
+********************************************************************************
+At Local date and time: Sun Nov 05 13:39:22 2017
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Sun Nov 05 13:39:22 2017
+ xsdk.exe -hwspec D:\git\mikrorendszerek\MB_System_full\MB_System\MB_System\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Sun Nov 05 13:40:32 2017
+ make -f system.make download started...
+""
+"*********************************************"
+"Downloading Bitstream onto the target board"
+"*********************************************"
+impact -batch etc/download.cmd
+Release 14.7 - iMPACT P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Preference Table
+Name                 Setting             
+StartupClock         Auto_Correction     
+AutoSignature        False               
+KeepSVF              False               
+ConcurrentMode       False               
+UseHighz             False               
+ConfigOnFailure      Stop                
+UserLevel            Novice              
+MessageLevel         Detailed            
+svfUseTime           false               
+SpiByteSwap          Auto_Correction     
+AutoInfer            false               
+SvfPlayDisplayComments false               
+AutoDetecting cable. Please wait.
+*** WARNING ***: When port is set to auto detect mode, cable speed is set to
+default 6 MHz regardless of explicit arguments supplied for setting the baud
+rates
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Driver file xusb_xlp.sys found.
+ Driver version: src=1029, dest=1029.
+ Driver windrvr6.sys version = 10.2.1.0. WinDriver v10.21 Jungo (c) 1997 - 2010 Build Date: Aug 31 2010 x86_64 64bit SYS
+14:14:44, version = 1021.
+ Cable PID = 0008.
+ Max current requested during enumeration is 74 mA.
+Type = 0x0004.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1303.
+File version of D:/Xilinx/14.7/ISE_DS/ISE/data/xusb_xlp.hex = 1303.
+Firmware hex file version = 1303.
+PLD file version = 0012h.
+ PLD version = 0012h.
+Type = 0x0004.
+ESN option: 0000112EA2A501.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc6slx9, Version : 2
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+Elapsed time =      0 sec.
+Elapsed time =      0 sec.
+'1': Loading file 'implementation/download.bit' ...
+done.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 1.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Maximum TCK operating frequency for this device chain: 25000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :    
+    0
+[1] IDCODE ERROR                                                           :    
+    0
+[2] DCM LOCK STATUS                                                        :    
+    1
+[3] GTS_CFG_B STATUS                                                       :    
+    1
+[4] GWE STATUS                                                             :    
+    1
+[5] GHIGH STATUS                                                           :    
+    1
+[6] DECRYPTION ERROR                                                       :    
+    0
+[7] DECRYPTOR ENABLE                                                       :    
+    0
+[8] HSWAPEN PIN                                                            :    
+    1
+[9] MODE PIN M[0]                                                          :    
+    1
+[10] MODE PIN M[1]                                                         :    
+    1
+[11] RESERVED                                                              :    
+    0
+[12] INIT_B PIN                                                            :    
+    1
+[13] DONE PIN                                                              :    
+    1
+[14] SUSPEND STATUS                                                        :    
+    0
+[15] FALLBACK STATUS                                                       :    
+    0
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+'1': Programmed successfully.
+Elapsed time =      5 sec.
+Done!
