@@ -1,10 +1,10 @@
 Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to F:\git\MB_System_full\MB_System\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to F:\git\mikrorendszerek\MB_System_full\MB_System\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> 
 TABLE OF CONTENTS
@@ -35,7 +35,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_cpld_if_0_wrapper_xst.prj"
-Verilog Include Directory          : {"F:\git\MB_System_full\MB_System\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"F:\git\mikrorendszerek\MB_System_full\MB_System\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc6slx9tqg144-2
@@ -62,7 +62,7 @@ Cores Search Directories           : {../implementation}
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "F:/git/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v" into library cpld_if_v1_00_a
+Analyzing Verilog file "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v" into library cpld_if_v1_00_a
 Parsing module <user_logic>.
 Parsing module <fpga_cpld>.
 Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
@@ -95,10 +95,10 @@ Parsing architecture <imp> of entity <slave_attachment>.
 Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd" into library axi_lite_ipif_v1_01_a
 Parsing entity <axi_lite_ipif>.
 Parsing architecture <imp> of entity <axi_lite_ipif>.
-Parsing VHDL file "F:/git/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" into library cpld_if_v1_00_a
+Parsing VHDL file "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" into library cpld_if_v1_00_a
 Parsing entity <cpld_if>.
 Parsing architecture <IMP> of entity <cpld_if>.
-Parsing VHDL file "F:\git\MB_System_full\MB_System\hdl\system_cpld_if_0_wrapper.vhd" into library work
+Parsing VHDL file "F:\git\mikrorendszerek\MB_System_full\MB_System\hdl\system_cpld_if_0_wrapper.vhd" into library work
 Parsing entity <system_cpld_if_0_wrapper>.
 Parsing architecture <STRUCTURE> of entity <system_cpld_if_0_wrapper>.
 
@@ -127,8 +127,8 @@ Going to verilog side to elaborate module user_logic
 Elaborating module <user_logic(C_NUM_REG=3,C_SLV_DWIDTH=32)>.
 
 Elaborating module <fpga_cpld>.
-WARNING:HDLCompiler:413 - "F:/git/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v" Line 294: Result of 13-bit expression is truncated to fit in 12-bit target.
-WARNING:HDLCompiler:413 - "F:/git/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v" Line 308: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v" Line 294: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v" Line 308: Result of 6-bit expression is truncated to fit in 5-bit target.
 Back to vhdl to continue elaboration
 
 =========================================================================
@@ -136,13 +136,13 @@ Back to vhdl to continue elaboration
 =========================================================================
 
 Synthesizing Unit <system_cpld_if_0_wrapper>.
-    Related source file is "F:\git\MB_System_full\MB_System\hdl\system_cpld_if_0_wrapper.vhd".
+    Related source file is "F:\git\mikrorendszerek\MB_System_full\MB_System\hdl\system_cpld_if_0_wrapper.vhd".
     Summary:
 	no macro.
 Unit <system_cpld_if_0_wrapper> synthesized.
 
 Synthesizing Unit <cpld_if>.
-    Related source file is "F:/git/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd".
+    Related source file is "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd".
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
         C_S_AXI_DATA_WIDTH = 32
@@ -161,9 +161,9 @@ WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/p
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
     Set property "MAX_FANOUT = 10000" for signal <S_AXI_ARESETN>.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
-INFO:Xst:3210 - "F:/git/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" line 287: Output port <Bus2IP_Addr> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:/git/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" line 287: Output port <Bus2IP_CS> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:/git/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" line 287: Output port <Bus2IP_RNW> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" line 287: Output port <Bus2IP_Addr> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" line 287: Output port <Bus2IP_CS> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/vhdl/cpld_if.vhd" line 287: Output port <Bus2IP_RNW> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <cpld_if> synthesized.
@@ -275,7 +275,7 @@ Synthesizing Unit <pselect_f_3>.
 Unit <pselect_f_3> synthesized.
 
 Synthesizing Unit <user_logic>.
-    Related source file is "F:/git/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v".
+    Related source file is "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v".
         C_NUM_REG = 3
         C_SLV_DWIDTH = 32
     Found 1-bit register for signal <slv_reg0<30>>.
@@ -382,7 +382,7 @@ Synthesizing Unit <user_logic>.
 Unit <user_logic> synthesized.
 
 Synthesizing Unit <fpga_cpld>.
-    Related source file is "F:/git/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v".
+    Related source file is "F:/git/mikrorendszerek/MB_System_full/MB_System/pcores/cpld_if_v1_00_a/hdl/verilog/user_logic.v".
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Register <cpld_clk> equivalent to <clk_div_msb> has been removed
     Found 1-bit register for signal <clk_div_msb>.
@@ -567,10 +567,10 @@ Primitive and Black Box Usage:
 #      INV                         : 4
 #      LUT1                        : 11
 #      LUT2                        : 11
-#      LUT3                        : 8
+#      LUT3                        : 21
 #      LUT4                        : 5
 #      LUT5                        : 13
-#      LUT6                        : 142
+#      LUT6                        : 129
 #      MUXCY                       : 18
 #      VCC                         : 1
 #      XORCY                       : 12
@@ -641,7 +641,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 3.738ns (Maximum Frequency: 267.523MHz)
+   Minimum period: 3.763ns (Maximum Frequency: 265.745MHz)
    Minimum input arrival time before clock: 2.751ns
    Maximum output required time after clock: 1.935ns
    Maximum combinational path delay: No path found
@@ -652,31 +652,31 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
-  Clock period: 3.738ns (frequency: 267.523MHz)
-  Total number of paths / destination ports: 1640 / 318
+  Clock period: 3.763ns (frequency: 265.745MHz)
+  Total number of paths / destination ports: 1601 / 318
 -------------------------------------------------------------------------
-Delay:               3.738ns (Levels of Logic = 7)
-  Source:            cpld_if_0/USER_LOGIC_I/cpld/din_reg_0 (FF)
-  Destination:       cpld_if_0/USER_LOGIC_I/slv_reg1_0 (FF)
+Delay:               3.763ns (Levels of Logic = 7)
+  Source:            cpld_if_0/USER_LOGIC_I/cpld/din_reg_2 (FF)
+  Destination:       cpld_if_0/USER_LOGIC_I/slv_reg1_12 (FF)
   Source Clock:      S_AXI_ACLK rising
   Destination Clock: S_AXI_ACLK rising
 
-  Data Path: cpld_if_0/USER_LOGIC_I/cpld/din_reg_0 to cpld_if_0/USER_LOGIC_I/slv_reg1_0
+  Data Path: cpld_if_0/USER_LOGIC_I/cpld/din_reg_2 to cpld_if_0/USER_LOGIC_I/slv_reg1_12
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              3   0.525   1.196  cpld_if_0/USER_LOGIC_I/cpld/din_reg_0 (cpld_if_0/USER_LOGIC_I/cpld/din_reg_0)
-     LUT6:I1->O            1   0.254   0.000  cpld_if_0/USER_LOGIC_I/Mcompar_n0023_lut<0> (cpld_if_0/USER_LOGIC_I/Mcompar_n0023_lut<0>)
+     FDE:C->Q              3   0.525   1.221  cpld_if_0/USER_LOGIC_I/cpld/din_reg_2 (cpld_if_0/USER_LOGIC_I/cpld/din_reg_2)
+     LUT6:I0->O            1   0.254   0.000  cpld_if_0/USER_LOGIC_I/Mcompar_n0023_lut<0> (cpld_if_0/USER_LOGIC_I/Mcompar_n0023_lut<0>)
      MUXCY:S->O            1   0.215   0.000  cpld_if_0/USER_LOGIC_I/Mcompar_n0023_cy<0> (cpld_if_0/USER_LOGIC_I/Mcompar_n0023_cy<0>)
      MUXCY:CI->O           1   0.023   0.000  cpld_if_0/USER_LOGIC_I/Mcompar_n0023_cy<1> (cpld_if_0/USER_LOGIC_I/Mcompar_n0023_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  cpld_if_0/USER_LOGIC_I/Mcompar_n0023_cy<2> (cpld_if_0/USER_LOGIC_I/Mcompar_n0023_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  cpld_if_0/USER_LOGIC_I/Mcompar_n0023_cy<3> (cpld_if_0/USER_LOGIC_I/Mcompar_n0023_cy<3>)
      MUXCY:CI->O          14   0.023   1.127  cpld_if_0/USER_LOGIC_I/Mcompar_n0023_cy<4> (cpld_if_0/USER_LOGIC_I/n0023)
-     LUT6:I5->O            1   0.254   0.000  cpld_if_0/USER_LOGIC_I/slv_reg1_0_rstpot (cpld_if_0/USER_LOGIC_I/slv_reg1_0_rstpot)
-     FDR:D                     0.074          cpld_if_0/USER_LOGIC_I/slv_reg1_0
+     LUT3:I2->O            1   0.254   0.000  cpld_if_0/USER_LOGIC_I/slv_reg1_12_rstpot (cpld_if_0/USER_LOGIC_I/slv_reg1_12_rstpot)
+     FDR:D                     0.074          cpld_if_0/USER_LOGIC_I/slv_reg1_12
     ----------------------------------------
-    Total                      3.738ns (1.415ns logic, 2.323ns route)
-                                       (37.9% logic, 62.1% route)
+    Total                      3.763ns (1.415ns logic, 2.348ns route)
+                                       (37.6% logic, 62.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
@@ -702,15 +702,15 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
   Total number of paths / destination ports: 54 / 41
 -------------------------------------------------------------------------
 Offset:              1.935ns (Levels of Logic = 1)
-  Source:            cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2 (FF)
+  Source:            cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1_2 (FF)
   Destination:       S_AXI_ARREADY (PAD)
   Source Clock:      S_AXI_ACLK rising
 
-  Data Path: cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2 to S_AXI_ARREADY
+  Data Path: cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1_2 to S_AXI_ARREADY
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.525   1.156  cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2 (cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2)
+     FD:C->Q               2   0.525   1.156  cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1_2 (cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1_2)
      LUT5:I0->O            2   0.254   0.000  cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rd_done1 (S_AXI_ARREADY)
     ----------------------------------------
     Total                      1.935ns (0.779ns logic, 1.156ns route)
@@ -726,14 +726,14 @@ Clock to Setup on destination clock S_AXI_ACLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-S_AXI_ACLK     |    3.738|         |         |         |
+S_AXI_ACLK     |    3.763|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.23 secs
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.85 secs
  
 --> 
 

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Nov 01 22:09:05 2017
+// Written by: Map P.20131013 on Sun Nov 05 09:48:31 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -372,19 +372,17 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PIN
         "cpld_if_0/cpld_if_0/USER_LOGIC_I/cpld/cntr_3_1" BEL
         "cpld_if_0/cpld_if_0/USER_LOGIC_I/cpld/cntr_2_1" BEL
         "cpld_if_0/cpld_if_0/USER_LOGIC_I/cpld/cntr_1_1" BEL
-        "cpld_if_0/cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_3"
-        BEL
         "cpld_if_0/cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2"
         BEL
         "cpld_if_0/cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1_3"
         BEL
-        "cpld_if_0/cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_2_2"
+        "cpld_if_0/cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_3"
         BEL
-        "cpld_if_0/cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1_2"
+        "cpld_if_0/cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_2_2"
         BEL
         "cpld_if_0/cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2"
         BEL
-        "cpld_if_0/cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_2_1"
+        "cpld_if_0/cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1_2"
         BEL
         "cpld_if_0/cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1"
         BEL
@@ -392,13 +390,14 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PIN
         BEL
         "cpld_if_0/cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1_1"
         BEL
+        "cpld_if_0/cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_2_1"
+        BEL
         "cpld_if_0/cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0"
         BEL
         "cpld_if_0/cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1"
         BEL
         "cpld_if_0/cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_2"
-        BEL "cpld_if_0/cpld_if_0/USER_LOGIC_I/slv_reg1_12" BEL
-        "cpld_if_0/cpld_if_0/USER_LOGIC_I/slv_reg1_11" BEL
+        BEL "cpld_if_0/cpld_if_0/USER_LOGIC_I/slv_reg1_11" BEL
         "cpld_if_0/cpld_if_0/USER_LOGIC_I/slv_reg1_10" BEL
         "cpld_if_0/cpld_if_0/USER_LOGIC_I/slv_reg1_9" BEL
         "cpld_if_0/cpld_if_0/USER_LOGIC_I/slv_reg1_8" BEL
@@ -410,6 +409,7 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PIN
         "cpld_if_0/cpld_if_0/USER_LOGIC_I/slv_reg1_2" BEL
         "cpld_if_0/cpld_if_0/USER_LOGIC_I/slv_reg1_1" BEL
         "cpld_if_0/cpld_if_0/USER_LOGIC_I/slv_reg1_0" BEL
+        "cpld_if_0/cpld_if_0/USER_LOGIC_I/slv_reg1_12" BEL
         "cpld_if_0/cpld_if_0/USER_LOGIC_I/cpld/ce" BEL
         "cpld_if_0/cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg"
         BEL "cpld_if_0/cpld_if_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst" BEL

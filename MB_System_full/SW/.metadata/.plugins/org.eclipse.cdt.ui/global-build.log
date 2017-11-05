@@ -1275,3 +1275,2015 @@ ELF file	: LCD.elf
 elfcheck passed.
 'Finished building: LCD.elf.elfcheck'
 ' '
+10:55:11 **** Auto Build of project LCD_bsp ****
+make -k all 
+'Finished building libraries'
+10:55:12 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4871	    344	   2088	   7303	   1c87	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+10:55:22 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+10:55:38 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+10:55:53 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+10:56:52 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+10:57:11 **** Auto Build of project LCD_bsp ****
+make -k all 
+'Finished building libraries'
+10:59:23 **** Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: cpld.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "cpld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cpld.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size cpld.elf  |tee "cpld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2430	    340	   2084	   4854	   12f6	cpld.elf
+'Finished building: cpld.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck cpld.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "cpld.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 cpld.elf 
+
+ELF file	: cpld.elf
+elfcheck passed.
+'Finished building: cpld.elf.elfcheck'
+' '
+11:01:45 **** Auto Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+11:02:00 **** Clean-only build of configuration Debug for project cpld ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  cpld.elf.size  cpld.elf.elfcheck  cpld.elf
+' '
+11:02:00 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: cpld.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "cpld.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cpld.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size cpld.elf  |tee "cpld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2430	    340	   2084	   4854	   12f6	cpld.elf
+'Finished building: cpld.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck cpld.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "cpld.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 cpld.elf 
+
+ELF file	: cpld.elf
+elfcheck passed.
+'Finished building: cpld.elf.elfcheck'
+' '
+11:02:08 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/cpld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/cpld.d" -MT"src/cpld.d" -o "src/cpld.o" "../src/cpld.c"
+'Finished building: ../src/cpld.c'
+' '
+'Building target: cpld.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "cpld.elf"  ./src/cpld.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cpld.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size cpld.elf  |tee "cpld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2430	    340	   2084	   4854	   12f6	cpld.elf
+'Finished building: cpld.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck cpld.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "cpld.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 cpld.elf 
+
+ELF file	: cpld.elf
+elfcheck passed.
+'Finished building: cpld.elf.elfcheck'
+' '
+11:02:59 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: cpld.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "cpld.elf"  ./src/cpld.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cpld.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size cpld.elf  |tee "cpld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2430	    340	   2084	   4854	   12f6	cpld.elf
+'Finished building: cpld.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck cpld.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "cpld.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 cpld.elf 
+
+ELF file	: cpld.elf
+elfcheck passed.
+'Finished building: cpld.elf.elfcheck'
+' '
+11:11:33 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+11:11:35 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+11:11:46 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+11:11:48 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+11:12:36 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/LCD.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LCD.d" -MT"src/LCD.d" -o "src/LCD.o" "../src/LCD.c"
+'Finished building: ../src/LCD.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4871	    344	   2088	   7303	   1c87	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+11:12:41 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+11:12:42 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+11:12:58 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/LCD.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LCD.d" -MT"src/LCD.d" -o "src/LCD.o" "../src/LCD.c"
+'Finished building: ../src/LCD.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4871	    344	   2088	   7303	   1c87	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+11:17:22 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: cpld.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "cpld.elf"  ./src/cpld.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cpld.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size cpld.elf  |tee "cpld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2430	    340	   2084	   4854	   12f6	cpld.elf
+'Finished building: cpld.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck cpld.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "cpld.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 cpld.elf 
+
+ELF file	: cpld.elf
+elfcheck passed.
+'Finished building: cpld.elf.elfcheck'
+' '
+11:20:32 **** Auto Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+11:24:28 **** Auto Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+11:26:17 **** Auto Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+11:26:21 **** Auto Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+11:28:45 **** Auto Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+11:30:27 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/LCD.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LCD.d" -MT"src/LCD.d" -o "src/LCD.o" "../src/LCD.c"
+'Finished building: ../src/LCD.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4871	    340	   2092	   7303	   1c87	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+11:30:33 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+11:30:34 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+12:39:59 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/LCD.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LCD.d" -MT"src/LCD.d" -o "src/LCD.o" "../src/LCD.c"
+'Finished building: ../src/LCD.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4871	    344	   2088	   7303	   1c87	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+12:44:14 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4875	    344	   2093	   7312	   1c90	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+12:44:18 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:44:19 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+12:44:42 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4871	    344	   2088	   7303	   1c87	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+12:44:47 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:44:48 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+12:46:31 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/LCD.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LCD.d" -MT"src/LCD.d" -o "src/LCD.o" "../src/LCD.c"
+'Finished building: ../src/LCD.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4871	    344	   2088	   7303	   1c87	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+12:46:35 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:46:36 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+12:47:53 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4871	    344	   2088	   7303	   1c87	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+12:47:58 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:47:59 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+12:48:01 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:48:03 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+12:48:28 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4871	    344	   2088	   7303	   1c87	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+12:49:26 **** Auto Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:49:29 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:49:31 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+12:49:51 **** Auto Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:49:59 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:50:00 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+12:50:20 **** Auto Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:53:39 **** Auto Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:53:46 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4871	    344	   2088	   7303	   1c87	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+12:53:58 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:53:59 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+12:54:55 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4831	    344	   2088	   7263	   1c5f	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+12:54:59 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:55:00 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+12:55:15 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:55:16 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+12:56:01 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3678	    344	   2088	   6110	   17de	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+12:56:05 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4867	    344	   2093	   7304	   1c88	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+12:56:11 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:56:13 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+12:56:28 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:56:29 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+12:56:59 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4867	    344	   2093	   7304	   1c88	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+12:57:18 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:57:19 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+12:57:37 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4871	    344	   2088	   7303	   1c87	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+12:57:42 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:57:43 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+12:58:15 **** Auto Build of project LCD_bsp ****
+make -k all 
+'Finished building libraries'
+12:58:28 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4867	    344	   2093	   7304	   1c88	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+12:58:32 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+12:58:33 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:03:15 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4042	    344	   2094	   6480	   1950	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+13:03:20 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:03:21 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:03:48 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4042	    344	   2094	   6480	   1950	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+13:03:53 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:03:54 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:04:11 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4042	    344	   2094	   6480	   1950	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+13:04:18 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:04:19 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:04:57 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4867	    344	   2093	   7304	   1c88	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+13:05:00 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4871	    344	   2088	   7303	   1c87	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+13:05:10 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4046	    344	   2088	   6478	   194e	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+13:05:15 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:05:16 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:05:39 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4042	    344	   2094	   6480	   1950	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+13:05:42 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:05:43 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:06:10 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4867	    344	   2093	   7304	   1c88	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+13:06:14 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:06:15 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:06:35 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4867	    344	   2093	   7304	   1c88	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+13:06:46 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:06:47 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:06:58 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4867	    344	   2093	   7304	   1c88	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+13:10:11 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:10:13 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:12:01 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4867	    344	   2093	   7304	   1c88	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+13:12:05 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:12:06 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:12:45 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4867	    344	   2093	   7304	   1c88	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+13:12:49 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:12:50 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:13:24 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4875	    344	   2093	   7312	   1c90	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+13:13:28 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:13:29 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:14:35 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4875	    344	   2093	   7312	   1c90	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+13:14:40 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:14:41 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:15:09 **** Auto Build of configuration Debug for project LCD ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:17: warning: unused variable 'pagepixel' [-Wunused-variable]
+../src/helloworld.c:49:14: warning: unused variable 'j' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: LCD.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LCD.elf"  ./src/LCD.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LCD.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size LCD.elf  |tee "LCD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4871	    344	   2088	   7303	   1c87	LCD.elf
+'Finished building: LCD.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck LCD.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "LCD.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 LCD.elf 
+
+ELF file	: LCD.elf
+elfcheck passed.
+'Finished building: LCD.elf.elfcheck'
+' '
+13:16:46 **** Auto Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:22:45 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/cpld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/cpld.d" -MT"src/cpld.d" -o "src/cpld.o" "../src/cpld.c"
+../src/cpld.c:1:1: error: unknown type name 'Xuint8'
+../src/cpld.c:5:1: error: unknown type name 'Xuint8'
+../src/cpld.c:6:1: error: unknown type name 'Xuint8'
+../src/cpld.c:6:23: error: unknown type name 'Xuint8'
+../src/cpld.c:7:1: error: unknown type name 'Xuint8'
+../src/cpld.c:7:23: error: unknown type name 'Xuint8'
+../src/cpld.c: In function 'read_CPLD_switch':
+../src/cpld.c:4:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/cpld.o] Error 1
+13:22:55 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/cpld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/cpld.d" -MT"src/cpld.d" -o "src/cpld.o" "../src/cpld.c"
+../src/cpld.c:1:1: error: unknown type name 'Xuint8'
+../src/cpld.c:5:1: error: unknown type name 'Xuint8'
+../src/cpld.c:6:1: error: unknown type name 'Xuint8'
+../src/cpld.c:6:23: error: unknown type name 'Xuint8'
+../src/cpld.c:7:1: error: unknown type name 'Xuint8'
+../src/cpld.c:7:23: error: unknown type name 'Xuint8'
+../src/cpld.c: In function 'read_CPLD_switch':
+../src/cpld.c:4:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/cpld.o] Error 1
+13:23:22 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/cpld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/cpld.d" -MT"src/cpld.d" -o "src/cpld.o" "../src/cpld.c"
+In file included from ../src/cpld.c:1:0:
+../src/cpld.h:12:1: error: unknown type name 'Xuint8'
+../src/cpld.h:13:1: error: unknown type name 'Xuint8'
+../src/cpld.h:14:1: error: unknown type name 'Xuint8'
+../src/cpld.h:14:23: error: unknown type name 'Xuint8'
+../src/cpld.h:15:1: error: unknown type name 'Xuint8'
+../src/cpld.h:15:23: error: unknown type name 'Xuint8'
+../src/cpld.c:2:1: error: unknown type name 'Xuint8'
+../src/cpld.c:6:1: error: unknown type name 'Xuint8'
+../src/cpld.c:7:1: error: unknown type name 'Xuint8'
+../src/cpld.c:7:23: error: unknown type name 'Xuint8'
+../src/cpld.c:8:1: error: unknown type name 'Xuint8'
+../src/cpld.c:8:23: error: unknown type name 'Xuint8'
+../src/cpld.c: In function 'read_CPLD_switch':
+../src/cpld.c:5:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/cpld.o] Error 1
+13:23:32 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/cpld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/cpld.d" -MT"src/cpld.d" -o "src/cpld.o" "../src/cpld.c"
+In file included from ../src/cpld.c:1:0:
+../src/cpld.h:12:1: error: unknown type name 'Xuint8'
+../src/cpld.h:13:1: error: unknown type name 'Xuint8'
+../src/cpld.h:14:1: error: unknown type name 'Xuint8'
+../src/cpld.h:14:23: error: unknown type name 'Xuint8'
+../src/cpld.h:15:1: error: unknown type name 'Xuint8'
+../src/cpld.h:15:23: error: unknown type name 'Xuint8'
+../src/cpld.c:3:1: error: unknown type name 'Xuint8'
+../src/cpld.c:7:1: error: unknown type name 'Xuint8'
+../src/cpld.c:8:1: error: unknown type name 'Xuint8'
+../src/cpld.c:8:23: error: unknown type name 'Xuint8'
+../src/cpld.c:9:1: error: unknown type name 'Xuint8'
+../src/cpld.c:9:23: error: unknown type name 'Xuint8'
+../src/cpld.c: In function 'read_CPLD_switch':
+../src/cpld.c:6:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/cpld.o] Error 1
+13:24:32 **** Auto Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:24:38 **** Auto Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:24:40 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:24:41 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/cpld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/cpld.d" -MT"src/cpld.d" -o "src/cpld.o" "../src/cpld.c"
+In file included from ../src/cpld.c:1:0:
+../src/cpld.h:12:1: error: unknown type name 'Xuint8'
+../src/cpld.h:13:1: error: unknown type name 'Xuint8'
+../src/cpld.h:14:1: error: unknown type name 'Xuint8'
+../src/cpld.h:14:23: error: unknown type name 'Xuint8'
+../src/cpld.h:15:1: error: unknown type name 'Xuint8'
+../src/cpld.h:15:23: error: unknown type name 'Xuint8'
+../src/cpld.c:3:1: error: unknown type name 'Xuint8'
+../src/cpld.c:7:1: error: unknown type name 'Xuint8'
+../src/cpld.c:8:1: error: unknown type name 'Xuint8'
+../src/cpld.c:8:23: error: unknown type name 'Xuint8'
+../src/cpld.c:9:1: error: unknown type name 'Xuint8'
+../src/cpld.c:9:23: error: unknown type name 'Xuint8'
+../src/cpld.c: In function 'read_CPLD_switch':
+../src/cpld.c:6:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/cpld.o] Error 1
+13:24:46 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/cpld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/cpld.d" -MT"src/cpld.d" -o "src/cpld.o" "../src/cpld.c"
+../src/cpld.c: In function 'read_CPLD_switch':
+../src/cpld.c:6:1: warning: control reaches end of non-void function [-Wreturn-type]
+'Finished building: ../src/cpld.c'
+' '
+'Building target: cpld.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "cpld.elf"  ./src/cpld.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cpld.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size cpld.elf  |tee "cpld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2430	    340	   2084	   4854	   12f6	cpld.elf
+'Finished building: cpld.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck cpld.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "cpld.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 cpld.elf 
+
+ELF file	: cpld.elf
+elfcheck passed.
+'Finished building: cpld.elf.elfcheck'
+' '
+13:28:52 **** Auto Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:33:24 **** Auto Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:34:13 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/cpld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/cpld.d" -MT"src/cpld.d" -o "src/cpld.o" "../src/cpld.c"
+'Finished building: ../src/cpld.c'
+' '
+'Building target: cpld.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "cpld.elf"  ./src/cpld.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cpld.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size cpld.elf  |tee "cpld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2430	    340	   2084	   4854	   12f6	cpld.elf
+'Finished building: cpld.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck cpld.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "cpld.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 cpld.elf 
+
+ELF file	: cpld.elf
+elfcheck passed.
+'Finished building: cpld.elf.elfcheck'
+' '
+13:40:43 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/cpld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/cpld.d" -MT"src/cpld.d" -o "src/cpld.o" "../src/cpld.c"
+../src/cpld.c:15:6: error: conflicting types for 'write_CPLD_seg'
+../src/cpld.h:18:8: note: previous declaration of 'write_CPLD_seg' was here
+../src/cpld.c:18:6: error: conflicting types for 'write_CPLD_led'
+../src/cpld.h:19:8: note: previous declaration of 'write_CPLD_led' was here
+make: *** [src/cpld.o] Error 1
+13:46:19 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/cpld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/cpld.d" -MT"src/cpld.d" -o "src/cpld.o" "../src/cpld.c"
+'Finished building: ../src/cpld.c'
+' '
+'Building target: cpld.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "cpld.elf"  ./src/cpld.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cpld.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size cpld.elf  |tee "cpld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2430	    340	   2084	   4854	   12f6	cpld.elf
+'Finished building: cpld.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck cpld.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "cpld.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 cpld.elf 
+
+ELF file	: cpld.elf
+elfcheck passed.
+'Finished building: cpld.elf.elfcheck'
+' '
+13:49:09 **** Auto Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:49:42 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/cpld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/cpld.d" -MT"src/cpld.d" -o "src/cpld.o" "../src/cpld.c"
+'Finished building: ../src/cpld.c'
+' '
+'Building target: cpld.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "cpld.elf"  ./src/cpld.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cpld.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size cpld.elf  |tee "cpld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2430	    340	   2084	   4854	   12f6	cpld.elf
+'Finished building: cpld.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck cpld.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "cpld.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 cpld.elf 
+
+ELF file	: cpld.elf
+elfcheck passed.
+'Finished building: cpld.elf.elfcheck'
+' '
+13:50:56 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:46:9: error: 'data' undeclared (first use in this function)
+../src/main.c:46:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:46:14: error: expected ';' before 'read_CPLD_switch'
+make: *** [src/main.o] Error 1
+13:51:04 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: cpld.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "cpld.elf"  ./src/cpld.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cpld.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size cpld.elf  |tee "cpld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2718	    340	   2084	   5142	   1416	cpld.elf
+'Finished building: cpld.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck cpld.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "cpld.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 cpld.elf 
+
+ELF file	: cpld.elf
+elfcheck passed.
+'Finished building: cpld.elf.elfcheck'
+' '
+13:51:11 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:51:12 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:51:38 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:51:39 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:51:45 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:51:46 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:56:03 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:50:12: error: lvalue required as left operand of assignment
+make: *** [src/main.o] Error 1
+13:56:19 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: cpld.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "cpld.elf"  ./src/cpld.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cpld.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size cpld.elf  |tee "cpld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2734	    340	   2084	   5158	   1426	cpld.elf
+'Finished building: cpld.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck cpld.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "cpld.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 cpld.elf 
+
+ELF file	: cpld.elf
+elfcheck passed.
+'Finished building: cpld.elf.elfcheck'
+' '
+13:56:24 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:56:25 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:56:33 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: cpld.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "cpld.elf"  ./src/cpld.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cpld.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size cpld.elf  |tee "cpld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2734	    340	   2084	   5158	   1426	cpld.elf
+'Finished building: cpld.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck cpld.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "cpld.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 cpld.elf 
+
+ELF file	: cpld.elf
+elfcheck passed.
+'Finished building: cpld.elf.elfcheck'
+' '
+13:56:37 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+13:56:38 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+13:57:53 **** Auto Build of project LCD_bsp ****
+make -k all 
+'Finished building libraries'
+09:37:07 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+09:37:09 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+09:37:22 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+09:37:23 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+09:37:42 **** Auto Build of project LCD_bsp ****
+make -k all 
+'Finished building libraries'
+09:39:15 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/cpld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/cpld.d" -MT"src/cpld.d" -o "src/cpld.o" "../src/cpld.c"
+../src/cpld.c:9:1: warning: no semicolon at end of struct or union [enabled by default]
+'Finished building: ../src/cpld.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timer_int_handler':
+../src/main.c:54:8: error: 'XPAR_XPS_TIMER_0_BASEADDR' undeclared (first use in this function)
+../src/main.c:54:8: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:47:13: warning: variable 'dip' set but not used [-Wunused-but-set-variable]
+../src/main.c: In function 'start_interrupts':
+../src/main.c:58:47: error: 'XPAR_XPS_INTC_0_XPS_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function)
+../src/main.c:64:2: error: 'XPAR_XPS_TIMER_0_INTERRUPT_MASK' undeclared (first use in this function)
+../src/main.c:70:2: error: 'XPAR_XPS_TIMER_0_BASEADDR' undeclared (first use in this function)
+../src/main.c:70:2: error: 'XPAR_XPS_TIMER_0_CLOCK_FREQ_HZ' undeclared (first use in this function)
+../src/main.c: In function 'main':
+../src/main.c:106:2: warning: statement with no effect [-Wunused-value]
+make: *** [src/main.o] Error 1
+09:39:53 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timer_int_handler':
+../src/main.c:47:13: warning: variable 'dip' set but not used [-Wunused-but-set-variable]
+../src/main.c: In function 'start_interrupts':
+../src/main.c:58:47: error: 'XPAR_XPS_INTC_0_XPS_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function)
+../src/main.c:58:47: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:64:2: error: 'XPAR_XPS_TIMER_0_INTERRUPT_MASK' undeclared (first use in this function)
+../src/main.c:70:2: error: 'XPAR_XPS_TIMER_0_BASEADDR' undeclared (first use in this function)
+../src/main.c:70:2: error: 'XPAR_XPS_TIMER_0_CLOCK_FREQ_HZ' undeclared (first use in this function)
+../src/main.c: In function 'main':
+../src/main.c:106:2: warning: statement with no effect [-Wunused-value]
+make: *** [src/main.o] Error 1
+09:40:22 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timer_int_handler':
+../src/main.c:47:13: warning: variable 'dip' set but not used [-Wunused-but-set-variable]
+../src/main.c: In function 'start_interrupts':
+../src/main.c:58:47: error: 'XPAR_XPS_INTC_0_XPS_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function)
+../src/main.c:58:47: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:70:2: error: 'XPAR_XPS_TIMER_0_CLOCK_FREQ_HZ' undeclared (first use in this function)
+../src/main.c:72:2: error: 'XPAR_XPS_TIMER_0_BASEADDR' undeclared (first use in this function)
+../src/main.c: In function 'main':
+../src/main.c:106:2: warning: statement with no effect [-Wunused-value]
+make: *** [src/main.o] Error 1
+09:40:27 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timer_int_handler':
+../src/main.c:47:13: warning: variable 'dip' set but not used [-Wunused-but-set-variable]
+../src/main.c: In function 'start_interrupts':
+../src/main.c:58:47: error: 'XPAR_XPS_INTC_0_XPS_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function)
+../src/main.c:58:47: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:72:2: error: 'XPAR_XPS_TIMER_0_BASEADDR' undeclared (first use in this function)
+../src/main.c: In function 'main':
+../src/main.c:106:2: warning: statement with no effect [-Wunused-value]
+make: *** [src/main.o] Error 1
+09:40:34 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timer_int_handler':
+../src/main.c:47:13: warning: variable 'dip' set but not used [-Wunused-but-set-variable]
+../src/main.c: In function 'start_interrupts':
+../src/main.c:58:47: error: 'XPAR_XPS_INTC_0_XPS_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function)
+../src/main.c:58:47: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:74:2: error: 'XPAR_XPS_TIMER_0_BASEADDR' undeclared (first use in this function)
+../src/main.c: In function 'main':
+../src/main.c:106:2: warning: statement with no effect [-Wunused-value]
+make: *** [src/main.o] Error 1
+09:40:41 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timer_int_handler':
+../src/main.c:47:13: warning: variable 'dip' set but not used [-Wunused-but-set-variable]
+../src/main.c: In function 'start_interrupts':
+../src/main.c:58:47: error: 'XPAR_XPS_INTC_0_XPS_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function)
+../src/main.c:58:47: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'main':
+../src/main.c:106:2: warning: statement with no effect [-Wunused-value]
+make: *** [src/main.o] Error 1
+09:41:23 **** Auto Build of configuration Debug for project cpld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../LCD_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timer_int_handler':
+../src/main.c:47:13: warning: variable 'dip' set but not used [-Wunused-but-set-variable]
+../src/main.c: In function 'main':
+../src/main.c:106:2: warning: statement with no effect [-Wunused-value]
+'Finished building: ../src/main.c'
+' '
+'Building target: cpld.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../LCD_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "cpld.elf"  ./src/cpld.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cpld.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size cpld.elf  |tee "cpld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2626	    340	   2098	   5064	   13c8	cpld.elf
+'Finished building: cpld.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck cpld.elf -hw ../../MB_System_hw_platform/system.xml -pe microblaze_0  |tee "cpld.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../MB_System_hw_platform/system.xml -pe
+microblaze_0 cpld.elf 
+
+ELF file	: cpld.elf
+elfcheck passed.
+'Finished building: cpld.elf.elfcheck'
+' '
+09:41:29 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+make: Nothing to be done for `all'.
+09:41:30 **** Incremental Build of configuration Debug for project cpld ****
+make all 
+make: Nothing to be done for `all'.
+09:41:55 **** Auto Build of project LCD_bsp ****
+make -k all 
+'Finished building libraries'

@@ -226,7 +226,7 @@ output                                    IP2Bus_Error;
 				slv_reg1[12:0] <= w_sw;
 				slv_reg0[1] <= 1'b1; // IF
 		  end
-		  if(slv_reg_read_sel == 3'b100)
+		  if(slv_reg_read_sel == 3'b010)
 				slv_reg0[1] <= 1'b0; // IF
         case ( slv_reg_write_sel )
           3'b100 :
@@ -243,7 +243,7 @@ output                                    IP2Bus_Error;
                 slv_reg2[(byte_index*8) +: 8] <= Bus2IP_Data[(byte_index*8) +: 8];
           default : begin
             slv_reg0 <= slv_reg0;
-            slv_reg1 <= slv_reg1;
+            //slv_reg1 <= slv_reg1;
             slv_reg2 <= slv_reg2;
 			 end
         endcase
@@ -256,7 +256,7 @@ output                                    IP2Bus_Error;
 
       case ( slv_reg_read_sel )
         3'b100 : slv_ip2bus_data <= slv_reg0;
-        //3'b010 : slv_ip2bus_data <= slv_reg1;
+        3'b010 : slv_ip2bus_data <= slv_reg1;
         3'b001 : slv_ip2bus_data <= slv_reg2;
         default : slv_ip2bus_data <= 0;
       endcase

@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+jtag.settings=\ -cable type xilinx_platformusb port USB21 frequency 6000000 -configdevice devicenr 1 partname unknown irlength 0 idcode 0x0 -debugdevice deviceNr 1

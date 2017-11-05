@@ -1,0 +1,10 @@
+-batch 
+-create lcd_module 
+-ver 1.00.a 
+-dir "F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System" 
+-lang verilog 
+-bus axi4lite s 
+-reg 2 
+-xps 
+-ise 
+-driver 

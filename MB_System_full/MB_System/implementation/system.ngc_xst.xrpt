@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Wed Nov 01 22:00:58 2017">
+  <application stringID="Xst" timeStamp="Sun Nov 05 09:44:51 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -62,7 +62,7 @@
       <item DEFAULT="Yes" label="-iobuf" stringID="XST_IOBUF" value="YES"/>
       <item DEFAULT="100000" label="-max_fanout" stringID="XST_MAXFANOUT" value="10000"/>
       <item DEFAULT="" label="-sd" stringID="XST_SD" value="{../implementation}"/>
-      <item DEFAULT="" label="-vlgincdir" stringID="XST_VLGINCDIR" value="{&quot;F:\git\MB_System_full\MB_System\pcores\&quot; &quot;D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\&quot; &quot;D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\&quot; }"/>
+      <item DEFAULT="" label="-vlgincdir" stringID="XST_VLGINCDIR" value="{&quot;F:\git\mikrorendszerek\MB_System_full\MB_System\pcores\&quot; &quot;D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\&quot; &quot;D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\&quot; }"/>
     </section>
     <section stringID="XST_ADVANCED_HDL_SYNTHESIS_REPORTFOUND_NO_MACRO"/>
     <section stringID="XST_FINAL_REGISTER_REPORTFOUND_NO_MACRO"/>
@@ -81,10 +81,10 @@
           <item dataType="int" stringID="XST_INV" value="43"/>
           <item dataType="int" stringID="XST_LUT1" value="47"/>
           <item dataType="int" stringID="XST_LUT2" value="296"/>
-          <item dataType="int" stringID="XST_LUT3" value="525"/>
+          <item dataType="int" stringID="XST_LUT3" value="538"/>
           <item dataType="int" stringID="XST_LUT4" value="377"/>
           <item dataType="int" stringID="XST_LUT5" value="454"/>
-          <item dataType="int" stringID="XST_LUT6" value="1001"/>
+          <item dataType="int" stringID="XST_LUT6" value="988"/>
           <item dataType="int" stringID="XST_MULTAND" value="2"/>
           <item dataType="int" stringID="XST_MUXCY" value="150"/>
           <item dataType="int" stringID="XST_MUXF7" value="175"/>

@@ -1,0 +1,76 @@
+09:53:47.302 INFO  - Processing command line option -hwspec F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.xml. 
+09:56:19.417 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+09:56:33.856 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+09:57:22.894 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW2/MB_System_hw_platform/download.bit" 
+09:58:40.954 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:05:01.516 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:05:46.918 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:06:13.613 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:38:45.057 INFO  - Project MB_System_hw_platform's source hardware specification located at F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+10:38:47.730 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.xml into \MB_System_hw_platform\system.xml. 
+10:38:47.740 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.bit into \MB_System_hw_platform\system.bit. 
+10:38:47.740 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system_bd.bmm into \MB_System_hw_platform\system_bd.bmm. 
+10:38:48.206 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:38:50.261 INFO  - Updating hardware inferred compiler options for CPLD. 
+10:38:50.291 INFO  - Clearing existing target manager status. 
+10:38:50.291 INFO  - Closing and re-opening the MSS file of ther project CPLD_bsp 
+10:38:50.701 INFO  - Closing and re-opening the MSS file of ther project CPLD_bsp 
+10:38:51.992 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+10:39:27.136 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+10:39:59.211 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.bit into \MB_System_hw_platform\system.bit. 
+10:39:59.211 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system_bd.bmm into \MB_System_hw_platform\system_bd.bmm. 
+10:44:54.231 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+10:45:12.484 WARN  - Terminating existing sessions on processor microblaze_0 
+10:45:17.908 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW2/MB_System_hw_platform/download.bit" 
+10:47:55.003 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW2/MB_System_hw_platform/download.bit" 
+10:58:03.733 INFO  - The new hardware specification file contains the same information as the current specification file. No changes were done to the workspace. 
+10:58:24.578 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW2/MB_System_hw_platform/download.bit" 
+11:24:56.451 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+11:25:41.001 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.bit into \MB_System_hw_platform\system.bit. 
+11:25:41.011 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system_bd.bmm into \MB_System_hw_platform\system_bd.bmm. 
+11:25:54.949 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW2/MB_System_hw_platform/download.bit" 
+11:41:05.839 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:41:36.487 WARN  - Terminating existing sessions on processor microblaze_0 
+11:41:41.941 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW2/MB_System_hw_platform/download.bit" 
+11:52:23.335 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:55:20.349 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:58:23.235 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:00:05.699 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:00:35.254 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:01:30.135 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:02:53.986 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+12:02:55.708 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.bit into \MB_System_hw_platform\system.bit. 
+12:02:55.708 INFO  - Copied contents of F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system_bd.bmm into \MB_System_hw_platform\system_bd.bmm. 
+12:03:08.519 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:06:04.683 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:06:37.583 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:07:05.412 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:07:37.559 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:08:02.873 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:09:37.462 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:09:57.771 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:11:40.127 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:12:02.670 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:12:12.189 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:12:26.522 WARN  - Terminating existing sessions on processor microblaze_0 
+12:12:31.927 INFO  - FPGA configured successfully with bitstream "F:/git/mikrorendszerek/MB_System_full/SW2/MB_System_hw_platform/download.bit" 
+12:15:46.348 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:21:47.819 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:23:09.909 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:26:51.436 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:27:39.931 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
