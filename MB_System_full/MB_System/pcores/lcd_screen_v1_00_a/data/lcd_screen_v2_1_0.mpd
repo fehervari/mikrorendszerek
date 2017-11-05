@@ -41,7 +41,7 @@ PORT spi_csn = "", DIR = O, IO_IF = spi_if0
 PORT spi_clk = "", DIR = O, IO_IF = spi_if0
 PORT spi_mosi = "", DIR = O, IO_IF = spi_if0
 PORT spi_miso = "", DIR = O, IO_IF = spi_if0
-PORT irq = "", DIR = O, SIGIS = INTERRUPT, SENSITIVITY = LEVEL_HIGH
+PORT irq = "", DIR = O, SIGIS = INTERRUPT, SENSITIVITY = EDGE_RISING
 PORT S_AXI_ACLK = ACLK, DIR = I, SIGIS = CLK, BUS = S_AXI
 PORT S_AXI_ARESETN = ARESETN, DIR = I, SIGIS = RST, BUS = S_AXI
 PORT S_AXI_AWADDR = AWADDR, DIR = I, VEC = [(C_S_AXI_ADDR_WIDTH-1):0], ENDIAN = LITTLE, BUS = S_AXI

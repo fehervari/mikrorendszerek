@@ -1,6 +1,6 @@
-12:27:38 **** Incremental Build of configuration Debug for project CPLD ****
+13:51:21 **** Incremental Build of configuration Debug for project CPLD ****
 make all 
 make: Nothing to be done for `all'.
 
-12:27:39 Build Finished (took 310ms)
+13:51:21 Build Finished (took 310ms)
 

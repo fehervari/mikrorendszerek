@@ -1,5 +1,6 @@
 #include "Tile.h"
 #include "malloc.h"
+
 struct Tile* Tile_create() {
 	struct Tile* tile = malloc(sizeof(struct Tile));
 	tile->type = EMPTY;

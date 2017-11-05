@@ -8,11 +8,6 @@ vhdl proc_common_v3_00_a D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcore
 vhdl axi_lite_ipif_v1_01_a D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd
 vhdl axi_lite_ipif_v1_01_a D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd
 vhdl axi_lite_ipif_v1_01_a D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd
-<<<<<<< HEAD
-verilog lcd_screen_v1_00_a D:\git\mikrorendszerek\MB_System_full\MB_System\pcores\lcd_screen_v1_00_a/hdl/verilog/user_logic.v
-vhdl lcd_screen_v1_00_a D:\git\mikrorendszerek\MB_System_full\MB_System\pcores\lcd_screen_v1_00_a/hdl/vhdl/lcd_screen.vhd
-=======
-verilog lcd_screen_v1_00_a F:\git\mikrorendszerek\MB_System_full\MB_System\pcores\lcd_screen_v1_00_a/hdl/verilog/user_logic.v
-vhdl lcd_screen_v1_00_a F:\git\mikrorendszerek\MB_System_full\MB_System\pcores\lcd_screen_v1_00_a/hdl/vhdl/lcd_screen.vhd
->>>>>>> remotes/origin/master
+verilog lcd_screen_v1_00_a F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\pcores\lcd_screen_v1_00_a/hdl/verilog/user_logic.v
+vhdl lcd_screen_v1_00_a F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\pcores\lcd_screen_v1_00_a/hdl/vhdl/lcd_screen.vhd
 vhdl work ../hdl/system_lcd_screen_0_wrapper.vhd

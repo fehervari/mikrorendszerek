@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< HEAD
   <FilterFile>filter.filter</FilterFile>
   <SavedFilterFilePath>D:/git/mikrorendszerek/MB_System_full/MB_System/__xps/ise</SavedFilterFilePath>
   <DateInitialized>2017-11-05T13:37:08</DateInitialized>
@@ -8,6 +9,15 @@
   <DateModified>2017-11-05T13:37:08</DateModified>
   <SavedFilePath>D:/git/mikrorendszerek/MB_System_full/MB_System/__xps/ise/system.xreport</SavedFilePath>
   <SummaryTimeStamp>2017-11-05T13:37:08</SummaryTimeStamp>
+=======
+  <DateModified>2017-11-05T13:00:23</DateModified>
+  <ModuleName>system</ModuleName>
+  <SummaryTimeStamp>2017-11-05T13:00:23</SummaryTimeStamp>
+  <SavedFilePath>F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/__xps/ise/system.xreport</SavedFilePath>
+  <FilterFile>filter.filter</FilterFile>
+  <SavedFilterFilePath>F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/__xps/ise</SavedFilterFilePath>
+  <DateInitialized>2017-09-22T14:49:40</DateInitialized>
+>>>>>>> 42fcca8b0d728ec4bf13b858e10f4c221f2ec213
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
 </report-views>

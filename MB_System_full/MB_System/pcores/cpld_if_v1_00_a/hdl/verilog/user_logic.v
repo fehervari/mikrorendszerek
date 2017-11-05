@@ -119,7 +119,6 @@ output                                    IP2Bus_Error;
   // --USER nets declarations added here, as needed for user logic
 
   // Nets for user logic slave model s/w accessible register example
-  reg        [C_SLV_DWIDTH-1 : 0]           slv_reg0;
   reg        [C_SLV_DWIDTH-1 : 0]           slv_reg1;
   reg        [C_SLV_DWIDTH-1 : 0]           slv_reg2;
   wire       [2 : 0]                        slv_reg_write_sel;
@@ -131,13 +130,10 @@ output                                    IP2Bus_Error;
 
   // USER logic implementation added here
  
+	reg IE;
+	reg IF;
    wire w_clk = Bus2IP_Clk; //input 
    wire w_rst = ~Bus2IP_Resetn; // rst
-   
-   //wire[7:0] led;   //input 
-   //wire[3:0] seg0; //input  
-   //wire[3:0] seg1; //input 
-   //wire[7:0] sw; //output 
    
    wire w_cpld_clk; //output reg  
    wire w_cpld_ld;  //output reg  
@@ -146,15 +142,14 @@ output                                    IP2Bus_Error;
 	wire w_cpld_rstn = 1'b1;
 	wire w_cpld_jtagen = 1'b0;
 	
-  	wire IE = slv_reg0[0];
-	wire IF = slv_reg0[1];
+  	
 	wire JTAG_EN = 1'b0;
 	wire [3:0]w_seg0 = slv_reg2[3:0];
 	wire [3:0]w_seg1 = slv_reg2[7:4];
 	wire [12:0]w_sw;
 	wire [7:0]w_led = slv_reg2[15:8];
 	
-	assign irq = IE && IF;
+	assign irq = IE & IF;
 	
 	assign cpld_clk = w_cpld_clk;
 	assign cpld_ld = w_cpld_ld;
@@ -215,7 +210,8 @@ output                                    IP2Bus_Error;
 
       if ( Bus2IP_Resetn == 1'b0 )
         begin
-          slv_reg0 <= 0;
+			 IE		 <= 0;
+			 IF		 <= 0;
           slv_reg1 <= 0;
           slv_reg2 <= 0;
         end
@@ -224,38 +220,26 @@ output                                    IP2Bus_Error;
 		  if(slv_reg1 != w_sw) //MAGIC TODO
 		  begin
 				slv_reg1[12:0] <= w_sw;
-				slv_reg0[1] <= 1'b1; // IF
+				IF <= 1'b1;
 		  end
 		  if(slv_reg_read_sel == 3'b010)
-				slv_reg0[1] <= 1'b0; // IF
-        case ( slv_reg_write_sel )
-          3'b100 :
-            for ( byte_index = 0; byte_index <= (C_SLV_DWIDTH/8)-1; byte_index = byte_index+1 )
-              if ( Bus2IP_BE[byte_index] == 1 )
-                slv_reg0[(byte_index*8) +: 8] <= Bus2IP_Data[(byte_index*8) +: 8];
-          /*3'b010 :
-            for ( byte_index = 0; byte_index <= (C_SLV_DWIDTH/8)-1; byte_index = byte_index+1 )
-              if ( Bus2IP_BE[byte_index] == 1 )
-                slv_reg1[(byte_index*8) +: 8] <= Bus2IP_Data[(byte_index*8) +: 8];*/
-          3'b001 :
+				IF <= 1'b0;
+        if(slv_reg_write_sel == 3'b100)
+				IE <= Bus2IP_Data[0];
+        else if(slv_reg_write_sel == 3'b001)
             for ( byte_index = 0; byte_index <= (C_SLV_DWIDTH/8)-1; byte_index = byte_index+1 )
               if ( Bus2IP_BE[byte_index] == 1 )
                 slv_reg2[(byte_index*8) +: 8] <= Bus2IP_Data[(byte_index*8) +: 8];
-          default : begin
-            slv_reg0 <= slv_reg0;
-            //slv_reg1 <= slv_reg1;
-            slv_reg2 <= slv_reg2;
-			 end
-        endcase
+		  else;
 		end
     end // SLAVE_REG_WRITE_PROC
 
   // implement slave model register read mux
-  always @( slv_reg_read_sel or slv_reg0 or slv_reg1 or slv_reg2 )
+  always @( slv_reg_read_sel or IE or IF or slv_reg1 or slv_reg2 )
     begin 
 
       case ( slv_reg_read_sel )
-        3'b100 : slv_ip2bus_data <= slv_reg0;
+        3'b100 : slv_ip2bus_data <= {30'b0,IF,IE};
         3'b010 : slv_ip2bus_data <= slv_reg1;
         3'b001 : slv_ip2bus_data <= slv_reg2;
         default : slv_ip2bus_data <= 0;

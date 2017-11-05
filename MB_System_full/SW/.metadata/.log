@@ -3827,14 +3827,24 @@ java.lang.RuntimeException: No Target with ID 0 in the System
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 =======
 >>>>>>> remotes/origin/master
+<<<<<<< HEAD
 !SESSION 2017-11-05 13:39:22.843 -----------------------------------------------
+=======
+!SESSION 2017-11-05 13:23:46.382 -----------------------------------------------
+>>>>>>> 42fcca8b0d728ec4bf13b858e10f4c221f2ec213
 eclipse.buildId=Release 14.7 Build SDK_P.20131013
 java.version=1.6.0_21
 java.vendor=Sun Microsystems Inc.
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=hu_HU
+<<<<<<< HEAD
 Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.ui.workbench 4 2 2017-11-05 13:39:24.320
+=======
+Command-line arguments:  -data F:\git\mikrorendszerek\MB_System_full\SW -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui.workbench 4 2 2017-11-05 13:23:51.174
+>>>>>>> 42fcca8b0d728ec4bf13b858e10f4c221f2ec213
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 1
 org.eclipse.ui.WorkbenchException: The content of elements must consist of well-formed character data or markup.
@@ -3861,7 +3871,11 @@ Caused by: org.xml.sax.SAXParseException: The content of elements must consist o
 	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
 	at org.eclipse.ui.XMLMemento.createReadRoot(XMLMemento.java:116)
 	... 6 more
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.ui 4 0 2017-11-05 13:39:24.320
+=======
+!SUBENTRY 1 org.eclipse.ui 4 0 2017-11-05 13:23:51.174
+>>>>>>> 42fcca8b0d728ec4bf13b858e10f4c221f2ec213
 !MESSAGE The content of elements must consist of well-formed character data or markup.
 !STACK 0
 org.xml.sax.SAXParseException: The content of elements must consist of well-formed character data or markup.
@@ -3885,7 +3899,11 @@ org.xml.sax.SAXParseException: The content of elements must consist of well-form
 	at org.eclipse.ui.internal.Workbench.restoreState(Workbench.java:2088)
 	at org.eclipse.ui.internal.WorkbenchConfigurer.restoreState(WorkbenchConfigurer.java:183)
 	at org.eclipse.ui.application.WorkbenchAdvisor$1.run(WorkbenchAdvisor.java:781)
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.ui 4 0 2017-11-05 13:39:24.320
+=======
+!SUBENTRY 1 org.eclipse.ui 4 0 2017-11-05 13:23:51.174
+>>>>>>> 42fcca8b0d728ec4bf13b858e10f4c221f2ec213
 !MESSAGE The content of elements must consist of well-formed character data or markup.
 !STACK 0
 org.xml.sax.SAXParseException: The content of elements must consist of well-formed character data or markup.
@@ -3909,6 +3927,7 @@ org.xml.sax.SAXParseException: The content of elements must consist of well-form
 	at org.eclipse.ui.internal.Workbench.restoreState(Workbench.java:2088)
 	at org.eclipse.ui.internal.WorkbenchConfigurer.restoreState(WorkbenchConfigurer.java:183)
 	at org.eclipse.ui.application.WorkbenchAdvisor$1.run(WorkbenchAdvisor.java:781)
+<<<<<<< HEAD
 
 !ENTRY org.eclipse.cdt.core 4 0 2017-11-05 13:39:53.540
 !MESSAGE Error
@@ -3998,3 +4017,5 @@ java.lang.RuntimeException: No Target with ID 0 in the System
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+=======
+>>>>>>> 42fcca8b0d728ec4bf13b858e10f4c221f2ec213

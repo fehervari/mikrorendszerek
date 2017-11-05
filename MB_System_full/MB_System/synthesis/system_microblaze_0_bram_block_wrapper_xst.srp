@@ -1,10 +1,10 @@
 Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to D:\git\mikrorendszerek\MB_System_full\MB_System\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> 
 TABLE OF CONTENTS
@@ -35,7 +35,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_microblaze_0_bram_block_wrapper_xst.prj"
-Verilog Include Directory          : {"D:\git\mikrorendszerek\MB_System_full\MB_System\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc6slx9tqg144-2
@@ -62,10 +62,10 @@ Cores Search Directories           : {../implementation}
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" into library microblaze_0_bram_block_elaborate_v1_00_a
+Parsing VHDL file "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" into library microblaze_0_bram_block_elaborate_v1_00_a
 Parsing entity <microblaze_0_bram_block_elaborate>.
 Parsing architecture <STRUCTURE> of entity <microblaze_0_bram_block_elaborate>.
-Parsing VHDL file "D:\git\mikrorendszerek\MB_System_full\MB_System\hdl\system_microblaze_0_bram_block_wrapper.vhd" into library work
+Parsing VHDL file "F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\hdl\system_microblaze_0_bram_block_wrapper.vhd" into library work
 Parsing entity <system_microblaze_0_bram_block_wrapper>.
 Parsing architecture <STRUCTURE> of entity <system_microblaze_0_bram_block_wrapper>.
 
@@ -76,22 +76,22 @@ Parsing architecture <STRUCTURE> of entity <system_microblaze_0_bram_block_wrapp
 Elaborating entity <system_microblaze_0_bram_block_wrapper> (architecture <STRUCTURE>) from library <work>.
 
 Elaborating entity <microblaze_0_bram_block_elaborate> (architecture <STRUCTURE>) with generics from library <microblaze_0_bram_block_elaborate_v1_00_a>.
-WARNING:HDLCompiler:89 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" Line 42: <ramb16bwer> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" Line 42: <ramb16bwer> remains a black-box since it has no binding entity.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <system_microblaze_0_bram_block_wrapper>.
-    Related source file is "D:\git\mikrorendszerek\MB_System_full\MB_System\hdl\system_microblaze_0_bram_block_wrapper.vhd".
+    Related source file is "F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\hdl\system_microblaze_0_bram_block_wrapper.vhd".
     Set property "KEEP_HIERARCHY = YES".
     Summary:
 	no macro.
 Unit <system_microblaze_0_bram_block_wrapper> synthesized.
 
 Synthesizing Unit <microblaze_0_bram_block_elaborate>.
-    Related source file is "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd".
-        C_MEMSIZE = 65536
+    Related source file is "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd".
+        C_MEMSIZE = 32768
         C_PORT_DWIDTH = 32
         C_PORT_AWIDTH = 32
         C_NUM_WE = 4
@@ -113,90 +113,42 @@ Synthesizing Unit <microblaze_0_bram_block_elaborate>.
     Set property "BMM_INFO =  " for instance <ramb16bwer_13>.
     Set property "BMM_INFO =  " for instance <ramb16bwer_14>.
     Set property "BMM_INFO =  " for instance <ramb16bwer_15>.
-    Set property "BMM_INFO =  " for instance <ramb16bwer_16>.
-    Set property "BMM_INFO =  " for instance <ramb16bwer_17>.
-    Set property "BMM_INFO =  " for instance <ramb16bwer_18>.
-    Set property "BMM_INFO =  " for instance <ramb16bwer_19>.
-    Set property "BMM_INFO =  " for instance <ramb16bwer_20>.
-    Set property "BMM_INFO =  " for instance <ramb16bwer_21>.
-    Set property "BMM_INFO =  " for instance <ramb16bwer_22>.
-    Set property "BMM_INFO =  " for instance <ramb16bwer_23>.
-    Set property "BMM_INFO =  " for instance <ramb16bwer_24>.
-    Set property "BMM_INFO =  " for instance <ramb16bwer_25>.
-    Set property "BMM_INFO =  " for instance <ramb16bwer_26>.
-    Set property "BMM_INFO =  " for instance <ramb16bwer_27>.
-    Set property "BMM_INFO =  " for instance <ramb16bwer_28>.
-    Set property "BMM_INFO =  " for instance <ramb16bwer_29>.
-    Set property "BMM_INFO =  " for instance <ramb16bwer_30>.
-    Set property "BMM_INFO =  " for instance <ramb16bwer_31>.
-WARNING:Xst:647 - Input <BRAM_Addr_A<0:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_Addr_A<0:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <BRAM_Addr_A<30:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <BRAM_Addr_B<0:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_Addr_B<0:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <BRAM_Addr_B<30:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 760: Output port <DOPA> of the instance <ramb16bwer_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 760: Output port <DOPB> of the instance <ramb16bwer_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 789: Output port <DOPA> of the instance <ramb16bwer_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 789: Output port <DOPB> of the instance <ramb16bwer_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 818: Output port <DOPA> of the instance <ramb16bwer_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 818: Output port <DOPB> of the instance <ramb16bwer_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 847: Output port <DOPA> of the instance <ramb16bwer_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 847: Output port <DOPB> of the instance <ramb16bwer_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 876: Output port <DOPA> of the instance <ramb16bwer_4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 876: Output port <DOPB> of the instance <ramb16bwer_4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 905: Output port <DOPA> of the instance <ramb16bwer_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 905: Output port <DOPB> of the instance <ramb16bwer_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 934: Output port <DOPA> of the instance <ramb16bwer_6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 934: Output port <DOPB> of the instance <ramb16bwer_6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 963: Output port <DOPA> of the instance <ramb16bwer_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 963: Output port <DOPB> of the instance <ramb16bwer_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 992: Output port <DOPA> of the instance <ramb16bwer_8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 992: Output port <DOPB> of the instance <ramb16bwer_8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1021: Output port <DOPA> of the instance <ramb16bwer_9> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1021: Output port <DOPB> of the instance <ramb16bwer_9> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1050: Output port <DOPA> of the instance <ramb16bwer_10> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1050: Output port <DOPB> of the instance <ramb16bwer_10> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1079: Output port <DOPA> of the instance <ramb16bwer_11> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1079: Output port <DOPB> of the instance <ramb16bwer_11> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1108: Output port <DOPA> of the instance <ramb16bwer_12> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1108: Output port <DOPB> of the instance <ramb16bwer_12> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1137: Output port <DOPA> of the instance <ramb16bwer_13> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1137: Output port <DOPB> of the instance <ramb16bwer_13> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1166: Output port <DOPA> of the instance <ramb16bwer_14> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1166: Output port <DOPB> of the instance <ramb16bwer_14> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1195: Output port <DOPA> of the instance <ramb16bwer_15> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1195: Output port <DOPB> of the instance <ramb16bwer_15> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1224: Output port <DOPA> of the instance <ramb16bwer_16> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1224: Output port <DOPB> of the instance <ramb16bwer_16> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1253: Output port <DOPA> of the instance <ramb16bwer_17> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1253: Output port <DOPB> of the instance <ramb16bwer_17> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1282: Output port <DOPA> of the instance <ramb16bwer_18> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1282: Output port <DOPB> of the instance <ramb16bwer_18> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1311: Output port <DOPA> of the instance <ramb16bwer_19> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1311: Output port <DOPB> of the instance <ramb16bwer_19> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1340: Output port <DOPA> of the instance <ramb16bwer_20> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1340: Output port <DOPB> of the instance <ramb16bwer_20> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1369: Output port <DOPA> of the instance <ramb16bwer_21> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1369: Output port <DOPB> of the instance <ramb16bwer_21> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1398: Output port <DOPA> of the instance <ramb16bwer_22> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1398: Output port <DOPB> of the instance <ramb16bwer_22> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1427: Output port <DOPA> of the instance <ramb16bwer_23> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1427: Output port <DOPB> of the instance <ramb16bwer_23> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1456: Output port <DOPA> of the instance <ramb16bwer_24> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1456: Output port <DOPB> of the instance <ramb16bwer_24> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1485: Output port <DOPA> of the instance <ramb16bwer_25> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1485: Output port <DOPB> of the instance <ramb16bwer_25> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1514: Output port <DOPA> of the instance <ramb16bwer_26> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1514: Output port <DOPB> of the instance <ramb16bwer_26> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1543: Output port <DOPA> of the instance <ramb16bwer_27> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1543: Output port <DOPB> of the instance <ramb16bwer_27> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1572: Output port <DOPA> of the instance <ramb16bwer_28> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1572: Output port <DOPB> of the instance <ramb16bwer_28> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1601: Output port <DOPA> of the instance <ramb16bwer_29> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1601: Output port <DOPB> of the instance <ramb16bwer_29> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1630: Output port <DOPA> of the instance <ramb16bwer_30> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1630: Output port <DOPB> of the instance <ramb16bwer_30> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1659: Output port <DOPA> of the instance <ramb16bwer_31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/git/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 1659: Output port <DOPB> of the instance <ramb16bwer_31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 522: Output port <DOPA> of the instance <ramb16bwer_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 522: Output port <DOPB> of the instance <ramb16bwer_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 551: Output port <DOPA> of the instance <ramb16bwer_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 551: Output port <DOPB> of the instance <ramb16bwer_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 580: Output port <DOPA> of the instance <ramb16bwer_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 580: Output port <DOPB> of the instance <ramb16bwer_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 609: Output port <DOPA> of the instance <ramb16bwer_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 609: Output port <DOPB> of the instance <ramb16bwer_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 638: Output port <DOPA> of the instance <ramb16bwer_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 638: Output port <DOPB> of the instance <ramb16bwer_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 667: Output port <DOPA> of the instance <ramb16bwer_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 667: Output port <DOPB> of the instance <ramb16bwer_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 696: Output port <DOPA> of the instance <ramb16bwer_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 696: Output port <DOPB> of the instance <ramb16bwer_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 725: Output port <DOPA> of the instance <ramb16bwer_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 725: Output port <DOPB> of the instance <ramb16bwer_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 754: Output port <DOPA> of the instance <ramb16bwer_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 754: Output port <DOPB> of the instance <ramb16bwer_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 783: Output port <DOPA> of the instance <ramb16bwer_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 783: Output port <DOPB> of the instance <ramb16bwer_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 812: Output port <DOPA> of the instance <ramb16bwer_10> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 812: Output port <DOPB> of the instance <ramb16bwer_10> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 841: Output port <DOPA> of the instance <ramb16bwer_11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 841: Output port <DOPB> of the instance <ramb16bwer_11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 870: Output port <DOPA> of the instance <ramb16bwer_12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 870: Output port <DOPB> of the instance <ramb16bwer_12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 899: Output port <DOPA> of the instance <ramb16bwer_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 899: Output port <DOPB> of the instance <ramb16bwer_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 928: Output port <DOPA> of the instance <ramb16bwer_14> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 928: Output port <DOPB> of the instance <ramb16bwer_14> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 957: Output port <DOPA> of the instance <ramb16bwer_15> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 957: Output port <DOPB> of the instance <ramb16bwer_15> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <microblaze_0_bram_block_elaborate> synthesized.
@@ -259,8 +211,8 @@ Primitive and Black Box Usage:
 ------------------------------
 # BELS                             : 1
 #      GND                         : 1
-# RAMS                             : 32
-#      RAMB16BWER                  : 32
+# RAMS                             : 16
+#      RAMB16BWER                  : 16
 
 Device utilization summary:
 ---------------------------
@@ -282,8 +234,8 @@ IO Utilization:
  Number of bonded IOBs:                   0  out of    102     0%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:               32  out of     32   100%  
-    Number using Block RAM only:         32
+ Number of Block RAM/FIFO:               16  out of     32    50%  
+    Number using Block RAM only:         16
 
 ---------------------------
 Partition Resource Summary:
@@ -306,8 +258,8 @@ Clock Information:
 -----------------------------------+-------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                     | Load  |
 -----------------------------------+-------------------------------------------+-------+
-BRAM_Clk_A                         | NONE(microblaze_0_bram_block/ramb16bwer_0)| 32    |
-BRAM_Clk_B                         | NONE(microblaze_0_bram_block/ramb16bwer_0)| 32    |
+BRAM_Clk_A                         | NONE(microblaze_0_bram_block/ramb16bwer_0)| 16    |
+BRAM_Clk_B                         | NONE(microblaze_0_bram_block/ramb16bwer_0)| 16    |
 -----------------------------------+-------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -330,18 +282,18 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'BRAM_Clk_B'
-  Total number of paths / destination ports: 672 / 672
+  Total number of paths / destination ports: 336 / 336
 -------------------------------------------------------------------------
 Offset:              0.400ns (Levels of Logic = 1)
-  Source:            BRAM_Addr_B<16> (PAD)
+  Source:            BRAM_Addr_B<17> (PAD)
   Destination:       microblaze_0_bram_block/ramb16bwer_0 (RAM)
   Destination Clock: BRAM_Clk_B rising
 
-  Data Path: BRAM_Addr_B<16> to microblaze_0_bram_block/ramb16bwer_0
+  Data Path: BRAM_Addr_B<17> to microblaze_0_bram_block/ramb16bwer_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     begin scope: 'microblaze_0_bram_block:BRAM_Addr_B<16>'
+     begin scope: 'microblaze_0_bram_block:BRAM_Addr_B<17>'
      RAMB16BWER:ADDRB13        0.400          ramb16bwer_0
     ----------------------------------------
     Total                      0.400ns (0.400ns logic, 0.000ns route)
@@ -349,18 +301,18 @@ Offset:              0.400ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'BRAM_Clk_A'
-  Total number of paths / destination ports: 672 / 672
+  Total number of paths / destination ports: 336 / 336
 -------------------------------------------------------------------------
 Offset:              0.400ns (Levels of Logic = 1)
-  Source:            BRAM_Addr_A<16> (PAD)
+  Source:            BRAM_Addr_A<17> (PAD)
   Destination:       microblaze_0_bram_block/ramb16bwer_0 (RAM)
   Destination Clock: BRAM_Clk_A rising
 
-  Data Path: BRAM_Addr_A<16> to microblaze_0_bram_block/ramb16bwer_0
+  Data Path: BRAM_Addr_A<17> to microblaze_0_bram_block/ramb16bwer_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     begin scope: 'microblaze_0_bram_block:BRAM_Addr_A<16>'
+     begin scope: 'microblaze_0_bram_block:BRAM_Addr_A<17>'
      RAMB16BWER:ADDRA13        0.400          ramb16bwer_0
     ----------------------------------------
     Total                      0.400ns (0.400ns logic, 0.000ns route)
@@ -379,7 +331,7 @@ Offset:              2.100ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16BWER:CLKA->DOA0    0   2.100   0.000  ramb16bwer_0 (BRAM_Din_A<0>)
+     RAMB16BWER:CLKA->DOA1    0   2.100   0.000  ramb16bwer_0 (BRAM_Din_A<0>)
      end scope: 'microblaze_0_bram_block:BRAM_Din_A<0>'
     ----------------------------------------
     Total                      2.100ns (2.100ns logic, 0.000ns route)
@@ -398,7 +350,7 @@ Offset:              2.100ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16BWER:CLKB->DOB0    0   2.100   0.000  ramb16bwer_0 (BRAM_Din_B<0>)
+     RAMB16BWER:CLKB->DOB1    0   2.100   0.000  ramb16bwer_0 (BRAM_Din_B<0>)
      end scope: 'microblaze_0_bram_block:BRAM_Din_B<0>'
     ----------------------------------------
     Total                      2.100ns (2.100ns logic, 0.000ns route)
@@ -412,14 +364,14 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.37 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.52 secs
  
 --> 
 
-Total memory usage is 259156 kilobytes
+Total memory usage is 298832 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    5 (   0 filtered)
-Number of infos    :   65 (   0 filtered)
+Number of infos    :   33 (   0 filtered)
 

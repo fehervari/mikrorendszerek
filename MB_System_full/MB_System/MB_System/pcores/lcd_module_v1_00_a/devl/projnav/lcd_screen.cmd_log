@@ -1,3 +1,0 @@
-xst -intstyle ise -ifn "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/lcd_module_v1_00_a/devl/projnav/lcd_screen.xst" -ofn "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/lcd_module_v1_00_a/devl/projnav/lcd_screen.syr" 
-xst -intstyle ise -ifn "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/lcd_module_v1_00_a/devl/projnav/lcd_screen.xst" -ofn "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/lcd_module_v1_00_a/devl/projnav/lcd_screen.syr" 
-xst -intstyle ise -ifn "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/lcd_module_v1_00_a/devl/projnav/lcd_screen.xst" -ofn "F:/curr_ISE_proj/mikrorendszerek/MB_System_full/MB_System/pcores/lcd_module_v1_00_a/devl/projnav/lcd_screen.syr" 
