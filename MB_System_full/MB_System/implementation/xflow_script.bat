@@ -6,7 +6,7 @@
 @REM #
 @REM # Command line for ngdbuild
 @REM #
-ngdbuild -p xc6slx9tqg144-2 -nt timestamp -bm system.bmm "F:/git/MB_System_full/MB_System/implementation/system.ngc" -uc system.ucf system.ngd 
+ngdbuild -p xc6slx9tqg144-2 -nt timestamp -bm system.bmm "D:/git/mikrorendszerek/MB_System_full/MB_System/implementation/system.ngc" -uc system.ucf system.ngd 
 
 @REM #
 @REM # Command line for map

@@ -63,7 +63,7 @@ void write_Pixel(Xuint8 x, Xuint8 y){ // x [1 : 102] y [1 : 64]
 	Xuint8 Col_addrL = Col_addr & 0x0F;
 	Xuint16 Row_addr = (y & 0x07);// sorcím
 	Row_addr = convert[Row_addr];
-	Row_addr += 0x10F;
+	Row_addr += 0x100;
 	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Page_addr);
 	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Col_addrH);
 	sendData16(LCD_SCREEN_BASEADDR + LCD_SCREEN_FIFO_OFFSET, Col_addrL);
@@ -113,3 +113,20 @@ void lcd_IT_handler(void *instancePtr){
 			LCD.SPEED += 1;
 }
 
+void write_Area(Xuint8 pagestart,  Xuint8 colstart, Xuint16 pages, Xuint16 cols, Xuint8* data){
+	Xuint8 i, j;
+	for(i = pagestart; i < pagestart + pages; i++){
+		for( j = colstart ; j < colstart + cols; j++){
+			write_Memory(i,j, data[(i-pagestart)*(j-colstart) + (j-colstart)]);
+		}
+	}
+}
+
+void clear_Area(Xuint8 pagestart,  Xuint8 colstart, Xuint16 pages, Xuint16 cols){
+	Xuint8 i, j;
+	for(i = pagestart; i < pagestart + pages; i++){
+		for( j = colstart ; j < colstart + cols; j++){
+			write_Memory(i,j,0x00);
+		}
+	}
+}

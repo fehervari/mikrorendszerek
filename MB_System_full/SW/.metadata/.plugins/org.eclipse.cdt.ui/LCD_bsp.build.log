@@ -1,6 +1,6 @@
-10:56:05 **** Auto Build of project LCD_bsp ****
+10:29:19 **** Auto Build of project LCD_bsp ****
 make -k all 
 'Finished building libraries'
 
-10:56:05 Build Finished (took 78ms)
+10:29:19 Build Finished (took 172ms)
 

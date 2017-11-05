@@ -32,6 +32,10 @@ void sendData16(Xuint32 addr, Xuint16 data);
 
 //void write_Memory(Xuint8 page, Xuint8 addr, Xuint8 data);
 void write_Memory(Xuint8 page, Xuint8 col, Xuint8 data);
+void write_Area(Xuint8 pagestart,  Xuint8 colstart, Xuint16 pages, Xuint16 cols, Xuint8* data);
+void clear_Area(Xuint8 pagestart,  Xuint8 colstart, Xuint16 pages, Xuint16 cols);
 
 void lcd_IT_handler(void *instancePtr);
 //void writeObject() ??
+
+

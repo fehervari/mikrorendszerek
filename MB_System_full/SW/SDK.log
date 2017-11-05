@@ -222,3 +222,246 @@ MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its 
 10:58:26.413 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
 11:00:29.307 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
 11:22:18.198 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+14:37:34.879 INFO  - Processing command line option -hwspec D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.xml. 
+14:38:02.727 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doSystemReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+14:38:30.770 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+14:38:46.983 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+14:39:04.209 INFO  - FPGA configured successfully with bitstream "D:/git/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+14:39:34.721 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+14:39:59.621 INFO  - System reset is completed. 
+14:40:26.039 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doSystemReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+14:40:39.018 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doSystemReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+14:40:47.210 INFO  - System reset is completed. 
+14:40:53.761 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+14:40:55.811 INFO  - System reset is completed. 
+14:41:29.039 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doSystemReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+14:41:33.537 INFO  - System reset is completed. 
+14:43:42.643 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+14:43:46.154 INFO  - System reset is completed. 
+14:44:50.285 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+14:44:51.287 INFO  - System reset is completed. 
+14:46:11.362 INFO  - System reset is completed. 
+14:47:32.533 INFO  - System reset is completed. 
+14:51:36.946 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+14:51:38.575 INFO  - System reset is completed. 
+14:52:24.218 INFO  - System reset is completed. 
+14:52:39.905 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+14:52:59.845 WARN  - Terminating existing sessions on processor microblaze_0 
+14:53:02.338 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.setResetOnRun(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+14:53:07.446 INFO  - FPGA configured successfully with bitstream "D:/git/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+14:53:18.505 INFO  - FPGA configured successfully with bitstream "D:/git/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+14:53:28.403 INFO  - System reset is completed. 
+14:54:00.905 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Target request failed: Target is not responding (timed out).
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+14:54:28.577 INFO  - System reset is completed. 
+15:09:19.092 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+15:09:33.797 INFO  - FPGA configured successfully with bitstream "D:/git/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+15:09:39.013 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+15:10:07.654 INFO  - System reset is completed. 
+15:17:33.464 WARN  - Terminating existing sessions on processor microblaze_0 
+15:17:38.868 INFO  - FPGA configured successfully with bitstream "D:/git/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+15:19:06.287 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+15:19:08.358 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+00:30:10.557 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:18:49.574 INFO  - Processing command line option -hwspec D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.xml. 
+09:20:53.802 INFO  - FPGA configured successfully with bitstream "D:/git/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+09:24:47.470 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:25:01.023 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:25:11.800 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:25:20.487 WARN  - Terminating existing sessions on processor microblaze_0 
+09:25:25.704 INFO  - FPGA configured successfully with bitstream "D:/git/mikrorendszerek/MB_System_full/SW/MB_System_hw_platform/download.bit" 
+09:25:46.780 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:26:21.714 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:26:34.460 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:27:40.011 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:27:56.325 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:49:00.967 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:49:27.274 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:49:52.276 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:58:31.769 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:58:38.533 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+10:01:16.071 ERROR - Unexpected error while launching program. java.lang.RuntimeException: The program file specified in the launch configuration does not exist
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+10:01:43.172 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:01:44.485 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+10:01:58.784 WARN  - Terminating existing sessions on processor microblaze_0 
+10:02:14.760 WARN  - Terminating existing sessions on processor microblaze_0 
+10:02:54.002 WARN  - Terminating existing sessions on processor microblaze_0 
+10:03:14.627 WARN  - Terminating existing sessions on processor microblaze_0 
+10:03:27.082 WARN  - Terminating existing sessions on processor microblaze_0 
+10:03:40.265 WARN  - Terminating existing sessions on processor microblaze_0 
+10:04:20.897 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:07:04.706 INFO  - Processing command line option -hwspec D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.xml. 
+10:07:45.161 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:07:46.747 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+10:08:23.817 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:09:28.438 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:11:14.750 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:11:16.164 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+10:12:22.989 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:12:24.638 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+10:12:57.085 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:15:46.789 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:16:50.762 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:17:33.285 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:19:23.584 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:19:57.561 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:20:17.752 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:20:40.036 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:28:53.826 INFO  - Project MB_System_hw_platform's source hardware specification located at D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+10:29:19.655 INFO  - Copied contents of D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.xml into \MB_System_hw_platform\system.xml. 
+10:29:19.655 INFO  - Copied contents of D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system.bit into \MB_System_hw_platform\system.bit. 
+10:29:19.655 INFO  - Copied contents of D:\git\mikrorendszerek\MB_System_full\MB_System\SDK\SDK_Export\hw\system_bd.bmm into \MB_System_hw_platform\system_bd.bmm. 
+10:29:19.842 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:29:21.514 INFO  - Updating hardware inferred compiler options for LCD. 
+10:29:21.514 INFO  - Clearing existing target manager status. 
+10:29:45.209 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Cannot perform the Debug Command, Current Processor State is "Running"
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+10:30:08.483 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:30:55.534 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:31:17.790 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:31:36.861 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:38:56.390 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:39:12.095 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:39:13.947 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+10:40:35.268 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:41:30.547 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:42:15.201 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:42:59.227 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:43:26.147 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:46:16.569 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:19:08.552 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+11:32:56.828 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:47:33.486 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+

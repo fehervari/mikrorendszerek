@@ -5,7 +5,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Command Line: platgen -p xc6slx9tqg144-2 -lang vhdl -intstyle default -msg
 __xps/ise/xmsgprops.lst system.mhs 
 
-Parse F:/git/MB_System_full/MB_System/system.mhs ...
+Parse D:/git/mikrorendszerek/MB_System_full/MB_System/system.mhs ...
 
 Read MPD definitions ...
 
@@ -43,8 +43,8 @@ Performing IP level DRCs on properties...
 
 Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
 Address Map for Processor microblaze_0
-  (0000000000-0x00007fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
-  (0000000000-0x00007fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0000000000-0x0000ffff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x0000ffff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
   (0x40000000-0x4000ffff) microblaze_0_intc	axi4lite_0
   (0x41000000-0x4100ffff) axi_timer_0	axi4lite_0
   (0x42000000-0x4200ffff) RS232	axi4lite_0
@@ -59,7 +59,7 @@ INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
    D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
    \lmb_v10_v2_1_0.mpd line 82 
 INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
-   overriding PARAMETER C_MEMSIZE value to 0x8000 -
+   overriding PARAMETER C_MEMSIZE value to 0x10000 -
    D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
    ata\bram_block_v2_1_0.mpd line 78 
 
@@ -179,42 +179,46 @@ Managing hardware (BBD-specified) netlist files ...
 
 Managing cache ...
 IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
-F:\git\MB_System_full\MB_System\system.mhs line 34 - Copying cache
-implementation netlist
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 34 - Copying
+cache implementation netlist
+IPNAME:axi_intc INSTANCE:microblaze_0_intc -
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 47 - Copying
+cache implementation netlist
 IPNAME:lmb_v10 INSTANCE:microblaze_0_ilmb -
-F:\git\MB_System_full\MB_System\system.mhs line 58 - Copying cache
-implementation netlist
-IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl -
-F:\git\MB_System_full\MB_System\system.mhs line 65 - Copying cache
-implementation netlist
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 58 - Copying
+cache implementation netlist
 IPNAME:lmb_v10 INSTANCE:microblaze_0_dlmb -
-F:\git\MB_System_full\MB_System\system.mhs line 74 - Copying cache
-implementation netlist
-IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl -
-F:\git\MB_System_full\MB_System\system.mhs line 81 - Copying cache
-implementation netlist
-IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
-F:\git\MB_System_full\MB_System\system.mhs line 90 - Copying cache
-implementation netlist
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 74 - Copying
+cache implementation netlist
 IPNAME:microblaze INSTANCE:microblaze_0 -
-F:\git\MB_System_full\MB_System\system.mhs line 97 - Copying cache
-implementation netlist
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 97 - Copying
+cache implementation netlist
 IPNAME:lcd_screen INSTANCE:lcd_screen_0 -
-F:\git\MB_System_full\MB_System\system.mhs line 122 - Copying cache
-implementation netlist
-IPNAME:mdm INSTANCE:debug_module - F:\git\MB_System_full\MB_System\system.mhs
-line 136 - Copying cache implementation netlist
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 122 - Copying
+cache implementation netlist
+IPNAME:mdm INSTANCE:debug_module -
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 136 - Copying
+cache implementation netlist
+IPNAME:cpld_if INSTANCE:cpld_if_0 -
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 148 - Copying
+cache implementation netlist
 IPNAME:axi_timer INSTANCE:axi_timer_0 -
-F:\git\MB_System_full\MB_System\system.mhs line 176 - Copying cache
-implementation netlist
-IPNAME:axi_uartlite INSTANCE:rs232 - F:\git\MB_System_full\MB_System\system.mhs
-line 196 - Copying cache implementation netlist
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 176 - Copying
+cache implementation netlist
+IPNAME:axi_interconnect INSTANCE:axi4lite_0 -
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 188 - Copying
+cache implementation netlist
+IPNAME:axi_uartlite INSTANCE:rs232 -
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 196 - Copying
+cache implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
-F:\git\MB_System_full\MB_System\system.mhs line 90 - elaborating IP
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 90 - elaborating
+IP
 IPNAME:clock_generator INSTANCE:clock_generator_0 -
-F:\git\MB_System_full\MB_System\system.mhs line 163 - elaborating IP
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 163 -
+elaborating IP
 ClkGen elaborate status: PASSED
 ----------------------------------------
 ----------------------------------------
@@ -222,7 +226,7 @@ ClkGen elaborate status: PASSED
 Writing HDL for elaborated instances ...
 
 Inserting wrapper level ...
-Completion time: 1.00 seconds
+Completion time: 0.00 seconds
 
 Constructing platform-level connectivity ...
 Completion time: 0.00 seconds
@@ -238,26 +242,32 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
-INSTANCE:microblaze_0_intc - F:\git\MB_System_full\MB_System\system.mhs line 47
-- Running XST synthesis
-INSTANCE:lcd_screen_0 - F:\git\MB_System_full\MB_System\system.mhs line 122 -
-Running XST synthesis
-INSTANCE:cpld_if_0 - F:\git\MB_System_full\MB_System\system.mhs line 148 -
-Running XST synthesis
-INSTANCE:clock_generator_0 - F:\git\MB_System_full\MB_System\system.mhs line 163
-- Running XST synthesis
-INSTANCE:axi4lite_0 - F:\git\MB_System_full\MB_System\system.mhs line 188 -
-Running XST synthesis
+INSTANCE:microblaze_0_i_bram_ctrl -
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 65 - Running XST
+synthesis
+INSTANCE:microblaze_0_d_bram_ctrl -
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 81 - Running XST
+synthesis
+INSTANCE:microblaze_0_bram_block -
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 90 - Running XST
+synthesis
+INSTANCE:lcd_screen_0 -
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 122 - Running
+XST synthesis
+INSTANCE:cpld_if_0 - D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs
+line 148 - Running XST synthesis
+INSTANCE:clock_generator_0 -
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 163 - Running
+XST synthesis
 
 Running NGCBUILD ...
 IPNAME:system_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
-F:\git\MB_System_full\MB_System\system.mhs line 163 - Running NGCBUILD
-IPNAME:system_axi4lite_0_wrapper INSTANCE:axi4lite_0 -
-F:\git\MB_System_full\MB_System\system.mhs line 188 - Running NGCBUILD
+D:\git\mikrorendszerek\MB_System_full\MB_System\system.mhs line 163 - Running
+NGCBUILD
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
    If any constraint needs to be overridden, this should be done by modifying
    the data/system.ucf file.
 
 Rebuilding cache ...
 
-Total run time: 145.00 seconds
+Total run time: 45.00 seconds
