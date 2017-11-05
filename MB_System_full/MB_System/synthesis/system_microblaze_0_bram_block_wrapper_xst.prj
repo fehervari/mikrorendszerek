@@ -1,6 +1,2 @@
-<<<<<<< HEAD
-VHDL microblaze_0_bram_block_elaborate_v1_00_a D:\git\mikrorendszerek\MB_System_full\MB_System\hdl\elaborate\microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd
-=======
-VHDL microblaze_0_bram_block_elaborate_v1_00_a F:\git\mikrorendszerek\MB_System_full\MB_System\hdl\elaborate\microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd
->>>>>>> remotes/origin/master
+VHDL microblaze_0_bram_block_elaborate_v1_00_a F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\hdl\elaborate\microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd
 vhdl work ../hdl/system_microblaze_0_bram_block_wrapper.vhd

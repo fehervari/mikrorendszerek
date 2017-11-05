@@ -1,15 +1,7 @@
-<<<<<<< HEAD
-INFILE=D:\git\mikrorendszerek\MB_System_full\MB_System\implementation\system.ncd
-OUTFILE=D:\git\mikrorendszerek\MB_System_full\MB_System\implementation\system.bit
+INFILE=F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\implementation\system.ncd
+OUTFILE=F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\implementation\system.bit
 FAMILY=Spartan6
 PART=xc6slx9-2tqg144
-WORKINGDIR=D:\git\mikrorendszerek\MB_System_full\MB_System\implementation
-=======
-INFILE=F:\git\mikrorendszerek\MB_System_full\MB_System\implementation\system.ncd
-OUTFILE=F:\git\mikrorendszerek\MB_System_full\MB_System\implementation\system.bit
-FAMILY=Spartan6
-PART=xc6slx9-2tqg144
-WORKINGDIR=F:\git\mikrorendszerek\MB_System_full\MB_System\implementation
->>>>>>> remotes/origin/master
+WORKINGDIR=F:\curr_ISE_proj\mikrorendszerek\MB_System_full\MB_System\implementation
 LICENSE=WebPack
 USER_INFO=__0_0_0

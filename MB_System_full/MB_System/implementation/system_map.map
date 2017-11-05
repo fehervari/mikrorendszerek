@@ -9,11 +9,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-<<<<<<< HEAD
-Mapped Date    : Sun Nov 05 10:27:00 2017
-=======
-Mapped Date    : Sun Nov 05 09:46:57 2017
->>>>>>> remotes/origin/master
+Mapped Date    : Sun Nov 05 13:05:02 2017
 
 Mapping design into LUTs...
 Writing file system_map.ngm...
@@ -23,120 +19,76 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-<<<<<<< HEAD
-Total REAL time at the beginning of Placer: 10 secs 
-Total CPU  time at the beginning of Placer: 9 secs 
-
-Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:365912e7) REAL time: 10 secs 
-
-Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:365912e7) REAL time: 11 secs 
-
-Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:6e29cff7) REAL time: 11 secs 
-=======
-Total REAL time at the beginning of Placer: 22 secs 
+Total REAL time at the beginning of Placer: 25 secs 
 Total CPU  time at the beginning of Placer: 20 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:6ba533ae) REAL time: 26 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:eb474250) REAL time: 27 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:6ba533ae) REAL time: 27 secs 
+Phase 2.7  Design Feasibility Check (Checksum:eb474250) REAL time: 27 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:b022906e) REAL time: 27 secs 
->>>>>>> remotes/origin/master
+Phase 3.31  Local Placement Optimization (Checksum:d9a34ed0) REAL time: 27 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-<<<<<<< HEAD
-(Checksum:edbe1c3f) REAL time: 15 secs 
+(Checksum:e16acb8f) REAL time: 37 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:edbe1c3f) REAL time: 15 secs 
+Phase 5.36  Local Placement Optimization (Checksum:e16acb8f) REAL time: 37 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:edbe1c3f) REAL time: 15 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:e16acb8f) REAL time: 37 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:edbe1c3f) REAL time: 15 secs 
+Phase 7.3  Local Placement Optimization (Checksum:e16acb8f) REAL time: 37 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:edbe1c3f) REAL time: 15 secs 
+Phase 8.5  Local Placement Optimization (Checksum:e16acb8f) REAL time: 37 secs 
 
 Phase 9.8  Global Placement
-............................
-...................................................................................................
-...............................................................................................................
-...............................................................................................................
-...................................................
-Phase 9.8  Global Placement (Checksum:42685f64) REAL time: 36 secs 
+.............................
+..................................................................
+.................................................................................................................
+..............................................................................................
+............................................
+Phase 9.8  Global Placement (Checksum:c19b483) REAL time: 1 mins 21 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:42685f64) REAL time: 37 secs 
+Phase 10.5  Local Placement Optimization (Checksum:c19b483) REAL time: 1 mins 21 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:3e530244) REAL time: 41 secs 
+Phase 11.18  Placement Optimization (Checksum:c78e0780) REAL time: 1 mins 32 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:3e530244) REAL time: 41 secs 
+Phase 12.5  Local Placement Optimization (Checksum:c78e0780) REAL time: 1 mins 32 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:c18d9dbe) REAL time: 41 secs 
+Phase 13.34  Placement Validation (Checksum:3446f87d) REAL time: 1 mins 33 secs 
 
-Total REAL time to Placer completion: 41 secs 
-Total CPU  time to Placer completion: 41 secs 
-=======
-(Checksum:3a96a431) REAL time: 40 secs 
-
-Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:3a96a431) REAL time: 40 secs 
-
-Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:3a96a431) REAL time: 40 secs 
-
-Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:3a96a431) REAL time: 40 secs 
-
-Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:3a96a431) REAL time: 40 secs 
-
-Phase 9.8  Global Placement
-..............................
-..........................................................................
-............................................................................................................
-........................................................................................
-.....................
-Phase 9.8  Global Placement (Checksum:2f65837d) REAL time: 1 mins 21 secs 
-
-Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:2f65837d) REAL time: 1 mins 22 secs 
-
-Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:41b459b2) REAL time: 1 mins 31 secs 
-
-Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:41b459b2) REAL time: 1 mins 31 secs 
-
-Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:9234d5c1) REAL time: 1 mins 32 secs 
-
-Total REAL time to Placer completion: 1 mins 32 secs 
-Total CPU  time to Placer completion: 1 mins 23 secs 
->>>>>>> remotes/origin/master
+Total REAL time to Placer completion: 1 mins 33 secs 
+Total CPU  time to Placer completion: 1 mins 27 secs 
 Running post-placement packing...
 Writing output files...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net cpld_if_0_irq is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lcd_screen_0_irq is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-<<<<<<< HEAD
-   _File_I/Using_LUT6.All_RAM32M[5].ram32m_i_RAMD_D1_O> is incomplete. The
+   _File_I/Using_LUT6.All_RAM32M[8].ram32m_i_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[3].ram32m_i_RAMD_D1_O> is incomplete. The
+   _File_I/Using_LUT6.All_RAM32M[7].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[4].ram32m_i_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
@@ -144,11 +96,7 @@ WARNING:PhysDesignRules:367 - The signal
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[0].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[14].ram32m_i_RAMD_D1_O> is incomplete. The
+   _File_I/Using_LUT6.All_RAM32M[3].ram32m_i_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
@@ -156,11 +104,7 @@ WARNING:PhysDesignRules:367 - The signal
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[15].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[7].ram32m_i_RAMD_D1_O> is incomplete. The
+   _File_I/Using_LUT6.All_RAM32M[11].ram32m_i_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
@@ -168,7 +112,7 @@ WARNING:PhysDesignRules:367 - The signal
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[4].ram32m_i_RAMD_D1_O> is incomplete. The
+   _File_I/Using_LUT6.All_RAM32M[0].ram32m_i_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
@@ -176,25 +120,15 @@ WARNING:PhysDesignRules:367 - The signal
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[8].ram32m_i_RAMD_D1_O> is incomplete. The
+   _File_I/Using_LUT6.All_RAM32M[12].ram32m_i_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[11].ram32m_i_RAMD_D1_O> is incomplete. The
-=======
-   _File_I/Using_LUT6.All_RAM32M[10].ram32m_i_RAMD_D1_O> is incomplete. The
+   _File_I/Using_LUT6.All_RAM32M[13].ram32m_i_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[11].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[8].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[4].ram32m_i_RAMD_D1_O> is incomplete. The
+   _File_I/Using_LUT6.All_RAM32M[9].ram32m_i_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
@@ -202,130 +136,62 @@ WARNING:PhysDesignRules:367 - The signal
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[3].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[2].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[0].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[12].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[13].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[9].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[1].ram32m_i_RAMD_D1_O> is incomplete. The
+   _File_I/Using_LUT6.All_RAM32M[14].ram32m_i_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
    _File_I/Using_LUT6.All_RAM32M[15].ram32m_i_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[14].ram32m_i_RAMD_D1_O> is incomplete. The
->>>>>>> remotes/origin/master
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr<30>> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[13].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-<<<<<<< HEAD
-   _File_I/Using_LUT6.All_RAM32M[9].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[12].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-=======
-   _File_I/Using_LUT6.All_RAM32M[7].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr<30>> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
    <microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr<31>> is
    incomplete. The signal does not drive any load pins in the design.
->>>>>>> remotes/origin/master
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr<30>> is
+   incomplete. The signal does not drive any load pins in the design.
 
 Design Summary
 --------------
 
 Design Summary:
 Number of errors:      0
-Number of warnings:   18
+Number of warnings:   20
 Slice Logic Utilization:
-  Number of Slice Registers:                 1,917 out of  11,440   16%
-    Number used as Flip Flops:               1,910
+  Number of Slice Registers:                 1,982 out of  11,440   17%
+    Number used as Flip Flops:               1,975
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                7
-<<<<<<< HEAD
-  Number of Slice LUTs:                      2,519 out of   5,720   44%
-    Number used as logic:                    2,353 out of   5,720   41%
-=======
-  Number of Slice LUTs:                      2,526 out of   5,720   44%
-    Number used as logic:                    2,354 out of   5,720   41%
->>>>>>> remotes/origin/master
-      Number using O6 output only:           1,848
-      Number using O5 output only:              52
-      Number using O5 and O6:                  454
+  Number of Slice LUTs:                      2,585 out of   5,720   45%
+    Number used as logic:                    2,408 out of   5,720   42%
+      Number using O6 output only:           1,893
+      Number using O5 output only:              51
+      Number using O5 and O6:                  464
       Number used as ROM:                        0
-    Number used as Memory:                     139 out of   1,440    9%
+    Number used as Memory:                     142 out of   1,440    9%
       Number used as Dual Port RAM:             64
         Number using O6 output only:             0
         Number using O5 output only:             0
         Number using O5 and O6:                 64
       Number used as Single Port RAM:            0
-      Number used as Shift Register:            75
-        Number using O6 output only:            24
+      Number used as Shift Register:            78
+        Number using O6 output only:            27
         Number using O5 output only:             1
         Number using O5 and O6:                 50
-<<<<<<< HEAD
-    Number used exclusively as route-thrus:     27
-      Number with same-slice register load:     24
-=======
-    Number used exclusively as route-thrus:     33
-      Number with same-slice register load:     30
->>>>>>> remotes/origin/master
+    Number used exclusively as route-thrus:     35
+      Number with same-slice register load:     32
       Number with same-slice carry load:         3
       Number with other load:                    0
 
 Slice Logic Distribution:
-<<<<<<< HEAD
   Number of occupied Slices:                 1,021 out of   1,430   71%
-  Number of MUXCYs used:                       532 out of   2,860   18%
-  Number of LUT Flip Flop pairs used:        2,873
-    Number with an unused Flip Flop:         1,070 out of   2,873   37%
-    Number with an unused LUT:                 354 out of   2,873   12%
-    Number of fully used LUT-FF pairs:       1,449 out of   2,873   50%
-=======
-  Number of occupied Slices:                 1,006 out of   1,430   70%
-  Number of MUXCYs used:                       532 out of   2,860   18%
-  Number of LUT Flip Flop pairs used:        2,870
-    Number with an unused Flip Flop:         1,078 out of   2,870   37%
-    Number with an unused LUT:                 344 out of   2,870   11%
-    Number of fully used LUT-FF pairs:       1,448 out of   2,870   50%
->>>>>>> remotes/origin/master
-    Number of unique control sets:             135
+  Number of MUXCYs used:                       536 out of   2,860   18%
+  Number of LUT Flip Flop pairs used:        2,951
+    Number with an unused Flip Flop:         1,096 out of   2,951   37%
+    Number with an unused LUT:                 366 out of   2,951   12%
+    Number of fully used LUT-FF pairs:       1,489 out of   2,951   50%
+    Number of unique control sets:             148
     Number of slice register sites lost
-      to control set restrictions:             581 out of  11,440    5%
+      to control set restrictions:             641 out of  11,440    5%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -334,12 +200,12 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        18 out of     102   17%
-    Number of LOCed IOBs:                       18 out of      18  100%
+  Number of bonded IOBs:                        21 out of     102   20%
+    Number of LOCed IOBs:                       21 out of      21  100%
     IOB Flip Flops:                              4
 
 Specific Feature Utilization:
-  Number of RAMB16BWERs:                        32 out of      32  100%
+  Number of RAMB16BWERs:                        16 out of      32   50%
   Number of RAMB8BWERs:                          0 out of      64    0%
   Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
     Number used as BUFIO2s:                      1
@@ -369,19 +235,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-<<<<<<< HEAD
-Average Fanout of Non-Clock Nets:                4.52
+Average Fanout of Non-Clock Nets:                4.33
 
-Peak Memory Usage:  483 MB
-Total REAL time to MAP completion:  44 secs 
-Total CPU time to MAP completion:   43 secs 
-=======
-Average Fanout of Non-Clock Nets:                4.35
-
-Peak Memory Usage:  530 MB
-Total REAL time to MAP completion:  1 mins 37 secs 
-Total CPU time to MAP completion:   1 mins 27 secs 
->>>>>>> remotes/origin/master
+Peak Memory Usage:  520 MB
+Total REAL time to MAP completion:  1 mins 39 secs 
+Total CPU time to MAP completion:   1 mins 31 secs 
 
 Mapping completed.
 See MAP report file "system_map.mrp" for details.

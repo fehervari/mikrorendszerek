@@ -1,1 +1,0 @@
- -p xc6slx9tqg144-2 -pe microblaze_0 ../SW/cpld/Debug/cpld.elf
